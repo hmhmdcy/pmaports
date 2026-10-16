@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Configure a newly built offline root tree, without mounting or formatting."""
 from pathlib import Path
-import argparse,os,pwd,re,shutil,json,hashlib
+import argparse,os,pwd,re,shutil,json,hashlib,uuid
 p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('--root',type=Path,required=True)
 p.add_argument('--user',default='user')
@@ -9,6 +9,11 @@ a=p.parse_args();root=a.root.resolve()
 if root==Path('/') or not (root/'etc/alpine-release').is_file():p.error('An offline Alpine root directory is required')
 if not re.fullmatch('[a-z_][a-z0-9_-]*',a.user):p.error('Invalid username')
 assert not os.statvfs(root).f_flag & os.ST_RDONLY,'Destination must be a writable candidate, not a backup'
+identity=root/'etc/machine-id'
+assert not identity.is_symlink(),'Unexpected machine-id symlink'
+if not identity.exists() or not identity.read_text().strip():
+ identity.write_text(uuid.uuid4().hex+'\n')
+assert re.fullmatch('[0-9a-f]{32}',identity.read_text().strip()),'Invalid installation identity'
 entries=[s.split(':') for s in (root/'etc/passwd').read_text().splitlines()]
 user=next(e for e in entries if e[0]==a.user)
 home=root/user[5].lstrip('/');uid,gid=map(int,user[2:4])

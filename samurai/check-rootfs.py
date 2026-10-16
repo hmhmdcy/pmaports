@@ -47,6 +47,7 @@ for block in db.split('\n\n'):
     if data.startswith(bytes([127])+b'ELF'):
      assert data[4:6]==bytes([2,1]) and struct.unpack('<H',data[18:20])[0]==183,'Non-ARM64 ELF: '+path
      elfs+=1
+assert checks>50,'Unrecognized installed-file checksum format'
 greet=tomllib.loads((root/'etc/greetd/samurai-phosh.toml').read_text())
 assert greet['initial_session']['user']==a.user
 assert greet['initial_session']['command']=='/usr/bin/samurai-phosh-session'
@@ -60,7 +61,7 @@ for service in ['samurai-radio','samurai-usb','samurai-loopback','sshd','bluetoo
  assert (root/'etc/init.d'/service).is_file(),service
  assert any((root/'etc/runlevels'/level/service).is_symlink() for level in ['boot','default']),service
 for command in ['usr/lib/bluetooth/bluetoothd','usr/libexec/elogind/elogind','usr/libexec/iio-sensor-proxy',
- 'usr/libexec/samurai-hexagonrpcd','usr/sbin/samurai-usb','usr/bin/samurai-phosh-session']:
+ 'usr/libexec/phrog-greetd-session','usr/sbin/sshd.pam','usr/libexec/samurai-hexagonrpcd','usr/sbin/samurai-usb','usr/bin/samurai-phosh-session']:
  assert (root/command).is_file(),'Missing service executable: '+command
 # Integrity manifests were generated after linking; they must survive packaging.
 for name in ['ssc-library','ssc-daemon']:
