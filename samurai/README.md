@@ -26,6 +26,11 @@ python3 "$HOME/samurai-build/pmbootstrap/pmbootstrap.py" --as-root -y -j 4 \
 sudo python3 samurai/export-apk-repository.py \
   --root "$HOME/samurai-build/work/chroot_rootfs_realme-samurai" \
   --packages "$HOME/samurai-build/work/packages/edge"
+sudo chroot "$HOME/samurai-build/work/chroot_rootfs_realme-samurai" \
+  apk --no-network add device-realme-samurai@samurai samurai-camera-stack@samurai \
+  libcamera@samurai libcamera-ipa@samurai libcamera-tools@samurai \
+  libcamera-gstreamer@samurai libcamera-v4l2@samurai \
+  modemmanager@samurai libmm-glib@samurai mesa-vulkan-freedreno-samurai@samurai
 sudo python3 samurai/finalize-rootfs.py \
   --root "$HOME/samurai-build/work/chroot_rootfs_realme-samurai" --user user
 ```
@@ -77,7 +82,7 @@ RAM/RPC检查保留上游builder已知的进程寿命分配，不把关闭leak�
 
 ## 软件包更新
 
-export脚本把本次构建的已签名索引、索引内APK和既有公钥信任保存在候选自身，配置带samurai标签的本地仓库；不复制私钥，不自动修改world。官方发行版仓库继续用于普通软件。部署自己的远程修复仓库时用HTTPS发布APK、同一签名索引及公钥，私钥留在构建机。
+export脚本把本次构建的已签名索引、索引内APK和既有公钥信任保存在候选自身，配置带samurai标签的本地仓库；不复制私钥，不自动修改world。官方发行版仓库继续用于普通软件。导出会拒绝同名多版本混杂的索引；发布仓库应只含本候选版本，不直接复制反复试验的包缓存。部署自己的远程修复仓库时用HTTPS发布APK、同一签名索引及公钥，私钥留在构建机。
 
 维护者先构建新的候选并验收，用户再更新修复仓库；GitHub源仓库本身不是apk仓库。对libcamera、libmm-glib、modemmanager和设备包使用对应samurai仓库标签，避免发行版新版本无意替换设备修复。标签限制来源，不永久锁死版本；以后发布该仓库的新版本仍可更新。新的索引和APK必须同时更新，不能仅复制so。
 

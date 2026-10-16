@@ -17,10 +17,12 @@ with tarfile.open(index) as archive:
  assert re.fullmatch(r'[A-Za-z0-9@_.+-]+\.rsa\.pub',key),key
  assert (root/'etc/apk/keys'/key).is_file(),'Install this build public key first'
  rows=archive.extractfile('APKINDEX').read().decode()
-files=[]
+files=[];seen=set()
 for block in rows.split('\n\n'):
  row=dict(line.split(':',1) for line in block.splitlines() if ':' in line)
  if 'P' not in row:continue
+ assert row['P'] not in seen,'Multiple versions in index; use a clean release package repository: '+row['P']
+ seen.add(row['P'])
  assert row['A'] in ['aarch64','noarch']
  name=row['P']+'-'+row['V']+'.apk'
  assert re.fullmatch(r'[A-Za-z0-9_.+~:-]+\.apk',name),name
@@ -28,6 +30,15 @@ for block in rows.split('\n\n'):
  files.append(name)
 assert files,'Empty package index'
 target=root/'var/lib/samurai/apk/aarch64';target.mkdir(parents=True,exist_ok=True)
+# Only clean files recorded by our own previous export; preserve unknown files.
+previous=root/'var/lib/samurai/apk/manifest.json'
+if previous.exists():
+ for name in json.loads(previous.read_text()):
+  assert name=='APKINDEX.tar.gz' or re.fullmatch(r'[A-Za-z0-9_.+~:-]+\.apk',name)
+  if name not in ['APKINDEX.tar.gz',*files]:
+   old=target/name
+   assert not old.is_symlink()
+   if old.exists():old.unlink()
 manifest={}
 for name in ['APKINDEX.tar.gz',*files]:
  src=source/name;dest=target/name
