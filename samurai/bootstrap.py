@@ -58,7 +58,7 @@ cmd=['python3',tool/'pmbootstrap.py']
 if os.geteuid()==0:cmd+=['--as-root']
 cmd+=['-y','-j',str(a.jobs),'-c',config]
 if not (base/'initialized').exists():
- run(cmd+['init'],input='\n'*100,text=True)
+ run([arg for arg in cmd if arg != '-y']+['init'],input='\n'*100,text=True)
  (base/'initialized').write_text(PIN+'\n')
 run(cmd+['status'])
 if a.build:
