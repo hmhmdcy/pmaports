@@ -1,14 +1,14 @@
 # Userspace package; the EDK2/kernel build is maintained separately.
 maintainer="hmhmdcy <hmhmdcy@users.noreply.github.com>"
 pkgname=device-realme-samurai
-pkgver=1
+pkgver=2
 pkgrel=0
 pkgdesc="Realme X2 Pro userspace for the external EDK2/native Linux boot chain"
 url="https://github.com/hmhmdcy/pmaports"
 arch="aarch64"
 license="MIT"
 options="!check !archcheck"
-depends="postmarketos-base samurai-platform samurai-desktop samurai-camera-stack mesa-vulkan-freedreno-samurai samurai-gnss-assist samurai-ssc"
+depends="device-realme-samurai-kernel-none postmarketos-base samurai-platform samurai-desktop samurai-camera-stack mesa-vulkan-freedreno-samurai samurai-gnss-assist samurai-ssc"
 subpackages="$pkgname-kernel-none:kernel_none"
 makedepends="devicepkg-dev"
 source="deviceinfo"

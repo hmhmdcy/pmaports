@@ -42,8 +42,12 @@ for directory in recipes:
   if text.startswith(('#!/bin/sh','#!/sbin/openrc-run')):subprocess.run(['sh','-n',str(p)],check=True)
   checked+=1
 for p in (root/'samurai').glob('*.py'):ast.parse(p.read_text())
+tool_patches=json.loads((root/'samurai/sources.json').read_text()).get('pmbootstrap_patches',[])
+for item in tool_patches:
+ p=root/'samurai'/item['path']
+ assert hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256'],str(p)
 baseline=json.loads((root/'samurai/observed-packages-248.json').read_text())
 assert len(baseline)==958
 assert len(list((root/'temp/libcamera').glob('00*.patch')))==12
 print(json.dumps({'recipes':len(recipes),'local_sha512_checks':hashes,'source_files_checked':checked,
- 'observed_package_records':len(baseline),'private_build_paths_required':False,'hardware_tested':False},indent=2))
+ 'tool_patches_verified':len(tool_patches),'observed_package_records':len(baseline),'private_build_paths_required':False,'hardware_tested':False},indent=2))
