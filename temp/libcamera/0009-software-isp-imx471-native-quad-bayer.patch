@@ -1,0 +1,404 @@
+Subject: [PATCH] software_isp: handle IMX471 native Quad Bayer with per-sensor opt-in
+
+diff --git a/include/libcamera/internal/software_isp/software_isp.h b/include/libcamera/internal/software_isp/software_isp.h
+index 4f72dce..32df37a 100644
+--- a/include/libcamera/internal/software_isp/software_isp.h
++++ b/include/libcamera/internal/software_isp/software_isp.h
+@@ -100,6 +100,8 @@ private:
+ 	DebayerParams debayerParams_;
+ 	DmaBufAllocator dmaHeap_;
+ 	bool ccmEnabled_;
++	bool imx471_ = false;
++	bool nativeQuadCpu_ = false;
+ 
+ 	std::unique_ptr<ipa::soft::IPAProxySoft> ipa_;
+ 	std::deque<FrameBuffer *> queuedInputBuffers_;
+diff --git a/include/libcamera/internal/software_isp/swstats_cpu.h b/include/libcamera/internal/software_isp/swstats_cpu.h
+index 6fe60e6..3546096 100644
+--- a/include/libcamera/internal/software_isp/swstats_cpu.h
++++ b/include/libcamera/internal/software_isp/swstats_cpu.h
+@@ -52,6 +52,7 @@ public:
+ 
+ 	const Size &patternSize() { return patternSize_; }
+ 
++	void setQuadBayer(bool enabled) { quadBayer_ = enabled; }
+ 	int configure(const StreamConfiguration &inputCfg, unsigned int statsBufferCount = 1);
+ 	void setWindow(const Rectangle &window);
+ 	void startFrame(uint32_t frame);
+diff --git a/src/libcamera/software_isp/debayer_cpu.cpp b/src/libcamera/software_isp/debayer_cpu.cpp
+index 654bc4c..825c2b0 100644
+--- a/src/libcamera/software_isp/debayer_cpu.cpp
++++ b/src/libcamera/software_isp/debayer_cpu.cpp
+@@ -27,6 +27,7 @@
+ #include "libcamera/internal/framebuffer.h"
+ #include "libcamera/internal/global_configuration.h"
+ #include "libcamera/internal/mapped_framebuffer.h"
++#include "libcamera/internal/software_isp/quad_bayer.h"
+ 
+ namespace libcamera {
+ 
+@@ -50,6 +51,7 @@ private:
+ 	void memcpyNextLine(const uint8_t *linePointers[]);
+ 	void process2(uint32_t frame, const uint8_t *src, uint8_t *dst);
+ 	void process4(uint32_t frame, const uint8_t *src, uint8_t *dst);
++	void processNativeQuad(const uint8_t *src, uint8_t *dst);
+ 
+ 	/* Max. supported Bayer pattern height is 4, debayering this requires 5 lines */
+ 	static constexpr unsigned int kMaxLineBuffers = 5;
+@@ -63,6 +65,7 @@ private:
+ 	unsigned int lineBufferIndex_;
+ 	std::vector<uint8_t> lineBuffers_[kMaxLineBuffers];
+ 	bool enableInputMemcpy_;
++	NativeQuadBayer::Workspace nativeQuadWorkspace_;
+ };
+ 
+ /**
+@@ -92,8 +95,8 @@ DebayerCpuThread::DebayerCpuThread(DebayerCpu *debayer, unsigned int threadIndex
+  * \param[in] stats Pointer to the stats object to use
+  * \param[in] cm The camera manager
+  */
+-DebayerCpu::DebayerCpu(std::unique_ptr<SwStatsCpu> stats, const CameraManager &cm)
+-	: Debayer(cm), stats_(std::move(stats))
++DebayerCpu::DebayerCpu(std::unique_ptr<SwStatsCpu> stats, const CameraManager &cm, bool imx471)
++	: Debayer(cm), imx471_(imx471), stats_(std::move(stats))
+ {
+ 	/*
+ 	 * Reading from uncached buffers may be very slow.
+@@ -110,6 +113,10 @@ DebayerCpu::DebayerCpu(std::unique_ptr<SwStatsCpu> stats, const CameraManager &c
+ 	bool enableInputMemcpy =
+ 		configuration.option<bool>({ "software_isp", "copy_input_buffer" }).value_or(true);
+ 
++	/* Private board experiment: the fourcc does not describe a 4x4 CFA. */
++	nativeQuadEnabled_ = configuration.option<bool>(
++		{ "software_isp", "experimental_imx471_native_quad" }).value_or(false);
++
+ 	unsigned int threadCount =
+ 		configuration.option<unsigned int>({ "software_isp", "threads" }).value_or(kDefaultThreads);
+ 	threadCount = std::clamp(threadCount, kMinThreads, kMaxThreads);
+@@ -643,12 +650,19 @@ int DebayerCpu::configure(const StreamConfiguration &inputCfg,
+ 			  const std::vector<std::reference_wrapper<const StreamConfiguration>> &outputCfgs,
+ 			  bool ccmEnabled)
+ {
++	nativeQuad_ = imx471_ && inputCfg.size == Size(4608, 3456);
++	if (nativeQuad_ && !nativeQuadEnabled_)
++		return -EINVAL;
++	inputSize_ = inputCfg.size;
+ 	if (getInputConfig(inputCfg.pixelFormat, inputConfig_) != 0) {
+ 		LOG(Debayer, Error)
+ 			<< "Unsupported input format " << inputCfg.pixelFormat;
+ 		return -EINVAL;
+ 	}
+ 
++	stats_->setQuadBayer(nativeQuad_);
++	if (nativeQuad_)
++		inputConfig_.patternSize = { 4, 4 };
+ 	if (stats_->configure(inputCfg, threads_.size()) != 0)
+ 		return -EINVAL;
+ 
+@@ -683,11 +697,27 @@ int DebayerCpu::configure(const StreamConfiguration &inputCfg,
+ 		return -EINVAL;
+ 	}
+ 
+-	int ret = setDebayerFunctions(inputCfg.pixelFormat,
+-				      outputCfg.pixelFormat,
+-				      ccmEnabled);
+-	if (ret != 0)
+-		return -EINVAL;
++	if (nativeQuad_) {
++		const BayerFormat bayer = BayerFormat::fromPixelFormat(inputCfg.pixelFormat);
++		const Point shift = quadBayerOrderShifts(bayer.order);
++		if (!isQuadBayerInputFormatSupported(inputCfg.pixelFormat) ||
++		    !nativeQuadDecoder_.configure(inputCfg.size.width, inputCfg.size.height,
++					 inputCfg.stride, shift.x / 2, shift.y / 2) ||
++		    getOutputConfig(outputCfg.pixelFormat, outputConfig_) != 0)
++			return -EINVAL;
++		std::tie(outputConfig_.stride, outputConfig_.frameSize) =
++			strideAndFrameSize(outputCfg.pixelFormat, outputCfg.size);
++		nativeQuadAlpha_ = outputConfig_.bpp == 32;
++		nativeQuadBgr_ = outputCfg.pixelFormat == formats::RGB888 ||
++				 outputCfg.pixelFormat == formats::XRGB8888 ||
++				 outputCfg.pixelFormat == formats::ARGB8888;
++		swapRedBlueGains_ = false;
++	} else {
++		int ret = setDebayerFunctions(inputCfg.pixelFormat,
++					      outputCfg.pixelFormat, ccmEnabled);
++		if (ret != 0)
++			return -EINVAL;
++	}
+ 
+ 	ccmEnabled_ = ccmEnabled;
+ 
+@@ -844,16 +874,21 @@ void DebayerCpuThread::process(uint32_t frame, const uint8_t *src, uint8_t *dst)
+ {
+ 	Rectangle &window = debayer_->window_;
+ 
+-	/* Adjust src to top left corner of the window */
+-	src += (window.y + yStart_) * debayer_->inputConfig_.stride +
+-	       window.x * debayer_->inputConfig_.bpp / 8;
+-	/* Adjust dst for yStart_ */
+-	dst += yStart_ * debayer_->outputConfig_.stride;
++	if (debayer_->nativeQuad_) {
++		processNativeQuad(src, dst);
++	} else {
++		/* Adjust src to top left corner of the window */
++		src += (window.y + yStart_) * debayer_->inputConfig_.stride +
++		       window.x * debayer_->inputConfig_.bpp / 8;
++		/* Adjust dst for yStart_ */
++		dst += yStart_ * debayer_->outputConfig_.stride;
++
++		if (debayer_->inputConfig_.patternSize.height == 2)
++			process2(frame, src, dst);
++		else
++			process4(frame, src, dst);
+ 
+-	if (debayer_->inputConfig_.patternSize.height == 2)
+-		process2(frame, src, dst);
+-	else
+-		process4(frame, src, dst);
++	}
+ 
+ 	debayer_->workPendingMutex_.lock();
+ 	debayer_->workPending_ &= ~(1 << threadIndex_);
+@@ -861,6 +896,35 @@ void DebayerCpuThread::process(uint32_t frame, const uint8_t *src, uint8_t *dst)
+ 	debayer_->workPendingCv_.notify_one();
+ }
+ 
++void DebayerCpuThread::processNativeQuad(const uint8_t *src, uint8_t *dst)
++{
++	auto *d = debayer_;
++	d->nativeQuadDecoder_.processRows(src, size_t(d->inputConfig_.stride) * d->inputSize_.height,
++		yStart_, yEnd_, nativeQuadWorkspace_, [&](unsigned int x, unsigned int y, auto rgb) {
++			uint8_t r, g, b;
++			if (d->ccmEnabled_) {
++				const auto &red = d->redCcm_[rgb[0] >> 2];
++				const auto &green = d->greenCcm_[rgb[1] >> 2];
++				const auto &blue = d->blueCcm_[rgb[2] >> 2];
++				auto gamma = [&](int value) { return d->gammaLut_[std::clamp(value, 0, 255)]; };
++				r = gamma(red.r + green.r + blue.r);
++				g = gamma(red.g + green.g + blue.g);
++				b = gamma(red.b + green.b + blue.b);
++			} else {
++				r = d->red_[rgb[0] >> 2];
++				g = d->green_[rgb[1] >> 2];
++				b = d->blue_[rgb[2] >> 2];
++			}
++			uint8_t *pixel = dst + size_t(y) * d->outputConfig_.stride +
++					size_t(x) * (d->nativeQuadAlpha_ ? 4 : 3);
++			pixel[0] = d->nativeQuadBgr_ ? b : r;
++			pixel[1] = g;
++			pixel[2] = d->nativeQuadBgr_ ? r : b;
++			if (d->nativeQuadAlpha_)
++				pixel[3] = 255;
++		});
++}
++
+ void DebayerCpuThread::process2(uint32_t frame, const uint8_t *src, uint8_t *dst)
+ {
+ 	unsigned int outputStride = debayer_->outputConfig_.stride;
+@@ -1092,7 +1156,17 @@ void DebayerCpu::process(uint32_t frame, FrameBuffer *input, FrameBuffer *output
+ 		return;
+ 	}
+ 
+-	stats_->startFrame(frame);
++	if (nativeQuad_ &&
++	    (in.planes()[0].size() < size_t(inputConfig_.stride) * inputSize_.height ||
++	     out.planes()[0].size() < outputConfig_.frameSize)) {
++		metadata.status = FrameMetadata::FrameError;
++		dmaSyncers.clear();
++		outputBufferReady.emit(output);
++		inputBufferReady.emit(input);
++		return;
++	}
++	if (!nativeQuad_)
++		stats_->startFrame(frame);
+ 
+ 	workPendingMutex_.lock();
+ 	workPending_ = (1 << threads_.size()) - 1;
+@@ -1110,7 +1184,10 @@ void DebayerCpu::process(uint32_t frame, FrameBuffer *input, FrameBuffer *output
+ 		});
+ 	}
+ 
+-	metadata.planes()[0].bytesused = out.planes()[0].size();
++	if (nativeQuad_)
++		stats_->processFrame(frame, 0, in);
++
++	metadata.planes()[0].bytesused = nativeQuad_ ? outputConfig_.frameSize : out.planes()[0].size();
+ 
+ 	dmaSyncers.clear();
+ 
+@@ -1122,7 +1199,8 @@ void DebayerCpu::process(uint32_t frame, FrameBuffer *input, FrameBuffer *output
+ 	 *
+ 	 * \todo Pass real bufferId once stats buffer passing is changed.
+ 	 */
+-	stats_->finishFrame(frame, 0);
++	if (!nativeQuad_)
++		stats_->finishFrame(frame, 0);
+ 	outputBufferReady.emit(output);
+ 	inputBufferReady.emit(input);
+ }
+@@ -1146,6 +1224,11 @@ void DebayerCpu::stop()
+ 
+ SizeRange DebayerCpu::sizes(PixelFormat inputFormat, const Size &inputSize)
+ {
++	if (imx471_ && inputSize == Size(4608, 3456)) {
++		if (!nativeQuadEnabled_ || !isQuadBayerInputFormatSupported(inputFormat))
++			return {};
++		return SizeRange(inputSize);
++	}
+ 	Size patternSize = this->patternSize(inputFormat);
+ 	unsigned int borderHeight = patternSize.height;
+ 
+diff --git a/src/libcamera/software_isp/debayer_cpu.h b/src/libcamera/software_isp/debayer_cpu.h
+index 5281c65..2dc4d0c 100644
+--- a/src/libcamera/software_isp/debayer_cpu.h
++++ b/src/libcamera/software_isp/debayer_cpu.h
+@@ -25,6 +25,7 @@
+ #include "libcamera/internal/software_isp/swstats_cpu.h"
+ 
+ #include "debayer.h"
++#include "native_quad_bayer.h"
+ 
+ namespace libcamera {
+ 
+@@ -32,7 +33,7 @@ class DebayerCpuThread;
+ class DebayerCpu : public Debayer
+ {
+ public:
+-	DebayerCpu(std::unique_ptr<SwStatsCpu> stats, const CameraManager &cm);
++	DebayerCpu(std::unique_ptr<SwStatsCpu> stats, const CameraManager &cm, bool imx471 = false);
+ 	~DebayerCpu();
+ 
+ 	int configure(const StreamConfiguration &inputCfg,
+@@ -149,6 +150,15 @@ private:
+ 	bool ccmEnabled_;
+ 	DebayerParams params_;
+ 
++
++	bool imx471_;
++	bool nativeQuadEnabled_ = false;
++	bool nativeQuad_ = false;
++	bool nativeQuadAlpha_ = false;
++	bool nativeQuadBgr_ = false;
++	NativeQuadBayer nativeQuadDecoder_;
++	Size inputSize_;
++
+ 	debayerFn debayer0_;
+ 	debayerFn debayer1_;
+ 	debayerFn debayer2_;
+diff --git a/src/libcamera/software_isp/software_isp.cpp b/src/libcamera/software_isp/software_isp.cpp
+index 74973d9..09eed5f 100644
+--- a/src/libcamera/software_isp/software_isp.cpp
++++ b/src/libcamera/software_isp/software_isp.cpp
+@@ -24,6 +24,8 @@
+ #include <libcamera/stream.h>
+ 
+ #include "libcamera/internal/bayer_format.h"
++#include "libcamera/internal/camera_manager.h"
++#include "libcamera/internal/global_configuration.h"
+ #include "libcamera/internal/framebuffer.h"
+ #include "libcamera/internal/software_isp/debayer_params.h"
+ #include "libcamera/internal/software_isp/quad_bayer.h"
+@@ -42,6 +44,24 @@ namespace libcamera {
+ 
+ LOG_DEFINE_CATEGORY(SoftwareIsp)
+ 
++namespace {
++
++DmaBufAllocator::DmaBufAllocatorFlags softwareIspHeapFlags(PipelineHandler *pipe,
++							const CameraSensor *sensor)
++{
++	const GlobalConfiguration &configuration = pipe->cameraManager()->_d()->configuration();
++	if (sensor->model() == "imx471" && configuration.option<bool>(
++		    { "software_isp", "experimental_imx471_native_quad" }).value_or(false))
++		return DmaBufAllocator::DmaBufAllocatorFlag::SystemHeap;
++
++	return DmaBufAllocator::DmaBufAllocatorFlag::CmaHeap |
++	       DmaBufAllocator::DmaBufAllocatorFlag::SystemHeap |
++	       DmaBufAllocator::DmaBufAllocatorFlag::UDmaBuf;
++}
++
++} /* namespace */
++
++
+ /**
+  * \class SoftwareIsp
+  * \brief Class for the Software ISP
+@@ -83,9 +103,7 @@ LOG_DEFINE_CATEGORY(SoftwareIsp)
+ SoftwareIsp::SoftwareIsp(PipelineHandler *pipe, const CameraSensor *sensor,
+ 			 ControlInfoMap *ipaControls)
+ 	: ispWorkerThread_("SWIspWorker"),
+-	  dmaHeap_(DmaBufAllocator::DmaBufAllocatorFlag::CmaHeap |
+-		   DmaBufAllocator::DmaBufAllocatorFlag::SystemHeap |
+-		   DmaBufAllocator::DmaBufAllocatorFlag::UDmaBuf)
++	  dmaHeap_(softwareIspHeapFlags(pipe, sensor))
+ {
+ 	if (!dmaHeap_.isValid()) {
+ 		LOG(SoftwareIsp, Error) << "Failed to create DmaBufAllocator object";
+@@ -100,6 +118,10 @@ SoftwareIsp::SoftwareIsp(PipelineHandler *pipe, const CameraSensor *sensor,
+ 
+ 	const CameraManager &cm = *pipe->cameraManager();
+ 	const bool quadBayer = softwareIspNeedsCellCollapse(sensor->model());
++	imx471_ = sensor->model() == "imx471";
++	const GlobalConfiguration &nativeConfiguration = cm._d()->configuration();
++	[[maybe_unused]] const bool nativeQuadExperiment = imx471_ && nativeConfiguration.option<bool>(
++		{ "software_isp", "experimental_imx471_native_quad" }).value_or(false);
+ 
+ 	auto stats = std::make_unique<SwStatsCpu>(cm, quadBayer);
+ 	if (!stats->isValid()) {
+@@ -121,7 +143,11 @@ SoftwareIsp::SoftwareIsp(PipelineHandler *pipe, const CameraSensor *sensor,
+ 		}
+ 	}
+ 
+-	if (!softISPMode || softISPMode == "gpu") {
++	if (nativeQuadExperiment && softISPMode == "gpu") {
++		LOG(SoftwareIsp, Error) << "Native Quad Bayer experiment requires CPU mode";
++		return;
++	}
++	if ((!softISPMode || softISPMode == "gpu") && !nativeQuadExperiment) {
+ 		if (eGL::isAvailable()) {
+ 			debayer_ = std::make_unique<DebayerEGL>(std::move(stats), cm, quadBayer);
+ 		} else {
+@@ -138,8 +164,10 @@ SoftwareIsp::SoftwareIsp(PipelineHandler *pipe, const CameraSensor *sensor,
+ 		return;
+ 	}
+ 
+-	if (!debayer_)
+-		debayer_ = std::make_unique<DebayerCpu>(std::move(stats), cm);
++	if (!debayer_) {
++		debayer_ = std::make_unique<DebayerCpu>(std::move(stats), cm, imx471_);
++		nativeQuadCpu_ = true;
++	}
+ 
+ 	debayer_->inputBufferReady.connect(this, &SoftwareIsp::inputReady);
+ 	debayer_->outputBufferReady.connect(this, &SoftwareIsp::outputReady);
+@@ -252,6 +280,8 @@ SizeRange SoftwareIsp::sizes(PixelFormat inputFormat, const Size &inputSize)
+ {
+ 	ASSERT(debayer_);
+ 
++	if (imx471_ && inputSize == Size(4608, 3456) && !nativeQuadCpu_)
++		return {};
+ 	return debayer_->sizes(inputFormat, inputSize);
+ }
+ 
+@@ -297,6 +327,8 @@ int SoftwareIsp::configure(const StreamConfiguration &inputCfg,
+ {
+ 	ASSERT(ipa_ && debayer_);
+ 
++	if (imx471_ && inputCfg.size == Size(4608, 3456) && !nativeQuadCpu_)
++		return -EINVAL;
+ 	int ret = ipa_->configure(configInfo);
+ 	if (ret < 0)
+ 		return ret;
+diff --git a/test/meson.build b/test/meson.build
+index d41ce23..0a0c255 100644
+--- a/test/meson.build
++++ b/test/meson.build
+@@ -52,6 +52,8 @@ public_tests = [
+ internal_tests = [
+     {'name': 'bayer-format', 'sources': ['bayer-format.cpp']},
+     {'name': 'quad-bayer', 'sources': ['quad-bayer.cpp']},
++    {'name': 'native-quad', 'sources': ['native-quad.cpp'], 'dependencies': [libthreads]},
++    {'name': 'native-quad-cpu', 'sources': ['native-quad-cpu.cpp'], 'dependencies': [libthreads]},
+     {'name': 'byte-stream-buffer', 'sources': ['byte-stream-buffer.cpp']},
+     {'name': 'camera-sensor', 'sources': ['camera-sensor.cpp']},
+     {'name': 'delayed_controls', 'sources': ['delayed_controls.cpp']},

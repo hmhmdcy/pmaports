@@ -27,6 +27,6 @@ for directory in recipes:
 for p in (root/'samurai').glob('*.py'):ast.parse(p.read_text())
 baseline=json.loads((root/'samurai/observed-packages-248.json').read_text())
 assert len(baseline)==958
-assert len(list((root/'temp/libcamera').glob('00*.patch')))==21
+assert len(list((root/'temp/libcamera').glob('00*.patch')))==12
 print(json.dumps({'recipes':len(recipes),'local_sha512_checks':hashes,'source_files_checked':checked,
  'observed_package_records':len(baseline),'private_build_paths_required':False,'hardware_tested':False},indent=2))

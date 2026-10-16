@@ -1,6 +1,10 @@
+Subject: [PATCH] software_isp: initialize CPU lookup tables before first use
+
+diff --git a/src/libcamera/software_isp/debayer_cpu.cpp b/src/libcamera/software_isp/debayer_cpu.cpp
+index c84832c..654bc4c 100644
 --- a/src/libcamera/software_isp/debayer_cpu.cpp
 +++ b/src/libcamera/software_isp/debayer_cpu.cpp
-@@ -697,7 +697,7 @@
+@@ -697,7 +697,7 @@ int DebayerCpu::configure(const StreamConfiguration &inputCfg,
  	 * own parameters. Let's enforce recomputing lookup tables by setting the
  	 * stored last used gamma to an out-of-range value.
  	 */

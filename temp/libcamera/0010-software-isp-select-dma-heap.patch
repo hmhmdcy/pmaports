@@ -1,6 +1,10 @@
+Subject: [PATCH] software_isp: allow explicit system DMA heap selection
+
+diff --git a/src/libcamera/software_isp/software_isp.cpp b/src/libcamera/software_isp/software_isp.cpp
+index 09eed5f..46f65b7 100644
 --- a/src/libcamera/software_isp/software_isp.cpp
 +++ b/src/libcamera/software_isp/software_isp.cpp
-@@ -50,6 +50,13 @@
+@@ -50,6 +50,13 @@ DmaBufAllocator::DmaBufAllocatorFlags softwareIspHeapFlags(PipelineHandler *pipe
  							const CameraSensor *sensor)
  {
  	const GlobalConfiguration &configuration = pipe->cameraManager()->_d()->configuration();
