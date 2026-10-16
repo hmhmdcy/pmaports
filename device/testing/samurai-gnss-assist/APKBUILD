@@ -1,0 +1,20 @@
+maintainer="hmhmdcy <hmhmdcy@users.noreply.github.com>"
+pkgname=samurai-gnss-assist
+pkgver=1
+pkgrel=0
+pkgdesc="Realme X2 Pro gnss-assist"
+url="https://github.com/hmhmdcy/pmaports"
+arch="noarch"
+license="MIT"
+depends="python3 libqmi chrony curl openrc modemmanager"
+options="!check"
+source="samurai-gnss-assist.py samurai-gnss-assist.initd"
+package() {
+ install -Dm755 "$srcdir"/samurai-gnss-assist.py "$pkgdir"/usr/sbin/samurai-gnss-assist
+ install -Dm755 "$srcdir"/samurai-gnss-assist.initd "$pkgdir"/etc/init.d/samurai-gnss-assist
+}
+
+sha512sums="
+33975dcbbaec60e367d2876d4ce497edea2c9a3c5f8b56423e58820a5a9248b0ad477e81d128b18f60c9cf01f84d0e5825b2e61eb59a8cae09c89fad5019442d  samurai-gnss-assist.initd
+fa0d7ea6c09ad8cacc83830212bd6a24a4e59d577c2dd380d2f9563b5ad3ba9d4b9a66018627499d1a887fc87f032cc1e9c072fc7d26fc8ae2ef56742f0772fd  samurai-gnss-assist.py
+"
