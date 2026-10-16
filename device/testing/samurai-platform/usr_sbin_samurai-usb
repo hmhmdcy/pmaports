@@ -4,7 +4,7 @@ set -eu
 g=/sys/kernel/config/usb_gadget/samurai
 udc=a600000.usb
 address=169.254.42.1
-tr '\\0' '\\n' < /proc/device-tree/compatible | grep -qx realme,samurai
+tr '\0' '\n' < /proc/device-tree/compatible | grep -qx realme,samurai
 status() {
  cat /sys/class/udc/$udc/state /sys/class/udc/$udc/current_speed
  [ ! -d "$g" ] || cat "$g/UDC"
