@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+"""Preserve this build's signed APK index and packages in a fresh offline root."""
+from pathlib import Path
+import argparse,hashlib,json,os,re,shutil,tarfile,subprocess
+p=argparse.ArgumentParser(description=__doc__)
+p.add_argument('--root',type=Path,required=True)
+p.add_argument('--packages',type=Path,required=True,help='This build packages/edge directory')
+a=p.parse_args();root=a.root.resolve();source=a.packages.resolve()/'aarch64'
+if root==Path('/') or not (root/'etc/alpine-release').is_file():p.error('Offline Alpine root required')
+assert not os.statvfs(root).f_flag & os.ST_RDONLY
+index=source/'APKINDEX.tar.gz'
+with tarfile.open(index) as archive:
+ names=archive.getnames()
+ signatures=[n for n in names if n.startswith('.SIGN.RSA.')]
+ assert len(signatures)==1,'Expected one RSA-signed APK index'
+ key=signatures[0].removeprefix('.SIGN.RSA.')
+ assert re.fullmatch(r'[A-Za-z0-9@_.+-]+\.rsa\.pub',key),key
+ assert (root/'etc/apk/keys'/key).is_file(),'Install this build public key first'
+ rows=archive.extractfile('APKINDEX').read().decode()
+files=[]
+for block in rows.split('\n\n'):
+ row=dict(line.split(':',1) for line in block.splitlines() if ':' in line)
+ if 'P' not in row:continue
+ assert row['A'] in ['aarch64','noarch']
+ name=row['P']+'-'+row['V']+'.apk'
+ assert re.fullmatch(r'[A-Za-z0-9_.+~:-]+\.apk',name),name
+ assert (source/name).is_file(),name
+ files.append(name)
+assert files,'Empty package index'
+target=root/'var/lib/samurai/apk/aarch64';target.mkdir(parents=True,exist_ok=True)
+manifest={}
+for name in ['APKINDEX.tar.gz',*files]:
+ src=source/name;dest=target/name
+ assert not dest.is_symlink(),str(dest)
+ shutil.copyfile(src,dest)
+ manifest[name]=hashlib.sha256(dest.read_bytes()).hexdigest()
+repo=root/'etc/apk/repositories'
+lines=repo.read_text().splitlines()
+entry='@samurai /var/lib/samurai/apk'
+if entry not in lines:repo.write_text('\n'.join(lines+[entry])+'\n')
+# Verify signature through apk, without downloading, installing or running services.
+result=subprocess.run(['chroot',str(root),'/sbin/apk','--no-network',
+ '--repositories-file','/dev/null','--repository','/var/lib/samurai/apk','update'],
+ capture_output=True,text=True)
+assert result.returncode==0,result.stdout+result.stderr
+(root/'var/lib/samurai/apk/manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+print(json.dumps({'signed_repository_preserved':True,'apk_files':len(files),
+ 'private_key_copied':False,'world_changed':False,'hardware_tested':False}))

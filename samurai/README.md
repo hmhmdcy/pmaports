@@ -23,6 +23,9 @@ python3 samurai/bootstrap.py --work "$HOME/samurai-build" --build --lax --jobs 4
 ```sh
 python3 "$HOME/samurai-build/pmbootstrap/pmbootstrap.py" --as-root -y -j 4 \
   -c "$HOME/samurai-build/pmbootstrap.cfg" install --no-image --no-recommends
+sudo python3 samurai/export-apk-repository.py \
+  --root "$HOME/samurai-build/work/chroot_rootfs_realme-samurai" \
+  --packages "$HOME/samurai-build/work/packages/edge"
 sudo python3 samurai/finalize-rootfs.py \
   --root "$HOME/samurai-build/work/chroot_rootfs_realme-samurai" --user user
 ```
@@ -71,3 +74,11 @@ python3 samurai/test-ram-services.py --work "$HOME/samurai-ram-tests"
 后两项另需主机的 patch 和 C 编译器（支持ASan/UBSan），以及可用的 /dev/shm tmpfs。
 RAM/RPC检查保留上游builder已知的进程寿命分配，不把关闭leak检查解释为内存泄漏已修复。
 这些是长期回归测试源码；生成的二进制、日志、抓包和SDK不进入Git。
+
+## 软件包更新
+
+export脚本把本次构建的已签名索引、索引内APK和既有公钥信任保存在候选自身，配置带samurai标签的本地仓库；不复制私钥，不自动修改world。官方发行版仓库继续用于普通软件。部署自己的远程修复仓库时用HTTPS发布APK、同一签名索引及公钥，私钥留在构建机。
+
+维护者先构建新的候选并验收，用户再更新修复仓库；GitHub源仓库本身不是apk仓库。对libcamera、libmm-glib、modemmanager和设备包使用对应samurai仓库标签，避免发行版新版本无意替换设备修复。标签限制来源，不永久锁死版本；以后发布该仓库的新版本仍可更新。新的索引和APK必须同时更新，不能仅复制so。
+
+本轮离线测试的实际安装、完整性及升级模拟结果见[REPRODUCIBILITY.md](REPRODUCIBILITY.md)。内核和模块属于外置启动链，不能通过当前设备APK自动升级。
