@@ -64,6 +64,7 @@ run(cmd+['status'])
 if a.build:
  run(cmd+['build','--arch',platform.machine(),'--lax','crossdirect'])
  build=['build','--arch','aarch64']+(['--lax'] if a.lax else [])
+ run(cmd+['checksum','--verify']+PACKAGES)
  run(cmd+build+PACKAGES)
 print('Configuration:',config)
 print('No phone was contacted. Use install --no-image only after successful package builds.')
