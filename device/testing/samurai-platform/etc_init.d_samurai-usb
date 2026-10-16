@@ -7,6 +7,6 @@ depend() {
 }
 start() {
     ebegin "Starting Samurai USB networking"
-    /usr/local/sbin/samurai-usb start
+    /usr/sbin/samurai-usb start
     eend $?
 }
