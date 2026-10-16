@@ -1,0 +1,44 @@
+#!/sbin/openrc-run
+# Track the daemon PID written by elogind, including D-Bus activation.
+supervisor=
+command_args="--daemon"
+pidfile=/run/elogind.pid
+retry="TERM/5/KILL/2"
+
+name="System login manager"
+description="System service that manages user logins"
+description_reload="Reload configuration without exiting"
+
+command=/usr/libexec/elogind/elogind
+
+depend() {
+	need dbus cgroups
+
+	# Make sure we start before any other display manager
+	before display-manager
+}
+
+extra_started_commands="reload"
+
+reload() {
+	ebegin "Reloading configuration"
+	start-stop-daemon --signal HUP --exec "$command" --pidfile "$pidfile"
+	eend $?
+}
+
+# D-Bus may have activated elogind before OpenRC reaches this service.
+start() {
+    if [ -r "$pidfile" ]; then
+        local daemon_pid="$(cat "$pidfile")"
+        case "$daemon_pid" in ''|*[!0-9]*) daemon_pid=invalid;; esac
+        if [ "$daemon_pid" != invalid ] && kill -0 "$daemon_pid" 2>/dev/null &&
+           [ "$(readlink "/proc/$daemon_pid/exe")" = "$command" ]; then
+            ebegin "Tracking existing ${name}"
+            service_set_value command "$command"
+            service_set_value pidfile "$pidfile"
+            eend 0
+            return 0
+        fi
+    fi
+    ssd_start
+}

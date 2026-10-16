@@ -1,0 +1,23 @@
+{
+  "pmaports_upstream": "https://gitlab.postmarketos.org/postmarketOS/pmaports.git",
+  "pmaports_base": "862c5af2ca9a48f43e934d9ea55fee0dd47a67f2",
+  "pmbootstrap": "200f5123615808326ac796f66b02fdc6cebbcbf1",
+  "kernel": {
+    "url": "https://github.com/hmhmdcy/linux",
+    "branch": "samurai-bringup",
+    "commit": "04d4d4f93171574201db1837a1b195e3aeccde4e"
+  },
+  "edk2": {
+    "url": "https://github.com/hmhmdcy/edk2-realme-x2-pro",
+    "branch": "master",
+    "commit": "3f8a65ec1e15a1ca7d71c02f0887275e65d52179"
+  },
+  "observed_baseline": "248; offline read-only backup; not a new observation of the physical phone",
+  "binary_reproducibility": false,
+  "private_inputs": [
+    "same-handset firmware, calibration/config and modem manifest",
+    "new installation credentials/SSH keys",
+    "rootfs identity when building external boot handoff"
+  ],
+  "upstream_binary_repositories": "Alpine edge and Nura edge are rolling; observed package inventory is not a frozen mirror"
+}

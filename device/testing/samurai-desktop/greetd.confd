@@ -1,0 +1,4 @@
+cfgfile="/etc/greetd/samurai-phosh.toml"
+
+# Start the desktop while the radio readiness observation continues.
+rc_before="samurai-radio"

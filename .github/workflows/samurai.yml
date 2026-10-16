@@ -1,0 +1,31 @@
+name: Samurai userspace
+on:
+  pull_request:
+  push:
+    branches: [samurai-bringup]
+  workflow_dispatch:
+    inputs:
+      full_build:
+        description: Build all ARM64 packages in a new pmbootstrap work directory
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  sources:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Fetch this exact public revision
+        env:
+          REPOSITORY_URL: ${{ github.server_url }}/${{ github.repository }}.git
+          REVISION: ${{ github.sha }}
+        run: |
+          git init source
+          git -C source remote add origin "$REPOSITORY_URL"
+          git -C source fetch --depth=1 origin "$REVISION"
+          git -C source checkout --detach FETCH_HEAD
+      - name: Verify source hashes and syntax
+        run: python3 source/samurai/check-sources.py
+      - name: Build new ARM64 packages
+        if: github.event_name == 'workflow_dispatch' && inputs.full_build
+        run: sudo python3 source/samurai/bootstrap.py --work /opt/samurai-build --build --lax --jobs 2
