@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Prepare a new, isolated pmbootstrap workspace; never flashes a device."""
 from pathlib import Path
-import argparse, configparser, os, subprocess, platform, json
+import argparse, configparser, os, subprocess, platform, json, hashlib
 
 PIN='200f5123615808326ac796f66b02fdc6cebbcbf1'
 PACKAGES=['libcamera','samurai-camera-config','mesa-vulkan-freedreno-samurai',
@@ -31,6 +31,15 @@ if not tool.exists():
  run(['git','-C',tool,'fetch','--depth=1','mirror',PIN])
  run(['git','-C',tool,'checkout','--detach',PIN])
 assert subprocess.check_output(['git','-C',tool,'rev-parse','HEAD'],text=True).strip()==PIN
+# Apply only the published functional tool delta, pinned along with upstream.
+for item in json.loads((repo/'samurai/sources.json').read_text()).get('pmbootstrap_patches',[]):
+ patch=repo/'samurai'/item['path']
+ assert hashlib.sha256(patch.read_bytes()).hexdigest()==item['sha256']
+ target=tool/item['result_path']
+ if hashlib.sha256(target.read_bytes()).hexdigest()!=item['result_sha256']:
+  run(['git','-C',tool,'apply','--check',patch])
+  run(['git','-C',tool,'apply',patch])
+ assert hashlib.sha256(target.read_bytes()).hexdigest()==item['result_sha256']
 # pmbootstrap resolves channel metadata through the canonical GitLab remote.
 # Initialize that metadata ref from the explicitly pinned imported commit.
 base_pin=json.loads((repo/'samurai/sources.json').read_text())['pmaports_base']

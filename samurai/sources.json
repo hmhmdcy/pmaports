@@ -19,5 +19,13 @@
     "new installation credentials/SSH keys",
     "rootfs identity when building external boot handoff"
   ],
-  "upstream_binary_repositories": "Alpine edge and Nura edge are rolling; observed package inventory is not a frozen mirror"
+  "upstream_binary_repositories": "Alpine edge and Nura edge are rolling; observed package inventory is not a frozen mirror",
+  "pmbootstrap_patches": [
+    {
+      "path": "pmbootstrap/0001-skip-initramfs-for-external-kernel.patch",
+      "sha256": "3a4dd48c0ab3f016d08f104a8df8cff0f1ca5fe7662995a97d890d663c863b92",
+      "result_path": "pmb/chroot/initfs.py",
+      "result_sha256": "302a6a8e53b6b0c3a3ac5490f16e813c95541d4a538ec3abb8a71248ecf893c1"
+    }
+  ]
 }

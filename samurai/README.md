@@ -12,7 +12,7 @@ cd pmaports
 python3 samurai/bootstrap.py --work "$HOME/samurai-build" --build --lax --jobs 4
 ```
 
-脚本从公开镜像取得并验证 pmbootstrap `200f5123615808326ac796f66b02fdc6cebbcbf1`，官方来源仍为 GitLab。它先构建修正过的 crossdirect，再构建设备包和依赖。`--lax` 只是在这次全新工作区内复用 chroot；不读取原手机 SDK。省略它可为每个包重建 chroot。失败后修正/更新源码，再使用同一参数加 `--resume`。不要运行 `pmbootstrap pull`，否则会推进上游基线。
+脚本从公开镜像取得并验证 pmbootstrap `200f5123615808326ac796f66b02fdc6cebbcbf1`，官方来源仍为 GitLab。随后应用sources.json锁定的一个功能补丁：选择kernel=none时跳过无内核可用的initramfs生成；不替换mkinitfs程序，也不生成占位内核。它先构建修正过的 crossdirect，再构建设备包和依赖。`--lax` 只是在这次全新工作区内复用 chroot；不读取原手机 SDK。省略它可为每个包重建 chroot。失败后修正/更新源码，再使用同一参数加 `--resume`。不要运行 `pmbootstrap pull`，否则会推进上游基线。
 
 所有本地补丁有 SHA512；外部源码有固定版本/提交及 SHA512。构建会生成自己的 APK 签名密钥和 libcamera IPA 密钥，不需要项目作者的私钥。结果不承诺与历史 APK 逐字节相同。APK 仓库仍是滚动的 edge；[958 包清单](observed-packages-248.json)记录历史版本，但不是永久可用的二进制镜像。
 
