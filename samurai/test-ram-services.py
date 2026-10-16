@@ -39,7 +39,7 @@ for name in ['storage-cow','sharedmem-bounded']:
  records.append({'case':name,'result':result.stdout.strip().splitlines()[-1]})
 binary=work/'test-tftp-ram'
 command(flags+[tests/'test-tftp-ram.c',radio/'samurai-tftp-ram.c',radio/'ro-firmware.c','-o',binary],'tftp-build')
-records.append({'case':'tftp','result':command([binary],'tftp',env).stdout.strip().splitlines()[-1]})
+records.append({'case':'tftp','result':command([binary,work],'tftp',env).stdout.strip().splitlines()[-1]})
 command(['patch','--fuzz=0','-p1','-i',rpc/'ram-registry-listener.patch'],'rpc-patch',cwd=h)
 shutil.copyfile(rpc/'hexagonfs_ram_registry.c',h/'hexagonrpcd/hexagonfs_ram_registry.c')
 shutil.copyfile(tests/'test-rpc-registry.c',h/'hexagonrpcd/test-rpc-registry.c')
