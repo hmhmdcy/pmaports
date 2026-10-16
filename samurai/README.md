@@ -54,7 +54,7 @@ firmware 是完整的本机固件树，包含 ADSP、GPU、Wi-Fi、BT 文件。s
 
 本设备包选择 `kernel=none`、`flash_method=none`。它不产生可独立启动的手机镜像。最后实机是 EDK2 boot235 + Image183，另有已核对的 775 个模块；不是安装一个通用上游内核就能恢复。屏幕修复还依赖 UEFI164 和内核 DSI/DPU153–165，GLES 依赖147内核地址对齐，不能只恢复用户态。
 
-外置启动链的构建入口、配置和回退见 [Linux README](https://github.com/hmhmdcy/linux/tree/samurai-bringup)及 [240 交接](https://github.com/hmhmdcy/edk2-realme-x2-pro/blob/master/Platform/Realme/sm8150/reference/kernel240/HANDOFF.md)。历史 rootfs handoff 的 PARTUUID/F2FS UUID 是私人部署参数，新文件系统必须重新生成绑定，不能复制旧 UUID 或凭 `uname -r` 认定模块匹配。完整逐字节回退仍使用个人248离线备份。
+外置启动链的来源与尚未闭环的步骤见 [BOOT-PROVENANCE.md](BOOT-PROVENANCE.md)，回退另见 [240 交接](https://github.com/hmhmdcy/edk2-realme-x2-pro/blob/master/Platform/Realme/sm8150/reference/kernel240/HANDOFF.md)。历史 rootfs handoff 的 PARTUUID/F2FS UUID 是私人部署参数，新文件系统必须重新生成绑定，不能复制旧 UUID 或凭 `uname -r` 认定模块匹配。完整逐字节回退仍使用个人248离线备份。
 
 本流程没有刷写命令。产物须先完成离线检查，再经过设备身份、备份和模块匹配核对，才进入单独的部署/实机验收步骤。
 
