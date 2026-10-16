@@ -1,0 +1,2 @@
+rc_need="networkmanager ${rc_need:-}"
+FAST_STARTUP=yes

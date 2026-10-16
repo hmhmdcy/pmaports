@@ -1,0 +1,37 @@
+maintainer="hmhmdcy <hmhmdcy@users.noreply.github.com>"
+pkgname=samurai-openrc
+pkgver=3
+pkgrel=0
+pkgdesc="Realme X2 Pro openrc"
+url="https://github.com/hmhmdcy/pmaports"
+arch="noarch"
+license="LicenseRef-Local-Project AND GPL-2.0-only"
+options="!check"
+provides="bluez-openrc=9999 elogind-openrc=9999 iio-sensor-proxy-openrc=9999 postmarketos-zram-openrc=9999"
+replaces="bluez-openrc elogind-openrc iio-sensor-proxy-openrc postmarketos-zram-openrc"
+depends="bluez elogind iio-sensor-proxy postmarketos-zram openrc samurai-platform samurai-ssc"
+source="bluetooth.initd elogind.initd iio-sensor-proxy.initd postmarketos-zram-swap.initd
+ bluetooth.confd networkmanager.confd chronyd.confd sshd.confd iio-sensor-proxy.confd"
+package() {
+ for name in bluetooth elogind iio-sensor-proxy postmarketos-zram-swap; do
+  install -Dm755 "$srcdir"/$name.initd "$pkgdir"/etc/init.d/$name
+ done
+ for name in iio-sensor-proxy; do
+  install -Dm644 "$srcdir"/$name.confd "$pkgdir"/etc/conf.d/$name
+ done
+ for name in bluetooth networkmanager chronyd sshd; do
+  install -Dm644 "$srcdir"/$name.confd "$pkgdir"/usr/share/samurai/openrc-overrides/$name
+ done
+}
+
+sha512sums="
+a4a373a9cfe48440a537e87aeaaf1117c630f45cc2d1d573d5f7455d379c06d79ddfdd753567f76fdf2d4560e3d7130431e725060f2a95c7d10ce78079bd46c9  bluetooth.initd
+b7fae1799e655ffbea617c939b9e13413029580a19b479d20668673ed6b2084a8424e3a0bf513637eb360abdee603c71b61fe322e0156ba1b7bd943e36d1f995  elogind.initd
+ac94e0177648d009f5bd13ad1f1d0f7597fbb35eb36d57b1900b62f84ae435d3bac8dd440bf94e2fa2ebcf8cb8a42ac160599ffc75018b97d4fb415d80ffb642  iio-sensor-proxy.initd
+85ee87d4f4d3667a8a8c5567297052464f150c854ac4bbb74c9915e3c218c5d2835d5b35bebfd61f8c310491870dfb3c9aa3fc93929bf680924d62a193bcff94  postmarketos-zram-swap.initd
+fe54728c43ff6de42c3fdfdd00a1bcae0055d4745e03212a418ad8c2fc5c049f69e2aaf76c618c2f57e5b6c53352ed33db129cebe51603911a5cf22de808b9d0  bluetooth.confd
+2ff8cb9e5577acc22362884361ce87e4de211ab5c82ec66130edf5eeec27beaed17f7ee482b250744d2f70c41a9a11e4773306711009962e25eb55243532287e  networkmanager.confd
+77c5bae17fa28fc999342c6f7e6aa48ccb4277f86af9ef9737235555832005ced2590efe699182eebc088416569f50a89c844e381a7df9ac3b9b0c8ffcd1b275  chronyd.confd
+97cff0e6f2e65d0492d2fc0ee88a875ab9428a3043d52e93fede5a841563376d07a76ca09ffda96bd9830bd25c40741c422fa3b5079b2d294732be7fa88fed01  sshd.confd
+278ac643c6e34361cf602ce4635558b8ebfd4ce53b940fbb1855b181260b106b309fb0b1d3dbdd4ef786c29fbaac1d5c1ab42ec74b77ca0f3eaa7d5033a69fc1  iio-sensor-proxy.confd
+"

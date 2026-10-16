@@ -1,0 +1,21 @@
+maintainer="hmhmdcy <hmhmdcy@users.noreply.github.com>"
+pkgname=samurai-ssc
+pkgver=1
+pkgrel=0
+pkgdesc="Realme X2 Pro ssc"
+url="https://github.com/hmhmdcy/pmaports"
+arch="noarch"
+license="LicenseRef-Local-Project"
+options="!check"
+depends="python3 samurai-hexagonrpcd samurai-libssc libssc iio-sensor-proxy openrc coreutils kmod"
+source="samurai-ssc.py samurai-ssc.initd"
+package() {
+ install -Dm755 "$srcdir"/samurai-ssc.py "$pkgdir"/usr/sbin/samurai-ssc
+ install -Dm755 "$srcdir"/samurai-ssc.initd "$pkgdir"/etc/init.d/samurai-ssc
+
+}
+
+sha512sums="
+14b52a6d2cbebc7979803f3e6b5d208523668c8bd728caabd4123061dd360db32e721733589cad9980ec4838c618c5074fc8763adbff788d33aea9221641a8ad  samurai-ssc.py
+a82b18d213c7dc898c22803634029c326c43fc4836f51b2c62fc7bbd44268fc76b9de9362755e0241cc4603d113a24de2fe098a013c40e766cecf4ae72f5bce1  samurai-ssc.initd
+"

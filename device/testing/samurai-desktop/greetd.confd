@@ -1,0 +1,2 @@
+cfgfile="/etc/greetd/samurai-phosh.toml"
+rc_before="samurai-radio ${rc_before:-}"

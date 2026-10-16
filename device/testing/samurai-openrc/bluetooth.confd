@@ -1,0 +1,2 @@
+# Block D-Bus auto activation until the verified address is assigned by OpenRC.
+command_args="--configfile=/etc/bluetooth/samurai.conf"
