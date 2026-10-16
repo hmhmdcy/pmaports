@@ -1,13 +1,13 @@
 maintainer="hmhmdcy <hmhmdcy@users.noreply.github.com>"
 pkgname=samurai-desktop
-pkgver=1
+pkgver=2
 pkgrel=0
 pkgdesc="Realme X2 Pro desktop"
 url="https://github.com/hmhmdcy/pmaports"
 arch="noarch"
 license="LicenseRef-Local-Project"
 options="!check"
-depends="phosh greetd samurai-openrc snapshot"
+depends="phosh greetd phrog samurai-openrc snapshot"
 source="samurai-phosh-session samurai-phosh.toml greetd.confd org.gnome.Snapshot.desktop org.gnome.Snapshot.service samurai-bluetooth.conf"
 package() {
  install -Dm755 "$srcdir"/samurai-phosh-session "$pkgdir"/usr/bin/samurai-phosh-session
@@ -21,7 +21,7 @@ package() {
 sha512sums="
 2f8d965bb36a330d72afefb0992645af88a6058aa70637bf521026da8f82ede0958e78fc41775309f0a3cc5ad9eae9d3e635ed480b6113ff2ee1b0d5fd3cd632  samurai-phosh-session
 8267ec83771f4a4356b435fb68316dc08b62edf16ae367a4617b4273db4d73d184c7ca9996a6df1776af65b8af08a2f3578e3d3bd41fa9d865589792f0a5f1d0  samurai-phosh.toml
-8129133617d853890b66fe0d949fb53a2edc94fec31d7e3cb6003107e029063d6649432d9ecb818357f922a379ff6bd79a0893929819bfe4a89a986bb8dd00ec  greetd.confd
+58b2cdac227fdf28c1f0510b60b5757d5ff2c029aff2495605a971aa6a7c5464438d3fe8dbeb231c0b6069d9207c86efe514017a6597c08be1bc569d4dcb8aa5  greetd.confd
 e6d6a905b06e2fde24e8a3f1660b6c90e113ecd9dea9ac994bc67f93ade860ccb9ac4586e556e7d3dfdaa77ac65f436fa8ecd11bd49c8bece9c75c25cc060d1e  org.gnome.Snapshot.desktop
 0e4f3e80ff0b1ebcf527634cca571677c48f5d636d7c09cf12e91a0a15b02e0fe8245fd3193030bd46e5f44ce88b6242db2d0c6ec241a455a1b521958730f031  org.gnome.Snapshot.service
 1b6371d57266422042c921ab2f7dd8f4c275222ddd42b5567acb9519818b9b083b879f47ee31ce4e8a4f34918ff6d7ea4bba4bba88f183b30febcf879a293f55  samurai-bluetooth.conf

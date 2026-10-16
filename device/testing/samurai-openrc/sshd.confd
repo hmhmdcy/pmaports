@@ -1,4 +1,2 @@
 command="/usr/sbin/sshd.pam"
-
-# SSH is usable in the boot runlevel before desktop/radio startup.
-rc_need="samurai-usb"
+rc_need="samurai-usb ${rc_need:-}"

@@ -28,7 +28,21 @@ for directory in [home/'.local',home/'.local/share',*(home/'.local/share').rglob
 greet=root/'etc/greetd/samurai-phosh.toml'
 text=greet.read_text();assert '@USER@' in text or f'user="{a.user}"' in text
 greet.write_text(text.replace('@USER@',a.user))
-shutil.copyfile(root/'usr/share/samurai/greetd.confd',root/'etc/conf.d/greetd')
+def managed_override(name,fragment):
+    target=root/'etc/conf.d'/name
+    body=fragment.read_text().rstrip()+"\n"
+    begin="# BEGIN samurai "+name+"\n"
+    end="# END samurai "+name+"\n"
+    original=target.read_text() if target.exists() else ""
+    block=begin+body+end
+    if begin in original:
+        assert block in original,'Existing device override differs: '+name
+    else:
+        target.parent.mkdir(parents=True,exist_ok=True)
+        target.write_text(original.rstrip()+"\n\n"+block)
+managed_override('greetd',root/'usr/share/samurai/greetd.confd')
+for fragment in (root/'usr/share/samurai/openrc-overrides').iterdir():
+    managed_override(fragment.name,fragment)
 levels={'boot':['samurai-loopback','samurai-usb','sshd'],
  'default':['cgroups','dbus','elogind','samurai-radio','networkmanager','chronyd','bluetooth',
  'postmarketos-zram-swap','greetd','samurai-ssc','iio-sensor-proxy','samurai-gnss-assist']}

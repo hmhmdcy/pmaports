@@ -51,7 +51,7 @@ assert checks>50,'Unrecognized installed-file checksum format'
 greet=tomllib.loads((root/'etc/greetd/samurai-phosh.toml').read_text())
 assert greet['initial_session']['user']==a.user
 assert greet['initial_session']['command']=='/usr/bin/samurai-phosh-session'
-assert 'rc_before="samurai-radio"' in (root/'etc/conf.d/greetd').read_text()
+assert re.search(r'^rc_before=.*samurai-radio', (root/'etc/conf.d/greetd').read_text(), re.M)
 entries=[line.split(':') for line in (root/'etc/passwd').read_text().splitlines()]
 home=root/next(row[5].lstrip('/') for row in entries if row[0]==a.user)
 for relative in ['applications/org.gnome.Snapshot.desktop','dbus-1/services/org.gnome.Snapshot.service']:
