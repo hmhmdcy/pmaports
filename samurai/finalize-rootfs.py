@@ -26,7 +26,7 @@ for pth in source.rglob('*'):
 for directory in [home/'.local',home/'.local/share',*(home/'.local/share').rglob('*')]:
  if directory.is_dir():os.chown(directory,uid,gid)
 greet=root/'etc/greetd/samurai-phosh.toml'
-text=greet.read_text();assert '@USER@' in text or f'user="{a.user}"' in text
+text=greet.read_text();assert '@USER@' in text or f'user = "{a.user}"' in text
 greet.write_text(text.replace('@USER@',a.user))
 def managed_override(name,fragment):
     target=root/'etc/conf.d'/name

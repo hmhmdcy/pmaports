@@ -7,4 +7,4 @@ user = "greetd"
 
 [initial_session]
 command = "/usr/bin/samurai-phosh-session"
-user = "cy122"
+user = "@USER@"
