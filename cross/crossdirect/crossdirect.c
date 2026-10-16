@@ -74,6 +74,9 @@ int main(int argc, char **argv)
 	// linker is involved: just use qemu binary (to avoid broken cross-ld, pmaports#227)
 	if (!argv_has_arg(argc, argv, "-c")) {
 		snprintf(newExecutable, sizeof(newExecutable), "/usr/bin/%s", executableName);
+		/* GCC derives its cc1 search prefix from argv[0]. Keep it consistent
+		 * with the native executable, not the /native crossdirect wrapper. */
+		argv[0] = newExecutable;
 		if (execv(newExecutable, argv) == -1) {
 			fprintf(stderr, "ERROR: crossdirect: failed to execute %s: %s\n", newExecutable, strerror(errno));
 			fprintf(stderr, "NOTE: this is a foreign arch binary that would run with qemu (linker is involved).\n");
