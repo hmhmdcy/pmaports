@@ -2,7 +2,7 @@ name: Samurai userspace
 on:
   pull_request:
   push:
-    branches: [samurai-bringup]
+    branches: [samurai-bringup, samurai-userspace, "update/**"]
   workflow_dispatch:
     inputs:
       full_build:

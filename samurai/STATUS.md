@@ -25,7 +25,9 @@
 
 ## 维护纯度的尚未完成项
 
-当前默认分支仍是复现用的 samurai-bringup，并未发布已验收的纯净维护内核。
+推荐用户态分支为samurai-userspace，按6个主题保存最终差异；samurai-bringup保留整理历史。并未发布已验收的纯净维护内核。
 它为保持最后部署配置，仍记录 IMX319 的 experimental_p_imx319_power 选项；
 该配置依赖235/237 lab PMIC provider，不能当作已经完成的标准regulator驱动。
 正式化和功能回归之前，不把它包装成“纯净修复”，也不通过直接删除使既有功能悄悄回退。
+
+249离线候选检查已完成：13个目标配方和crossdirect构建通过，882包根目录、189项包文件校验、78个ARM64 ELF及QMI GI加载通过；签名仓库和升级模拟通过。详见[独立复现核验](REPRODUCIBILITY.md)。这些数字不代表新硬件验收。

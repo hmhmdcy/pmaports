@@ -7,14 +7,14 @@
 - 已验收版本：固定内核/DTB/模块与用户态版本，并保留不可移动的发布标签和个人回退备份。
 - 上游更新候选：在新分支上推进上游，重放设备补丁，通过构建/离线检查后，再做实机验收。构建成功不能自动晋升为已验收版本。
 
-`main` 在首次导入时保存上游基线；`samurai-bringup` 是当前适配候选。记录的旧基线不能静默变化。每次更新创建新候选分支，更新 `sources.json` 中的基线，审阅 `git range-diff`；上游已有等价修复就删除本地补丁，不通过重复应用维持它。共享已验收分支不进行强制推送。
+`main` 在首次导入时保存上游基线；`samurai-userspace` 是按6个主题整理的用户态候选，`samurai-bringup`保留历史。记录的旧基线不能静默变化。每次更新创建新候选分支，更新 `sources.json` 中的基线，审阅 `git range-diff`；上游已有等价修复就删除本地补丁，不通过重复应用维持它。共享已验收分支不进行强制推送。
 
 例如在干净 checkout 中更新 pmaports（把示例日期、ref替换为实际目标）：
 
 ```sh
 git remote add upstream https://gitlab.postmarketos.org/postmarketOS/pmaports.git
 git fetch upstream main
-git switch -c update/pmaports-YYYYMMDD samurai-bringup
+git switch -c update/pmaports-YYYYMMDD samurai-userspace
 git rebase --onto upstream/main 862c5af2ca9a48f43e934d9ea55fee0dd47a67f2
 # 有冲突即停下逐项解决，不使用 ours/theirs 批量覆盖。
 # 更新 sources.json 的基线后，在新的 work 目录执行 bootstrap.py 和离线检查。
@@ -65,3 +65,5 @@ fork 中的 `temp/libcamera`、`temp/modemmanager` 要同时比较对应 Alpine/
 上游pmaports/Alpine更新先进入新候选；单独推进libcamera、Mesa、ModemManager等源码版本并重算校验和、增加pkgrel，避免把多个ABI升级混成一次无法定位的变更。重新生成APK、签名索引、离线rootfs和精确包清单。设备本地修复仓库的优先级/版本应显式设置；仅运行apk upgrade不会自动编译GitHub源码，也不会更新外置EDK2/内核/模块。
 
 在离线候选先检查apk升级模拟、包归属与服务配置。OpenRC附加设置保留上游原配置；升级产生的.apk-new需审阅，设备片段变化需重新运行finalize并处理差异，不能覆盖用户设置。实机通过后才发布不可移动的版本标签、构建输入清单和匹配产物；保留上一版完整回退。当前尚未发布经过新实机验收的249版本，也未配置自动刷写或无人值守内核升级。
+
+当前samurai-userspace相对固定上游基线为6个主题提交：工具链、相机、Turnip、radio/GNSS、平台/传感器/服务、构建与状态文档。它避免让后续rebase重放打包过程中的修正提交；最终代码与本轮测试版本对应。提交历史收敛不等于实验相机供电已正式化，后者仍须单独完成。

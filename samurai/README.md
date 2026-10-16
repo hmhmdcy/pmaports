@@ -2,19 +2,21 @@
 
 本仓库负责用户态与配置；[Linux 内核](https://github.com/hmhmdcy/linux/tree/samurai-bringup)和[EDK2/DTB/bring-up 记录](https://github.com/hmhmdcy/edk2-realme-x2-pro)分别保存。先读 [STATUS.md](STATUS.md)，不要把构建成功等同于所有硬件通过。
 
+推荐samurai-userspace：相对上游基线按6个主题保存最终用户态差异，原samurai-bringup保留整理历史。**这仍是构建候选；IMX319的内核实验供电依赖尚未正式化，整机纯净维护版本未发布。**
+
 ## 环境与隔离构建
 
 需要 Linux x86_64 或 ARM64、Python 3.12以上、Git、sudo/挂载权限、约 25 GiB 可用的 ext4 工作空间。WSL2 可以使用，但 work 目录必须在 Linux 文件系统，不能放在 `/mnt/c`、`/mnt/e` 等 NTFS 挂载上。需联网获取 APK 和已锁定的源码。构建期间保持 WSL 实例运行。
 
 ```sh
-git clone --branch samurai-bringup https://github.com/hmhmdcy/pmaports.git
+git clone --branch samurai-userspace https://github.com/hmhmdcy/pmaports.git
 cd pmaports
 python3 samurai/bootstrap.py --work "$HOME/samurai-build" --build --lax --jobs 4
 ```
 
 脚本从公开镜像取得并验证 pmbootstrap `200f5123615808326ac796f66b02fdc6cebbcbf1`，官方来源仍为 GitLab。随后应用sources.json锁定的一个功能补丁：选择kernel=none时跳过无内核可用的initramfs生成；不替换mkinitfs程序，也不生成占位内核。它先构建修正过的 crossdirect，再构建设备包和依赖。`--lax` 只是在这次全新工作区内复用 chroot；不读取原手机 SDK。省略它可为每个包重建 chroot。失败后修正/更新源码，再使用同一参数加 `--resume`。不要运行 `pmbootstrap pull`，否则会推进上游基线。
 
-所有本地补丁有 SHA512；外部源码有固定版本/提交及 SHA512。构建会生成自己的 APK 签名密钥和 libcamera IPA 密钥，不需要项目作者的私钥。结果不承诺与历史 APK 逐字节相同。APK 仓库仍是滚动的 edge；[958 包清单](observed-packages-248.json)记录历史版本，但不是永久可用的二进制镜像。
+配方中的本地补丁有 SHA512，工具补丁有独立 SHA256；外部源码有固定版本/提交及 SHA512。构建会生成自己的 APK 签名密钥和 libcamera IPA 密钥，不需要项目作者的私钥。结果不承诺与历史 APK 逐字节相同。APK 仓库仍是滚动的 edge；[958 包清单](observed-packages-248.json)记录历史版本，但不是永久可用的二进制镜像。
 
 ## 生成离线根目录
 
@@ -75,6 +77,18 @@ python3 samurai/check-sources.py
 python3 samurai/verify-camera-series.py --work "$HOME/samurai-camera-replay"
 python3 samurai/test-ram-services.py --work "$HOME/samurai-ram-tests"
 ```
+
+离线根目录还需执行以下检查；不会启动硬件服务：
+
+```sh
+sudo python3 samurai/check-rootfs.py \
+  --root "$HOME/samurai-build/work/chroot_rootfs_realme-samurai" \
+  --packages "$HOME/samurai-build/work/packages/edge" --user user
+sudo chroot "$HOME/samurai-build/work/chroot_rootfs_realme-samurai" apk update
+sudo chroot "$HOME/samurai-build/work/chroot_rootfs_realme-samurai" apk upgrade --simulate
+```
+
+check-rootfs添加--require-maintenance-clean会拒绝尚存的lab供电配置，这是当前候选预期的阻塞，不应关闭该检查来标成纯净版。
 
 后两项另需主机的 patch 和 C 编译器（支持ASan/UBSan），以及可用的 /dev/shm tmpfs。
 RAM/RPC检查保留上游builder已知的进程寿命分配，不把关闭leak检查解释为内存泄漏已修复。
