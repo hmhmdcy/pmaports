@@ -1,0 +1,37 @@
+maintainer="hmhmdcy <hmhmdcy@users.noreply.github.com>"
+pkgname=mesa-vulkan-freedreno-samurai
+pkgver=26.2.4
+pkgrel=2
+pkgdesc="Realme X2 Pro mesa-vulkan-freedreno-samurai"
+url="https://github.com/hmhmdcy/pmaports"
+arch="aarch64"
+license="MIT AND SGI-B-2.0 AND BSL-1.0"
+provides="mesa-vulkan-freedreno=$pkgver-r$pkgrel"
+replaces="mesa-vulkan-freedreno"
+options="!check"
+makedepends="meson python3 py3-mako py3-packaging py3-ply py3-yaml bison flex libdrm-dev expat-dev elfutils-dev zlib-dev zstd-dev wayland-dev wayland-protocols libx11-dev libxrandr-dev libxshmfence-dev xorgproto vulkan-loader-dev glslang-dev linux-headers"
+source="https://mesa.freedesktop.org/archive/mesa-$pkgver.tar.xz
+ 0015-mesa-turnip-a640-vm-bind-iova-alignment.patch"
+builddir="$srcdir/mesa-$pkgver"
+build() {
+ abuild-meson -Dgallium-drivers= -Dvulkan-drivers=freedreno -Dfreedreno-kmds=msm,virtio \
+  -Dplatforms=x11,wayland -Dllvm=disabled -Dshared-llvm=disabled \
+  -Dgbm=disabled -Degl=disabled -Dglx=disabled -Dopengl=false \
+  -Dgles1=disabled -Dgles2=disabled -Dgallium-rusticl=false \
+  -Dbuild-tests=false -Dvideo-codecs= -Db_lto=false . output
+ meson compile -C output
+}
+package() {
+ DESTDIR="$pkgdir" meson install --no-rebuild -C output
+ # Do not take ownership of unrelated Mesa artifacts installed by Meson.
+ mkdir -p "$srcdir"/turnip-only/usr/lib "$srcdir"/turnip-only/usr/share/vulkan/icd.d
+ mv "$pkgdir"/usr/lib/libvulkan_freedreno.so "$srcdir"/turnip-only/usr/lib/
+ mv "$pkgdir"/usr/share/vulkan/icd.d/freedreno_icd*.json "$srcdir"/turnip-only/usr/share/vulkan/icd.d/
+ find "$pkgdir" -mindepth 1 -delete
+ cp -a "$srcdir"/turnip-only/. "$pkgdir"/
+}
+
+sha512sums="
+42e793561661a567e72c7324d071ab9f82d3a9f1e000827ed989b8d5fcc2cd16e50c02808d43465b3135c25a3cad77649ba0bf9e35d95b848f8fc8d8b9ce327c  mesa-26.2.4.tar.xz
+a36aaa564c35513cc2a764ee4fb3a5352a27bc43096bb5e63ce816741317108eb1a25471c23ed1801117c368fc58e462109a1750abb785c1653e8daa5086c8ed  0015-mesa-turnip-a640-vm-bind-iova-alignment.patch
+"
