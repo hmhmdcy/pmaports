@@ -23,10 +23,13 @@ for line in lines:
  assert re.fullmatch(r'[0-9a-f]{64}  (modem\.b[0-9][0-9]|modem\.mdt|modemr\.jsn|modemuw\.jsn|wlanmdsp\.mbn)',line), 'Unsafe manifest entry'
 def copy_tree(source,dest):
  source=source.resolve()
+ dest.mkdir(parents=True,exist_ok=True)
  for base,dirs,files in os.walk(source,followlinks=False):
   for d in dirs:assert not (Path(base)/d).is_symlink(),'Source directory symlink'
+  (dest/Path(base).relative_to(source)).mkdir(parents=True,exist_ok=True)
   for name in files:
    f=Path(base)/name;resolved=f.resolve(strict=True);assert resolved.is_relative_to(source),'Source escaped'
+   assert resolved.is_file(),'Only regular firmware/config files are accepted'
    target=dest/f.relative_to(source);target.parent.mkdir(parents=True,exist_ok=True)
    assert not target.is_symlink(),'Destination symlink'
    shutil.copyfile(resolved,target)
@@ -39,7 +42,10 @@ data=root/'var/lib/samurai/firmware';assert not data.exists(),'Use a fresh candi
 data.mkdir(parents=True,mode=0o700)
 copy_tree(a.firmware,root/'lib/firmware')
 copy_tree(a.slpi_firmware,root/'lib/firmware/qcom/sm8150/realme/samurai-slpi-a11')
-copy_tree(a.ssc_source,data/'ssc')
+for subtree in ['sdsp','sensors-vendor/config','sensors-persist/registry']:
+ copy_tree(a.ssc_source/subtree,data/'ssc'/subtree)
+file=data/'ssc/sensors-vendor/sns_reg_config'
+shutil.copyfile(a.ssc_source/'sensors-vendor/sns_reg_config',file)
 shutil.copyfile(a.mag_config,data/'magnetometer.json')
 shutil.copyfile(a.modem_type,data/'modemType')
 manifest(data/'ssc',data/'ssc.sha256')
