@@ -1,12 +1,12 @@
 maintainer="hmhmdcy <hmhmdcy@users.noreply.github.com>"
 pkgname=samurai-gnss-assist
-pkgver=1
+pkgver=2
 pkgrel=0
 pkgdesc="Realme X2 Pro gnss-assist"
 url="https://github.com/hmhmdcy/pmaports"
 arch="noarch"
 license="MIT"
-depends="python3 libqmi chrony curl openrc modemmanager"
+depends="python3 py3-gobject3 libqmi chrony curl openrc modemmanager"
 options="!check"
 source="samurai-gnss-assist.py samurai-gnss-assist.initd"
 package() {
