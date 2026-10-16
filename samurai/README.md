@@ -4,7 +4,7 @@
 
 ## 环境与隔离构建
 
-需要 Linux x86_64 或 ARM64、Python 3、Git、sudo/挂载权限、约 25 GiB 可用的 ext4 工作空间。WSL2 可以使用，但 work 目录必须在 Linux 文件系统，不能放在 `/mnt/c`、`/mnt/e` 等 NTFS 挂载上。需联网获取 APK 和已锁定的源码。构建期间保持 WSL 实例运行。
+需要 Linux x86_64 或 ARM64、Python 3.12以上、Git、sudo/挂载权限、约 25 GiB 可用的 ext4 工作空间。WSL2 可以使用，但 work 目录必须在 Linux 文件系统，不能放在 `/mnt/c`、`/mnt/e` 等 NTFS 挂载上。需联网获取 APK 和已锁定的源码。构建期间保持 WSL 实例运行。
 
 ```sh
 git clone --branch samurai-bringup https://github.com/hmhmdcy/pmaports.git
@@ -57,3 +57,17 @@ firmware 是完整的本机固件树，包含 ADSP、GPU、Wi-Fi、BT 文件。s
 外置启动链的构建入口、配置和回退见 [Linux README](https://github.com/hmhmdcy/linux/tree/samurai-bringup)及 [240 交接](https://github.com/hmhmdcy/edk2-realme-x2-pro/blob/master/Platform/Realme/sm8150/reference/kernel240/HANDOFF.md)。历史 rootfs handoff 的 PARTUUID/F2FS UUID 是私人部署参数，新文件系统必须重新生成绑定，不能复制旧 UUID 或凭 `uname -r` 认定模块匹配。完整逐字节回退仍使用个人248离线备份。
 
 本流程没有刷写命令。产物须先完成离线检查，再经过设备身份、备份和模块匹配核对，才进入单独的部署/实机验收步骤。
+
+## 可单独运行的公开源码检查
+
+以下检查各使用一个新目录；只下载已锁定的公开源码，不连接手机：
+
+```sh
+python3 samurai/check-sources.py
+python3 samurai/verify-camera-series.py --work "$HOME/samurai-camera-replay"
+python3 samurai/test-ram-services.py --work "$HOME/samurai-ram-tests"
+```
+
+后两项另需主机的 patch 和 C 编译器（支持ASan/UBSan），以及可用的 /dev/shm tmpfs。
+RAM/RPC检查保留上游builder已知的进程寿命分配，不把关闭leak检查解释为内存泄漏已修复。
+这些是长期回归测试源码；生成的二进制、日志、抓包和SDK不进入Git。
