@@ -1,6 +1,6 @@
 maintainer="hmhmdcy <hmhmdcy@users.noreply.github.com>"
 pkgname=samurai-openrc
-pkgver=2
+pkgver=3
 pkgrel=0
 pkgdesc="Realme X2 Pro openrc"
 url="https://github.com/hmhmdcy/pmaports"
@@ -16,10 +16,10 @@ package() {
  for name in bluetooth elogind iio-sensor-proxy postmarketos-zram-swap; do
   install -Dm755 "$srcdir"/$name.initd "$pkgdir"/etc/init.d/$name
  done
- for name in bluetooth iio-sensor-proxy; do
+ for name in iio-sensor-proxy; do
   install -Dm644 "$srcdir"/$name.confd "$pkgdir"/etc/conf.d/$name
  done
- for name in networkmanager chronyd sshd; do
+ for name in bluetooth networkmanager chronyd sshd; do
   install -Dm644 "$srcdir"/$name.confd "$pkgdir"/usr/share/samurai/openrc-overrides/$name
  done
 }
