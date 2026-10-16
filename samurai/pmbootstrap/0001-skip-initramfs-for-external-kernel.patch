@@ -1,0 +1,21 @@
+From: hmhmdcy <hmhmdcy@users.noreply.github.com>
+Subject: [PATCH] chroot: skip initramfs generation for kernel=none
+
+An external kernel has no installed kernel release. Calling mkinitfs in this
+case fails before login configuration, including during install --no-image.
+Honor the existing none selection rather than requiring a dummy kernel or
+replacing the mkinitfs executable. Rootfs installation exercises this path.
+
+--- a/pmb/chroot/initfs.py
++++ b/pmb/chroot/initfs.py
+@@ -14,6 +14,10 @@
+ 
+ 
+ def build(chroot: Chroot) -> None:
++    if get_context().config.kernel == "none":
++        logging.info(f"({chroot}) external kernel selected; no initramfs to generate")
++        return
++
+     # Update mkinitfs and hooks
+     pmb.chroot.apk.install(["postmarketos-mkinitfs"], chroot)
+     pmb.chroot.initfs_hooks.update(chroot)

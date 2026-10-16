@@ -1,0 +1,7654 @@
+[
+  {
+    "P": "a52dec",
+    "V": "0.8.0-r11",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "a52dec",
+    "c": "176a2b903cac9d3e8c4127f81afe53b4bd43d627"
+  },
+  {
+    "P": "abseil-cpp-base",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-city",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-cord",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-cord-internal",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-cordz-functions",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-cordz-handle",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-cordz-info",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-crc-cord-state",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-crc-internal",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-crc32c",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-debugging-internal",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-die-if-null",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-examine-stack",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-exponential-biased",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-hash",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-hashtablez-sampler",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-int128",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-kernel-timeout-internal",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-leak-check",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-log-globals",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-log-initialize",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-log-internal-check-op",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-log-internal-conditions",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-log-internal-format",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-log-internal-globals",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-log-internal-log-sink-set",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-log-internal-message",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-log-internal-nullguard",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-log-internal-proto",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-log-internal-structured-proto",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-log-sink",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-malloc-internal",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-raw-hash-set",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-raw-logging-internal",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-spinlock-wait",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-stacktrace",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-status",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-statusor",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-str-format-internal",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-strerror",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-strings",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-strings-internal",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-symbolize",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-synchronization",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-throw-delegate",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-time",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-time-zone",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "abseil-cpp-tracing-internal",
+    "V": "20260817.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "abseil-cpp",
+    "c": "5e6a6ebc442b9177f2f56d612ea72764fde7a919"
+  },
+  {
+    "P": "accountsservice",
+    "V": "26.27.3-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "accountsservice",
+    "c": "dc37db8d1c7fa1f3513ce7db5d2802d325d16bf3"
+  },
+  {
+    "P": "acl-libs",
+    "V": "2.3.2-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later AND GPL-2.0-or-later",
+    "o": "acl",
+    "c": "0824e5bc4c0d1fb9aac2f133a4c0a92f1f0bb5b4"
+  },
+  {
+    "P": "adwaita-fonts",
+    "V": "51.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "adwaita-fonts",
+    "c": "78164623848f651c90c6ba36898faad92e05b945"
+  },
+  {
+    "P": "adwaita-fonts-mono",
+    "V": "51.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "adwaita-fonts",
+    "c": "78164623848f651c90c6ba36898faad92e05b945"
+  },
+  {
+    "P": "adwaita-fonts-sans",
+    "V": "51.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "adwaita-fonts",
+    "c": "78164623848f651c90c6ba36898faad92e05b945"
+  },
+  {
+    "P": "adwaita-icon-theme",
+    "V": "51.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later OR CC-BY-SA-3.0",
+    "o": "adwaita-icon-theme",
+    "c": "ce981c61732a9be14279376e4388924f81862177"
+  },
+  {
+    "P": "agetty",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "Public-Domain",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "agetty-openrc",
+    "V": "0.63.2-r1",
+    "A": "aarch64",
+    "L": "BSD-2-Clause",
+    "o": "openrc",
+    "c": "2f3ff9120b8bad6648b2f53ffd7bdde512b133b2"
+  },
+  {
+    "P": "alpine-appstream-downloader",
+    "V": "0.6-r4",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "alpine-appstream-downloader",
+    "c": "877425ccfe0cec9f14c413bd5d3e419de651b980"
+  },
+  {
+    "P": "alpine-baselayout",
+    "V": "3.7.2-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "alpine-baselayout",
+    "c": "60a7585bbab2fa0f762504eb617dbca90216e31f"
+  },
+  {
+    "P": "alpine-baselayout-data",
+    "V": "3.7.2-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "alpine-baselayout",
+    "c": "60a7585bbab2fa0f762504eb617dbca90216e31f"
+  },
+  {
+    "P": "alpine-conf",
+    "V": "3.22.0-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "alpine-conf",
+    "c": "ffe51358504147f053bc39711afeb04ad89deb95"
+  },
+  {
+    "P": "alpine-keys",
+    "V": "2.6-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "alpine-keys",
+    "c": "b9f23becced4d7b3ccc0fa0f28530243ccd314a0"
+  },
+  {
+    "P": "alpine-release",
+    "V": "3.25.0_alpha20260805-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "alpine-base",
+    "c": "5aad27a98146f1557e9e3408f615c59d44a41acb"
+  },
+  {
+    "P": "alsa-lib",
+    "V": "1.2.16.1-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "alsa-lib",
+    "c": "3d335f311df5b6b841bc6871fa1620dfad6f8a3c"
+  },
+  {
+    "P": "alsa-plugins-pulse",
+    "V": "1.2.12-r2",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later LGPL-2.1-or-later",
+    "o": "alsa-plugins",
+    "c": "a09825449dc82baee0073965af1703e826977b8c"
+  },
+  {
+    "P": "alsa-ucm-conf",
+    "V": "1.2.16.1-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "alsa-ucm-conf",
+    "c": "5b5cbb9b8c805718066171188ea2aefa4b1c742d"
+  },
+  {
+    "P": "alsa-utils",
+    "V": "1.2.16-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "alsa-utils",
+    "c": "3308d2766277971e2a15e634663049ad1a462491"
+  },
+  {
+    "P": "alsa-utils-openrc",
+    "V": "1.2.16-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "alsa-utils",
+    "c": "3308d2766277971e2a15e634663049ad1a462491"
+  },
+  {
+    "P": "alsa-utils-udev",
+    "V": "1.2.16-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "alsa-utils",
+    "c": "3308d2766277971e2a15e634663049ad1a462491"
+  },
+  {
+    "P": "anthy",
+    "V": "9100h-r4",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "anthy",
+    "c": "cc26e248bce55c5f6a475f40ad8c16c5a1a3df58"
+  },
+  {
+    "P": "aom-libs",
+    "V": "3.15.2-r0",
+    "A": "aarch64",
+    "L": "BSD-2-Clause AND custom",
+    "o": "aom",
+    "c": "58378ffaed9a20ed05e76a2c63357ab261d0e773"
+  },
+  {
+    "P": "apk-polkit-rs",
+    "V": "3.0.2-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "apk-polkit-rs",
+    "c": "134a57705eed6c849b09cc91f2d797bd1991c027"
+  },
+  {
+    "P": "apk-polkit-rs-openrc",
+    "V": "3.0.2-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "apk-polkit-rs",
+    "c": "134a57705eed6c849b09cc91f2d797bd1991c027"
+  },
+  {
+    "P": "apk-tools",
+    "V": "3.0.8-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "apk-tools",
+    "c": "31eb9b7d150e197c3a16f1d7a11dc829016a0fc7"
+  },
+  {
+    "P": "appstream",
+    "V": "1.2.1-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "appstream",
+    "c": "d65e7dbbfb6be3f8d8e7b4b67c59c30de18bbfcc"
+  },
+  {
+    "P": "appstream-compose",
+    "V": "1.2.1-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "appstream",
+    "c": "d65e7dbbfb6be3f8d8e7b4b67c59c30de18bbfcc"
+  },
+  {
+    "P": "at-spi2-core",
+    "V": "2.62.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "at-spi2-core",
+    "c": "409085f774ec72def56cc88a4ed52a892d923de4"
+  },
+  {
+    "P": "at-spi2-core-libs",
+    "V": "2.62.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "at-spi2-core",
+    "c": "409085f774ec72def56cc88a4ed52a892d923de4"
+  },
+  {
+    "P": "avahi",
+    "V": "0.9_rc5-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "avahi",
+    "c": "b327a2a3692c182396a58099ad9d451816d9495c"
+  },
+  {
+    "P": "avahi-glib",
+    "V": "0.9_rc5-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "avahi",
+    "c": "b327a2a3692c182396a58099ad9d451816d9495c"
+  },
+  {
+    "P": "avahi-libs",
+    "V": "0.9_rc5-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "avahi",
+    "c": "b327a2a3692c182396a58099ad9d451816d9495c"
+  },
+  {
+    "P": "avahi-openrc",
+    "V": "0.9_rc5-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "avahi",
+    "c": "b327a2a3692c182396a58099ad9d451816d9495c"
+  },
+  {
+    "P": "axc",
+    "V": "0.3.7-r2",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "axc",
+    "c": "33283848034c9885d984c8e8697c645c57324938"
+  },
+  {
+    "P": "bash",
+    "V": "5.3.9-r2",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "bash",
+    "c": "052899da729dfcd14a202ddd63e5d5cc5e2fb533"
+  },
+  {
+    "P": "basu",
+    "V": "0.2.1-r2",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "basu",
+    "c": "33283848034c9885d984c8e8697c645c57324938"
+  },
+  {
+    "P": "beebzzr",
+    "V": "0_git20251214-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "beebzzr",
+    "c": "5d0357a8fd2cc940f164032cb28936277002e299"
+  },
+  {
+    "P": "blake3-libs",
+    "V": "1.8.7-r0",
+    "A": "aarch64",
+    "L": "CC0-1.0 OR Apache-2.0",
+    "o": "b3sum",
+    "c": "5582c57dfc50e01a31a07c4e8fd887f473e4a088"
+  },
+  {
+    "P": "blkid",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "LGPL-1.0-only",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "bluez",
+    "V": "5.87-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND BSD-2-Clause AND MIT",
+    "o": "bluez",
+    "c": "87c1eb5ce8663b9000e441f81757ed2073513e9b"
+  },
+  {
+    "P": "bluez-openrc",
+    "V": "5.87-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND BSD-2-Clause AND MIT",
+    "o": "bluez",
+    "c": "87c1eb5ce8663b9000e441f81757ed2073513e9b"
+  },
+  {
+    "P": "boot-deploy",
+    "V": "0.25.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "boot-deploy",
+    "c": "-dirty"
+  },
+  {
+    "P": "bridge",
+    "V": "1.5-r5",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "bridge",
+    "c": "0714a84b7f79009ae8b96aef50216ed72f54b885"
+  },
+  {
+    "P": "brotli-libs",
+    "V": "1.2.0-r1",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "brotli",
+    "c": "1ee249c9da168084b1c6c9f7488bdffa2ac33c84"
+  },
+  {
+    "P": "btrfs-progs",
+    "V": "6.17.1-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "btrfs-progs",
+    "c": "0de8f5fdfa9f69b4ef3f92f1d764d7725666a534"
+  },
+  {
+    "P": "btrfs-progs-openrc",
+    "V": "6.17.1-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "btrfs-progs",
+    "c": "0de8f5fdfa9f69b4ef3f92f1d764d7725666a534"
+  },
+  {
+    "P": "btrfs-progs-udev",
+    "V": "6.17.1-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "btrfs-progs",
+    "c": "0de8f5fdfa9f69b4ef3f92f1d764d7725666a534"
+  },
+  {
+    "P": "bubblewrap",
+    "V": "0.13.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "bubblewrap",
+    "c": "f88d048562042f11e439e6b7a0950518729cd8e3"
+  },
+  {
+    "P": "buffyboard",
+    "V": "3.6.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "buffybox",
+    "c": "-dirty"
+  },
+  {
+    "P": "busctl",
+    "V": "255.24-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later LGPL-2.1-or-later",
+    "o": "elogind",
+    "c": "f7e4c2c1ed47d57461b9cb50cd11cc2bc8168ad3"
+  },
+  {
+    "P": "busybox",
+    "V": "1.38.0-r7",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "busybox",
+    "c": "768a1e8764c8ddda36995c2a4ba8ab9a9c78ef91"
+  },
+  {
+    "P": "busybox-binsh",
+    "V": "1.38.0-r7",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "busybox",
+    "c": "768a1e8764c8ddda36995c2a4ba8ab9a9c78ef91"
+  },
+  {
+    "P": "busybox-extras",
+    "V": "1.38.0-r7",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "busybox",
+    "c": "768a1e8764c8ddda36995c2a4ba8ab9a9c78ef91"
+  },
+  {
+    "P": "busybox-mdev-openrc",
+    "V": "1.38.0-r7",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "busybox",
+    "c": "768a1e8764c8ddda36995c2a4ba8ab9a9c78ef91"
+  },
+  {
+    "P": "busybox-openrc",
+    "V": "1.38.0-r7",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "busybox",
+    "c": "768a1e8764c8ddda36995c2a4ba8ab9a9c78ef91"
+  },
+  {
+    "P": "bzip2",
+    "V": "1.0.8-r6",
+    "A": "aarch64",
+    "L": "bzip2-1.0.6",
+    "o": "bzip2",
+    "c": "33283848034c9885d984c8e8697c645c57324938"
+  },
+  {
+    "P": "c-ares",
+    "V": "1.34.8-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "c-ares",
+    "c": "cccc1eba323609348c0a5d70d1fc53fc4408a01b"
+  },
+  {
+    "P": "ca-certificates",
+    "V": "20260909-r0",
+    "A": "aarch64",
+    "L": "MPL-2.0 AND MIT",
+    "o": "ca-certificates",
+    "c": "a3c0689895e115d2910ab915de99a85bc11afe42"
+  },
+  {
+    "P": "ca-certificates-bundle",
+    "V": "20260909-r0",
+    "A": "aarch64",
+    "L": "MPL-2.0 AND MIT",
+    "o": "ca-certificates",
+    "c": "a3c0689895e115d2910ab915de99a85bc11afe42"
+  },
+  {
+    "P": "cairo",
+    "V": "1.18.4-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later OR MPL-1.1",
+    "o": "cairo",
+    "c": "e54632f6ef658146c2393a8cbd0368a3707d4991"
+  },
+  {
+    "P": "cairo-gobject",
+    "V": "1.18.4-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later OR MPL-1.1",
+    "o": "cairo",
+    "c": "e54632f6ef658146c2393a8cbd0368a3707d4991"
+  },
+  {
+    "P": "callaudiocli",
+    "V": "0.1.99-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "callaudiod",
+    "c": "b23ed25f2a13347ecbfe6c7d9c28d66a68dc85c2"
+  },
+  {
+    "P": "callaudiod",
+    "V": "0.1.99-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "callaudiod",
+    "c": "b23ed25f2a13347ecbfe6c7d9c28d66a68dc85c2"
+  },
+  {
+    "P": "callaudiod-libs",
+    "V": "0.1.99-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "callaudiod",
+    "c": "b23ed25f2a13347ecbfe6c7d9c28d66a68dc85c2"
+  },
+  {
+    "P": "calls",
+    "V": "50.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "calls",
+    "c": "7dced6ed1d6a16cb38be19aba3f03c6706642e40"
+  },
+  {
+    "P": "cdparanoia-libs",
+    "V": "10.2-r14",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "cdparanoia",
+    "c": "c878341873168fef6b5c91c8f5c924a1af67c7c3"
+  },
+  {
+    "P": "cellbroadcastd",
+    "V": "0.0.3-r2",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "cellbroadcastd",
+    "c": "9a4d674c5ad9cac7ffec0d815e397a0bc835ed2e"
+  },
+  {
+    "P": "cellbroadcastd-libs",
+    "V": "0.0.3-r2",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "cellbroadcastd",
+    "c": "9a4d674c5ad9cac7ffec0d815e397a0bc835ed2e"
+  },
+  {
+    "P": "cfdisk",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "cfitsio",
+    "V": "4.7.0-r0",
+    "A": "aarch64",
+    "L": "CFITSIO",
+    "o": "cfitsio",
+    "c": "2b3f577c8e28cb2a81e81be6500becd17b3b00a1"
+  },
+  {
+    "P": "cgif",
+    "V": "0.5.4-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "cgif",
+    "c": "d73824dd96ea8d9331a527742db56e3ce7353f47"
+  },
+  {
+    "P": "chatty",
+    "V": "0.8.9-r16",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "chatty",
+    "c": "fe55ded4176a44754d26ad5c75ab2c840e286564"
+  },
+  {
+    "P": "chrony",
+    "V": "4.9-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "chrony",
+    "c": "1f4962065916def5c8e7e4f876171df63117c3e4"
+  },
+  {
+    "P": "chrony-common",
+    "V": "4.9-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "chrony",
+    "c": "1f4962065916def5c8e7e4f876171df63117c3e4"
+  },
+  {
+    "P": "chrony-openrc",
+    "V": "4.9-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "chrony",
+    "c": "1f4962065916def5c8e7e4f876171df63117c3e4"
+  },
+  {
+    "P": "colord",
+    "V": "1.4.8-r4",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "colord",
+    "c": "a7c11fb75debe853e13fc2f6599506a001365611"
+  },
+  {
+    "P": "colord-gtk",
+    "V": "0.3.1-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "colord-gtk",
+    "c": "c3866a2177b68d1c649aaff171ba5fad7a767886"
+  },
+  {
+    "P": "colord-udev",
+    "V": "1.4.8-r4",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "colord",
+    "c": "a7c11fb75debe853e13fc2f6599506a001365611"
+  },
+  {
+    "P": "cracklib",
+    "V": "2.10.3-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "cracklib",
+    "c": "46ead21b854fbb678528bd02e9773167ffcaf9ab"
+  },
+  {
+    "P": "cracklib-words",
+    "V": "2.10.3-r1",
+    "A": "aarch64",
+    "L": "Public-Domain",
+    "o": "cracklib",
+    "c": "46ead21b854fbb678528bd02e9773167ffcaf9ab"
+  },
+  {
+    "P": "cryptsetup",
+    "V": "2.8.8-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later WITH cryptsetup-OpenSSL-exception",
+    "o": "cryptsetup",
+    "c": "698f5ac7d5ca428ea7d5af598c44d6b294582ec0"
+  },
+  {
+    "P": "cryptsetup-libs",
+    "V": "2.8.8-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later WITH cryptsetup-OpenSSL-exception",
+    "o": "cryptsetup",
+    "c": "698f5ac7d5ca428ea7d5af598c44d6b294582ec0"
+  },
+  {
+    "P": "cryptsetup-openrc",
+    "V": "2.8.8-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later WITH cryptsetup-OpenSSL-exception",
+    "o": "cryptsetup",
+    "c": "698f5ac7d5ca428ea7d5af598c44d6b294582ec0"
+  },
+  {
+    "P": "cups-libs",
+    "V": "2.4.20-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "cups",
+    "c": "a995dd94b422901b284bcd0fc7b5dc296769090a"
+  },
+  {
+    "P": "cups-pk-helper",
+    "V": "0.2.7-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "cups-pk-helper",
+    "c": "1e40ebb81e1bd430682f1e567f49def3e88314d0"
+  },
+  {
+    "P": "curl",
+    "V": "8.22.0-r0",
+    "A": "aarch64",
+    "L": "curl",
+    "o": "curl",
+    "c": "11e7d92d27e227ff80704b54df382652e4607db1"
+  },
+  {
+    "P": "cyrus-sasl",
+    "V": "2.1.28-r9",
+    "A": "aarch64",
+    "L": "BSD-3-Clause-Attribution AND BSD-4-Clause",
+    "o": "cyrus-sasl",
+    "c": "fac808c0fddf93e8980ec1f55972e6f69b78ba6f"
+  },
+  {
+    "P": "cyrus-sasl-openrc",
+    "V": "2.1.28-r9",
+    "A": "aarch64",
+    "L": "BSD-3-Clause-Attribution AND BSD-4-Clause",
+    "o": "cyrus-sasl",
+    "c": "fac808c0fddf93e8980ec1f55972e6f69b78ba6f"
+  },
+  {
+    "P": "cyrus-sasl-scram",
+    "V": "2.1.28-r9",
+    "A": "aarch64",
+    "L": "BSD-3-Clause-Attribution AND BSD-4-Clause",
+    "o": "cyrus-sasl",
+    "c": "fac808c0fddf93e8980ec1f55972e6f69b78ba6f"
+  },
+  {
+    "P": "dbus",
+    "V": "1.16.2-r4",
+    "A": "aarch64",
+    "L": "AFL-2.1 OR GPL-2.0-or-later",
+    "o": "dbus",
+    "c": "0d449a75166f997151ca7b645da4012b8d3df610"
+  },
+  {
+    "P": "dbus-daemon-launch-helper",
+    "V": "1.16.2-r4",
+    "A": "aarch64",
+    "L": "AFL-2.1 OR GPL-2.0-or-later",
+    "o": "dbus",
+    "c": "0d449a75166f997151ca7b645da4012b8d3df610"
+  },
+  {
+    "P": "dbus-glib",
+    "V": "0.116-r0",
+    "A": "aarch64",
+    "L": "AFL-2.1 OR GPL-2.0-or-later",
+    "o": "dbus-glib",
+    "c": "e16072225702605809157fa7411154a5603b649b"
+  },
+  {
+    "P": "dbus-libs",
+    "V": "1.16.2-r4",
+    "A": "aarch64",
+    "L": "AFL-2.1 OR GPL-2.0-or-later",
+    "o": "dbus",
+    "c": "0d449a75166f997151ca7b645da4012b8d3df610"
+  },
+  {
+    "P": "dbus-openrc",
+    "V": "1.16.2-r4",
+    "A": "aarch64",
+    "L": "AFL-2.1 OR GPL-2.0-or-later",
+    "o": "dbus",
+    "c": "0d449a75166f997151ca7b645da4012b8d3df610"
+  },
+  {
+    "P": "dbus-x11",
+    "V": "1.16.2-r4",
+    "A": "aarch64",
+    "L": "AFL-2.1 OR GPL-2.0-or-later",
+    "o": "dbus",
+    "c": "0d449a75166f997151ca7b645da4012b8d3df610"
+  },
+  {
+    "P": "dconf",
+    "V": "51.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "dconf",
+    "c": "68074ed6456e7b9955cf569e55f676619ba21e37"
+  },
+  {
+    "P": "desktop-file-utils",
+    "V": "0.28-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "desktop-file-utils",
+    "c": "d219babac2540b2418a91177836c9490e1388683"
+  },
+  {
+    "P": "device-mapper",
+    "V": "2.03.35-r8",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "device-mapper",
+    "c": "bd5bd7cf5acac17b4f34697b0c7f093cfa9d86b2"
+  },
+  {
+    "P": "device-mapper-libs",
+    "V": "2.03.35-r8",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "device-mapper",
+    "c": "bd5bd7cf5acac17b4f34697b0c7f093cfa9d86b2"
+  },
+  {
+    "P": "device-mapper-udev",
+    "V": "2.03.35-r8",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "device-mapper",
+    "c": "bd5bd7cf5acac17b4f34697b0c7f093cfa9d86b2"
+  },
+  {
+    "P": "device-postmarketos-trailblazer",
+    "V": "22-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "device-postmarketos-trailblazer",
+    "c": "-dirty"
+  },
+  {
+    "P": "devicepkg-utils",
+    "V": "0.3.3-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "devicepkg-utils",
+    "c": "-dirty"
+  },
+  {
+    "P": "dialog",
+    "V": "1.3.20260107-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-only",
+    "o": "dialog",
+    "c": "a9e2a2dc46f377eb25884f7fea9834492de7f518"
+  },
+  {
+    "P": "directfb",
+    "V": "1.7.7-r8",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "directfb",
+    "c": "bc049ae1bcf9ef3f66cd12a6fbb7ac4e917764b1"
+  },
+  {
+    "P": "djvulibre-libs",
+    "V": "3.5.30-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "djvulibre",
+    "c": "40e250cfec435d633139c6f73bd5c6269b418268"
+  },
+  {
+    "P": "dmesg",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "dnsmasq",
+    "V": "2.93-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "dnsmasq",
+    "c": "94f55ddec206a0269ec324d3907e1de8b514ab22"
+  },
+  {
+    "P": "dnsmasq-common",
+    "V": "2.93-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "dnsmasq",
+    "c": "94f55ddec206a0269ec324d3907e1de8b514ab22"
+  },
+  {
+    "P": "dnsmasq-openrc",
+    "V": "2.93-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "dnsmasq",
+    "c": "94f55ddec206a0269ec324d3907e1de8b514ab22"
+  },
+  {
+    "P": "dosfstools",
+    "V": "4.2-r2",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "dosfstools",
+    "c": "84a227baf001b6e0208e3352b294e4d7a40e93de"
+  },
+  {
+    "P": "dropbear",
+    "V": "2026.94-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "dropbear",
+    "c": "5391e6ad7784726136122287cbc0f7681e445e99"
+  },
+  {
+    "P": "dropbear-openrc",
+    "V": "2026.94-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "dropbear",
+    "c": "5391e6ad7784726136122287cbc0f7681e445e99"
+  },
+  {
+    "P": "duktape-libs",
+    "V": "2.7.0-r3",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "duktape",
+    "c": "a9e2a2dc46f377eb25884f7fea9834492de7f518"
+  },
+  {
+    "P": "e2fsprogs",
+    "V": "1.47.4-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT",
+    "o": "e2fsprogs",
+    "c": "8683a6972cb245fbbdb535dad6435a9930bb9374"
+  },
+  {
+    "P": "e2fsprogs-extra",
+    "V": "1.47.4-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT",
+    "o": "e2fsprogs",
+    "c": "8683a6972cb245fbbdb535dad6435a9930bb9374"
+  },
+  {
+    "P": "e2fsprogs-libs",
+    "V": "1.47.4-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT",
+    "o": "e2fsprogs",
+    "c": "8683a6972cb245fbbdb535dad6435a9930bb9374"
+  },
+  {
+    "P": "elogind",
+    "V": "255.24-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later LGPL-2.1-or-later",
+    "o": "elogind",
+    "c": "f7e4c2c1ed47d57461b9cb50cd11cc2bc8168ad3"
+  },
+  {
+    "P": "elogind-common",
+    "V": "255.24-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later LGPL-2.1-or-later",
+    "o": "elogind",
+    "c": "f7e4c2c1ed47d57461b9cb50cd11cc2bc8168ad3"
+  },
+  {
+    "P": "elogind-openrc",
+    "V": "255.24-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later LGPL-2.1-or-later",
+    "o": "elogind",
+    "c": "f7e4c2c1ed47d57461b9cb50cd11cc2bc8168ad3"
+  },
+  {
+    "P": "enchant2-libs",
+    "V": "2.8.15-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "enchant2",
+    "c": "29f5e8636649b9b1bd07d694fe8fe3a9b5e0e0e9"
+  },
+  {
+    "P": "esystemd",
+    "V": "261.2-r1",
+    "A": "aarch64",
+    "L": "MIT AND GPL-2.0-only AND LGPL-2.1-or-later",
+    "o": "esystemd",
+    "c": "-dirty"
+  },
+  {
+    "P": "esystemd-sysusers",
+    "V": "261.2-r1",
+    "A": "aarch64",
+    "L": "MIT AND GPL-2.0-only AND LGPL-2.1-or-later",
+    "o": "esystemd",
+    "c": "-dirty"
+  },
+  {
+    "P": "esystemd-sysusers-openrc",
+    "V": "261.2-r1",
+    "A": "aarch64",
+    "L": "MIT AND GPL-2.0-only AND LGPL-2.1-or-later",
+    "o": "esystemd",
+    "c": "-dirty"
+  },
+  {
+    "P": "esystemd-tmpfiles",
+    "V": "261.2-r1",
+    "A": "aarch64",
+    "L": "MIT AND GPL-2.0-only AND LGPL-2.1-or-later",
+    "o": "esystemd",
+    "c": "-dirty"
+  },
+  {
+    "P": "esystemd-tmpfiles-openrc",
+    "V": "261.2-r1",
+    "A": "aarch64",
+    "L": "MIT AND GPL-2.0-only AND LGPL-2.1-or-later",
+    "o": "esystemd",
+    "c": "-dirty"
+  },
+  {
+    "P": "eudev",
+    "V": "9999.3.2.14-r7",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "eudev",
+    "c": "-dirty"
+  },
+  {
+    "P": "eudev-libs",
+    "V": "3.2.14-r8",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "eudev",
+    "c": "6b4d520a838bd137811a56ffa569e2431ce5b903"
+  },
+  {
+    "P": "eudev-openrc",
+    "V": "9999.3.2.14-r7",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "eudev",
+    "c": "-dirty"
+  },
+  {
+    "P": "evince-libs",
+    "V": "48.4-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "evince",
+    "c": "a3d7c1b7525dbabef762e0445ac71956203d6a12"
+  },
+  {
+    "P": "evolution-data-server",
+    "V": "3.62.0-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "evolution-data-server",
+    "c": "fe55ded4176a44754d26ad5c75ab2c840e286564"
+  },
+  {
+    "P": "evtest",
+    "V": "1.36-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0",
+    "o": "evtest",
+    "c": "d3a95ea716b5839db1574bdf9ad0feb6779a5451"
+  },
+  {
+    "P": "exiftool",
+    "V": "13.55-r0",
+    "A": "aarch64",
+    "L": "Artistic-1.0-Perl GPL-1.0-or-later",
+    "o": "perl-image-exiftool",
+    "c": "b23f98ea4190d1561aeecfd7db8d974d3a5430d4"
+  },
+  {
+    "P": "f2fs-tools",
+    "V": "1.17.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later OR LGPL-2.1-or-later",
+    "o": "f2fs-tools",
+    "c": "92971b1f9c86798a09508e5081fc501de10df0e4"
+  },
+  {
+    "P": "f2fs-tools-libs",
+    "V": "1.17.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later OR LGPL-2.1-or-later",
+    "o": "f2fs-tools",
+    "c": "92971b1f9c86798a09508e5081fc501de10df0e4"
+  },
+  {
+    "P": "faac",
+    "V": "1.31.1-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "faac",
+    "c": "fd133eb9c5bdad4ab8aa2bda85a4b1a0ff18837b"
+  },
+  {
+    "P": "faad2-libs",
+    "V": "2.11.2-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "faad2",
+    "c": "333c64f70965994ccb525551c617af7974e39fc8"
+  },
+  {
+    "P": "fdk-aac",
+    "V": "2.0.2-r4",
+    "A": "aarch64",
+    "L": "FDK-AAC",
+    "o": "fdk-aac",
+    "c": "90b891a26b5ba0fbce151155cea425473f8cb96a"
+  },
+  {
+    "P": "feedbackd",
+    "V": "0.8.9-r4",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "feedbackd",
+    "c": "9300ed125d6bd60af3180e37b0413312d74c79ab"
+  },
+  {
+    "P": "feedbackd-device-themes",
+    "V": "0.8.9-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "feedbackd-device-themes",
+    "c": "549e84793b0f66ebd7b0912411a9daab563c5cd2"
+  },
+  {
+    "P": "feedbackd-udev",
+    "V": "0.8.9-r4",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "feedbackd",
+    "c": "9300ed125d6bd60af3180e37b0413312d74c79ab"
+  },
+  {
+    "P": "ffmpeg-libavcodec",
+    "V": "8.1.2-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "ffmpeg",
+    "c": "1bd51bf4c3db2920493f847ccb268c0cb875fcfe"
+  },
+  {
+    "P": "ffmpeg-libavutil",
+    "V": "8.1.2-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "ffmpeg",
+    "c": "1bd51bf4c3db2920493f847ccb268c0cb875fcfe"
+  },
+  {
+    "P": "ffmpeg-libswresample",
+    "V": "8.1.2-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "ffmpeg",
+    "c": "1bd51bf4c3db2920493f847ccb268c0cb875fcfe"
+  },
+  {
+    "P": "fftw-double-libs",
+    "V": "3.3.11-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "fftw",
+    "c": "961fdd748f4623133dcddb51b1169967b1657175"
+  },
+  {
+    "P": "fftw-single-libs",
+    "V": "3.3.11-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "fftw",
+    "c": "961fdd748f4623133dcddb51b1169967b1657175"
+  },
+  {
+    "P": "file",
+    "V": "5.48-r0",
+    "A": "aarch64",
+    "L": "BSD-2-Clause",
+    "o": "file",
+    "c": "34a8c432746095fabf79908e406045a9448a244d"
+  },
+  {
+    "P": "findmnt",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "firefox",
+    "V": "154.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-only AND LGPL-2.1-only AND LGPL-3.0-only AND MPL-2.0",
+    "o": "firefox",
+    "c": "980cec3c88aeca6036c0a1cb9aa09ba445f31975"
+  },
+  {
+    "P": "flatpak-libs",
+    "V": "1.18.4-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "flatpak",
+    "c": "1b7e1d0a815d6e0dcec9b666900d86a7da4ad028"
+  },
+  {
+    "P": "flite",
+    "V": "2.2-r7",
+    "A": "aarch64",
+    "L": "BSD-4-Clause",
+    "o": "flite",
+    "c": "c588ad5b6b4755f4a09da7ed6444e8317f1660a3"
+  },
+  {
+    "P": "flock",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "folks",
+    "V": "0.15.12-r2",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "folks",
+    "c": "97dba23dc382440e73c3813c9072a25099fb0d67"
+  },
+  {
+    "P": "font-droid",
+    "V": "20200215-r5",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "font-droid",
+    "c": "b01c471c954a054e703baee3fa242df2cea570c1"
+  },
+  {
+    "P": "font-terminus",
+    "V": "4.49.1-r4",
+    "A": "aarch64",
+    "L": "OFL-1.1",
+    "o": "font-terminus",
+    "c": "abec7d40d0a7660e575f18f6625e6d74f742ecf0"
+  },
+  {
+    "P": "fontconfig",
+    "V": "2.18.1-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "fontconfig",
+    "c": "d026b8a2a0e11062ac18d1b94791eb358b2f7f8c"
+  },
+  {
+    "P": "freetype",
+    "V": "2.14.3-r0",
+    "A": "aarch64",
+    "L": "FTL OR GPL-2.0-or-later",
+    "o": "freetype",
+    "c": "ad16b0afc1a315c4095a75ff72ebbe3cfa29b671"
+  },
+  {
+    "P": "fribidi",
+    "V": "1.0.16-r3",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "fribidi",
+    "c": "5c9b8291bfb31116907f54dad1c7e03fec51eddb"
+  },
+  {
+    "P": "fstrim",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "fuse-common",
+    "V": "3.18.3-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-only AND LGPL-2.1-only",
+    "o": "fuse3",
+    "c": "501a5779e5c908af179342d4d39b6b039017cd2d"
+  },
+  {
+    "P": "fuse-openrc",
+    "V": "3.18.3-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-only AND LGPL-2.1-only",
+    "o": "fuse3",
+    "c": "501a5779e5c908af179342d4d39b6b039017cd2d"
+  },
+  {
+    "P": "fuse3",
+    "V": "3.18.3-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-only AND LGPL-2.1-only",
+    "o": "fuse3",
+    "c": "501a5779e5c908af179342d4d39b6b039017cd2d"
+  },
+  {
+    "P": "fuse3-libs",
+    "V": "3.18.3-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-only AND LGPL-2.1-only",
+    "o": "fuse3",
+    "c": "501a5779e5c908af179342d4d39b6b039017cd2d"
+  },
+  {
+    "P": "fuse3-udev",
+    "V": "3.18.3-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-only AND LGPL-2.1-only",
+    "o": "fuse3",
+    "c": "501a5779e5c908af179342d4d39b6b039017cd2d"
+  },
+  {
+    "P": "fwupd",
+    "V": "2.1.8-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "fwupd",
+    "c": "c1b49d84fee97f2b964eec6471e360728c59b48a"
+  },
+  {
+    "P": "fwupd-efi",
+    "V": "1.8-r1",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later",
+    "o": "fwupd-efi",
+    "c": "a5a4973065dd4fab402cb6f6ce44f71526503c69"
+  },
+  {
+    "P": "fwupd-openrc",
+    "V": "2.1.8-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "fwupd",
+    "c": "c1b49d84fee97f2b964eec6471e360728c59b48a"
+  },
+  {
+    "P": "fwupd-polkit",
+    "V": "2.1.8-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "fwupd",
+    "c": "c1b49d84fee97f2b964eec6471e360728c59b48a"
+  },
+  {
+    "P": "gcr",
+    "V": "3.41.2-r3",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "gcr",
+    "c": "779103d8e7593e2572d2b9ab51e85a1e3908e843"
+  },
+  {
+    "P": "gcr-base",
+    "V": "3.41.2-r3",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "gcr",
+    "c": "779103d8e7593e2572d2b9ab51e85a1e3908e843"
+  },
+  {
+    "P": "gcr-ssh-agent",
+    "V": "4.4.0.1-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "gcr4",
+    "c": "c97799aa548f601eb43cfd276ba52f1a9da85d48"
+  },
+  {
+    "P": "gcr4",
+    "V": "4.4.0.1-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "gcr4",
+    "c": "c97799aa548f601eb43cfd276ba52f1a9da85d48"
+  },
+  {
+    "P": "gcr4-base",
+    "V": "4.4.0.1-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "gcr4",
+    "c": "c97799aa548f601eb43cfd276ba52f1a9da85d48"
+  },
+  {
+    "P": "gdbm",
+    "V": "1.26-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "gdbm",
+    "c": "1ea03990396db618edfcc8a9a0bc6b72662bac8f"
+  },
+  {
+    "P": "gdk-pixbuf",
+    "V": "2.44.8-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "gdk-pixbuf",
+    "c": "2fdebdd2a35d5525c8f3242ead2a57432ea79ae6"
+  },
+  {
+    "P": "generate-kernel-cmdline",
+    "V": "1.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "generate-kernel-cmdline",
+    "c": "17f4df4481b0d57f12d659df1447c9267ec1ac26"
+  },
+  {
+    "P": "geoclue",
+    "V": "2.8.2-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "geoclue",
+    "c": "df74ed579057042d714e0f629b559c48451addd7"
+  },
+  {
+    "P": "geocode-glib",
+    "V": "3.26.4-r5",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "geocode-glib",
+    "c": "094c05697f01caa52310f362ffa2acf5f9a0e106"
+  },
+  {
+    "P": "gjs",
+    "V": "1.90.0-r0",
+    "A": "aarch64",
+    "L": "MIT AND LGPL-2.0-or-later",
+    "o": "gjs",
+    "c": "82e23a6f143c81eccaea28d8b5da2d928dab7e08"
+  },
+  {
+    "P": "glib",
+    "V": "2.90.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "glib",
+    "c": "b1f2e90f9e0d99b6d3b9d1c2084494eed27405ce"
+  },
+  {
+    "P": "glib-networking",
+    "V": "2.90.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "glib-networking",
+    "c": "141a5e4e3b0cff318073b1da54708b70f02a5cc7"
+  },
+  {
+    "P": "glycin-heif",
+    "V": "2.2.1-r0",
+    "A": "aarch64",
+    "L": "MPL-2.0 OR LGPL-2.0-or-later",
+    "o": "glycin",
+    "c": "9d87fa338fd7091f32180af46af941e061c4e3b6"
+  },
+  {
+    "P": "glycin-image-rs",
+    "V": "2.2.1-r0",
+    "A": "aarch64",
+    "L": "MPL-2.0 OR LGPL-2.0-or-later",
+    "o": "glycin",
+    "c": "9d87fa338fd7091f32180af46af941e061c4e3b6"
+  },
+  {
+    "P": "glycin-jxl",
+    "V": "2.2.1-r0",
+    "A": "aarch64",
+    "L": "MPL-2.0 OR LGPL-2.0-or-later",
+    "o": "glycin",
+    "c": "9d87fa338fd7091f32180af46af941e061c4e3b6"
+  },
+  {
+    "P": "glycin-loaders-all",
+    "V": "2.2.1-r0",
+    "A": "aarch64",
+    "L": "MPL-2.0 OR LGPL-2.0-or-later",
+    "o": "glycin",
+    "c": "9d87fa338fd7091f32180af46af941e061c4e3b6"
+  },
+  {
+    "P": "glycin-svg",
+    "V": "2.2.1-r0",
+    "A": "aarch64",
+    "L": "MPL-2.0 OR LGPL-2.0-or-later",
+    "o": "glycin",
+    "c": "9d87fa338fd7091f32180af46af941e061c4e3b6"
+  },
+  {
+    "P": "glycin-thumbnailer",
+    "V": "2.2.1-r0",
+    "A": "aarch64",
+    "L": "MPL-2.0 OR LGPL-2.0-or-later",
+    "o": "glycin",
+    "c": "9d87fa338fd7091f32180af46af941e061c4e3b6"
+  },
+  {
+    "P": "gmobile",
+    "V": "0.7.3-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-only",
+    "o": "gmobile",
+    "c": "8197913b7055cd707a01fcf3e9e35698d6e84a6f"
+  },
+  {
+    "P": "gmobile-udev",
+    "V": "0.7.3-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-only",
+    "o": "gmobile",
+    "c": "8197913b7055cd707a01fcf3e9e35698d6e84a6f"
+  },
+  {
+    "P": "gmp",
+    "V": "6.3.0-r4",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+    "o": "gmp",
+    "c": "8bfc27fafbf6c27761b150c571c3075a5a3db0de"
+  },
+  {
+    "P": "gnome-app-list",
+    "V": "2026.08-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "gnome-app-list",
+    "c": "c2c8987f83b4047026be71f4430f145c1c112b75"
+  },
+  {
+    "P": "gnome-app-provider-gnome-software",
+    "V": "14-r1",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-ui-gnome",
+    "c": "-dirty"
+  },
+  {
+    "P": "gnome-backgrounds",
+    "V": "51.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND CC-BY-2.0 AND CC-BY-SA-2.0 AND CC-BY-SA-3.0",
+    "o": "gnome-backgrounds",
+    "c": "372e43adbae30afa909939fe06eb341ba8310fce"
+  },
+  {
+    "P": "gnome-bluetooth",
+    "V": "47.2-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "gnome-bluetooth",
+    "c": "aa5f85d16ddde8bb77f70c6bbd6571c97580fcf2"
+  },
+  {
+    "P": "gnome-bluetooth-libs",
+    "V": "47.2-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "gnome-bluetooth",
+    "c": "aa5f85d16ddde8bb77f70c6bbd6571c97580fcf2"
+  },
+  {
+    "P": "gnome-bluetooth-udev",
+    "V": "47.2-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "gnome-bluetooth",
+    "c": "aa5f85d16ddde8bb77f70c6bbd6571c97580fcf2"
+  },
+  {
+    "P": "gnome-control-center",
+    "V": "51.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "gnome-control-center",
+    "c": "ab75a6251799453932c36846d2ac7929342d19fb"
+  },
+  {
+    "P": "gnome-keyring",
+    "V": "51.1-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-only LGPL-2.0-only",
+    "o": "gnome-keyring",
+    "c": "84cdaa93f59c6928ee9373498ebd099a2691ea4a"
+  },
+  {
+    "P": "gnome-keyring-openrc",
+    "V": "51.1-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-only LGPL-2.0-only",
+    "o": "gnome-keyring",
+    "c": "84cdaa93f59c6928ee9373498ebd099a2691ea4a"
+  },
+  {
+    "P": "gnome-keyring-pam",
+    "V": "51.1-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-only LGPL-2.0-only",
+    "o": "gnome-keyring",
+    "c": "84cdaa93f59c6928ee9373498ebd099a2691ea4a"
+  },
+  {
+    "P": "gnome-online-accounts",
+    "V": "3.58.1-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "gnome-online-accounts",
+    "c": "23c0b6111451a76df7f12b9115e3ef80ced7d7e8"
+  },
+  {
+    "P": "gnome-session",
+    "V": "48.0-r5",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "gnome-session",
+    "c": "a3d7c1b7525dbabef762e0445ac71956203d6a12"
+  },
+  {
+    "P": "gnome-settings-daemon",
+    "V": "51.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-only AND LGPL-2.1-only",
+    "o": "gnome-settings-daemon",
+    "c": "22bcae434c00be81d2736c738741464192e26041"
+  },
+  {
+    "P": "gnome-settings-daemon-udev",
+    "V": "51.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-only AND LGPL-2.1-only",
+    "o": "gnome-settings-daemon",
+    "c": "22bcae434c00be81d2736c738741464192e26041"
+  },
+  {
+    "P": "gnome-shell-schemas",
+    "V": "51.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "gnome-shell",
+    "c": "c58e95100f1a6becd69723cc18bae304f1eb3299"
+  },
+  {
+    "P": "gnome-software",
+    "V": "51.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "gnome-software",
+    "c": "6d0fdd5284927754fb2e3a43d6e2920a7094d201"
+  },
+  {
+    "P": "gnome-software-lib",
+    "V": "51.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "gnome-software",
+    "c": "6d0fdd5284927754fb2e3a43d6e2920a7094d201"
+  },
+  {
+    "P": "gnome-software-plugin-apk2",
+    "V": "0.0.3-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "gnome-software-plugin-apk2",
+    "c": "839f74b417a991403a204b3cfa8293f0bf060219"
+  },
+  {
+    "P": "gnupg-dirmngr",
+    "V": "2.5.22-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "gnupg",
+    "c": "b2ea575329d2d0abb0aebe51c6a03773c493b02e"
+  },
+  {
+    "P": "gnupg-gpgconf",
+    "V": "2.5.22-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "gnupg",
+    "c": "b2ea575329d2d0abb0aebe51c6a03773c493b02e"
+  },
+  {
+    "P": "gnupg-keyboxd",
+    "V": "2.5.22-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "gnupg",
+    "c": "b2ea575329d2d0abb0aebe51c6a03773c493b02e"
+  },
+  {
+    "P": "gnutls",
+    "V": "3.8.13-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "gnutls",
+    "c": "c09f2e94a4b0b4077da49683cf0faa09ed63fb5b"
+  },
+  {
+    "P": "gobject-introspection",
+    "V": "1.86.0-r2",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later AND GPL-2.0-or-later AND MIT",
+    "o": "gobject-introspection",
+    "c": "c6f089a964f45753dec18913b35b3454084ddac7"
+  },
+  {
+    "P": "gom",
+    "V": "0.5.6-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "gom",
+    "c": "0afd7d12e674ccc13be92f8325222b8aa1aa7e0b"
+  },
+  {
+    "P": "gom-pyc",
+    "V": "0.5.6-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "gom",
+    "c": "0afd7d12e674ccc13be92f8325222b8aa1aa7e0b"
+  },
+  {
+    "P": "gpg",
+    "V": "2.5.22-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "gnupg",
+    "c": "b2ea575329d2d0abb0aebe51c6a03773c493b02e"
+  },
+  {
+    "P": "gpg-agent",
+    "V": "2.5.22-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "gnupg",
+    "c": "b2ea575329d2d0abb0aebe51c6a03773c493b02e"
+  },
+  {
+    "P": "gpgme",
+    "V": "2.0.1-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later AND GPL-3.0-or-later",
+    "o": "gpgme",
+    "c": "34ecdac2b99b3520c96e821645115a26dab45af6"
+  },
+  {
+    "P": "gpgsm",
+    "V": "2.5.22-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "gnupg",
+    "c": "b2ea575329d2d0abb0aebe51c6a03773c493b02e"
+  },
+  {
+    "P": "graphene",
+    "V": "1.10.8-r5",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "graphene",
+    "c": "398a5aee3025ec8a4d0d761e448dc86ac777fa09"
+  },
+  {
+    "P": "graphite2",
+    "V": "1.3.15-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later OR MPL-1.1",
+    "o": "graphite2",
+    "c": "13d7ebc2bf207f3915898a3c1e70cc716f491bd3"
+  },
+  {
+    "P": "greetd",
+    "V": "0.10.3-r12",
+    "A": "aarch64",
+    "L": "GPL-3.0-only",
+    "o": "greetd",
+    "c": "f0bded9c9b6096f7f660760d1f856caec4089a0b"
+  },
+  {
+    "P": "greetd-openrc",
+    "V": "0.10.3-r12",
+    "A": "aarch64",
+    "L": "GPL-3.0-only",
+    "o": "greetd",
+    "c": "f0bded9c9b6096f7f660760d1f856caec4089a0b"
+  },
+  {
+    "P": "greetd-phrog",
+    "V": "0.53.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-only",
+    "o": "greetd-phrog",
+    "c": "e88ab709be5a2d1e0089815198a2d49ad2fff1d8"
+  },
+  {
+    "P": "greetd-phrog-schemas",
+    "V": "0.53.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-only",
+    "o": "greetd-phrog",
+    "c": "e88ab709be5a2d1e0089815198a2d49ad2fff1d8"
+  },
+  {
+    "P": "grim",
+    "V": "1.5.0-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "grim",
+    "c": "63e0874f4b1c08476d105b539f355395c8e49f9c"
+  },
+  {
+    "P": "gsettings-desktop-schemas",
+    "V": "51.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "gsettings-desktop-schemas",
+    "c": "4898e84a56371b01dce7824e1459c0d8d38cffcc"
+  },
+  {
+    "P": "gsm",
+    "V": "1.0.24-r0",
+    "A": "aarch64",
+    "L": "TU-Berlin-2.0",
+    "o": "gsm",
+    "c": "8c80099d05443aa718e87cc3c0c28d7d78a0b644"
+  },
+  {
+    "P": "gsound",
+    "V": "1.0.3-r3",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "gsound",
+    "c": "7b90583424c3f9654ed9da77055cfec20f455875"
+  },
+  {
+    "P": "gspell",
+    "V": "1.14.5-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "gspell",
+    "c": "ab7c8c470e074b7beea790239cc97635c5c967bd"
+  },
+  {
+    "P": "gst-audio-thumbnailer",
+    "V": "1.1.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-only",
+    "o": "gst-thumbnailers",
+    "c": "667642037beb9a2f9552b6ae963819e31bfd1c83"
+  },
+  {
+    "P": "gst-plugin-pipewire",
+    "V": "1.6.9-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "pipewire",
+    "c": "0afac626498565714f7a06c04589112584cc95f4"
+  },
+  {
+    "P": "gst-plugins-bad",
+    "V": "1.28.7-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later LGPL-2.0-or-later",
+    "o": "gst-plugins-bad",
+    "c": "aeb3007e99404a6e0ecacb6d7da6e40ce7a7e270"
+  },
+  {
+    "P": "gst-plugins-base",
+    "V": "1.28.7-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.0-or-later",
+    "o": "gst-plugins-base",
+    "c": "f81b584981155851990303db5079f8f6f73ca0e2"
+  },
+  {
+    "P": "gst-plugins-good",
+    "V": "1.28.7-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later LGPL-2.0-or-later",
+    "o": "gst-plugins-good",
+    "c": "f81b584981155851990303db5079f8f6f73ca0e2"
+  },
+  {
+    "P": "gst-plugins-rs-gtk4",
+    "V": "0.15.3-r1",
+    "A": "aarch64",
+    "L": "MIT AND Apache-2.0 AND MPL-2.0 AND LGPL-2.1-or-later",
+    "o": "gst-plugins-rs",
+    "c": "dbe1ff8290b92b5d72cd424b41199e2b26b9130b"
+  },
+  {
+    "P": "gst-plugins-ugly",
+    "V": "1.28.7-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later LGPL-2.0-or-later",
+    "o": "gst-plugins-ugly",
+    "c": "176392453a093446bfcfc0db6fa39091b3fae247"
+  },
+  {
+    "P": "gst-thumbnailers",
+    "V": "1.1.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-only",
+    "o": "gst-thumbnailers",
+    "c": "667642037beb9a2f9552b6ae963819e31bfd1c83"
+  },
+  {
+    "P": "gst-video-thumbnailer",
+    "V": "1.1.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-only",
+    "o": "gst-thumbnailers",
+    "c": "667642037beb9a2f9552b6ae963819e31bfd1c83"
+  },
+  {
+    "P": "gstreamer",
+    "V": "1.28.7-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "gstreamer",
+    "c": "b6ecb6da05394a3d2b5113a05245b8620da20b41"
+  },
+  {
+    "P": "gstreamer-ptp-helper",
+    "V": "1.28.7-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "gstreamer",
+    "c": "b6ecb6da05394a3d2b5113a05245b8620da20b41"
+  },
+  {
+    "P": "gtest",
+    "V": "1.18.0-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "gtest",
+    "c": "79124b7ff9b39e64189e5f33b8bbc6a7b82d6f76"
+  },
+  {
+    "P": "gtk+3.0",
+    "V": "3.24.52-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "gtk+3.0",
+    "c": "81ac3343fbf0ae01ce4105c13ae592294cad8843"
+  },
+  {
+    "P": "gtk-update-icon-cache",
+    "V": "3.24.52-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "gtk+3.0",
+    "c": "81ac3343fbf0ae01ce4105c13ae592294cad8843"
+  },
+  {
+    "P": "gtk4.0",
+    "V": "4.24.1-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "gtk4.0",
+    "c": "462d9137efd75611f46774fb0d95778f181f66a1"
+  },
+  {
+    "P": "gtksourceview5",
+    "V": "5.21.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "gtksourceview5",
+    "c": "c7cf9d16b6adc6e5d3fec244424b8784c8686a41"
+  },
+  {
+    "P": "gweather-locations",
+    "V": "2026.2-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "gweather-locations",
+    "c": "fc1d27a999b312e6dc136fa3852e91581c7b3c43"
+  },
+  {
+    "P": "harfbuzz",
+    "V": "14.2.1-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "harfbuzz",
+    "c": "92e85684b9a5fd63c2ccd21597fa2be4afa87c0b"
+  },
+  {
+    "P": "harfbuzz-icu",
+    "V": "14.2.1-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "harfbuzz",
+    "c": "92e85684b9a5fd63c2ccd21597fa2be4afa87c0b"
+  },
+  {
+    "P": "harfbuzz-subset",
+    "V": "14.2.1-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "harfbuzz",
+    "c": "92e85684b9a5fd63c2ccd21597fa2be4afa87c0b"
+  },
+  {
+    "P": "haveged",
+    "V": "1.9.26-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "haveged",
+    "c": "f5e477deb25585a3cf15e8ecb5cc654f634f500a"
+  },
+  {
+    "P": "haveged-openrc",
+    "V": "1.9.26-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "haveged",
+    "c": "f5e477deb25585a3cf15e8ecb5cc654f634f500a"
+  },
+  {
+    "P": "heimdal-libs",
+    "V": "7.8.0-r5",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "heimdal",
+    "c": "de5eeae31578f5a1bb1435d21b7afb3d458bf420"
+  },
+  {
+    "P": "hexagonrpcd",
+    "V": "0.4.0-r3",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "hexagonrpcd",
+    "c": "45460400f0c0a0a4b6633f1eaf85c30fac74a937"
+  },
+  {
+    "P": "hexagonrpcd-openrc",
+    "V": "0.4.0-r3",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "hexagonrpcd",
+    "c": "45460400f0c0a0a4b6633f1eaf85c30fac74a937"
+  },
+  {
+    "P": "hexagonrpcd-udev",
+    "V": "0.4.0-r3",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "hexagonrpcd",
+    "c": "45460400f0c0a0a4b6633f1eaf85c30fac74a937"
+  },
+  {
+    "P": "hexdump",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "BSD-4-Clause-UC",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "hicolor-icon-theme",
+    "V": "0.18-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "hicolor-icon-theme",
+    "c": "0d5b763d2fa803e7d71b4d2272a138842e4966fa"
+  },
+  {
+    "P": "hidapi",
+    "V": "0.15.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-only OR BSD-3-Clause",
+    "o": "hidapi",
+    "c": "a255ed0fa9f4570e9356934632439e3dd03b3e5b"
+  },
+  {
+    "P": "hunspell-en-us",
+    "V": "2020.12.07-r4",
+    "A": "aarch64",
+    "L": "custom",
+    "o": "hunspell-en",
+    "c": "ad7f441a1b07a6e51fadd495b96790f67b459565"
+  },
+  {
+    "P": "hwdata-pci",
+    "V": "0.412-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later OR XFree86-1.1",
+    "o": "hwdata",
+    "c": "8ebbba93d0d228433dc8490576a716e6c6293e99"
+  },
+  {
+    "P": "hwdata-usb",
+    "V": "0.412-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later OR XFree86-1.1",
+    "o": "hwdata",
+    "c": "8ebbba93d0d228433dc8490576a716e6c6293e99"
+  },
+  {
+    "P": "hwloc",
+    "V": "2.12.2-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "hwloc",
+    "c": "f2a27e57078cab586b58041de66d1d909b13911d"
+  },
+  {
+    "P": "hyphen",
+    "V": "2.8.8-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later LGPL-2.0-or-later MPL-1.1",
+    "o": "hyphen",
+    "c": "33283848034c9885d984c8e8697c645c57324938"
+  },
+  {
+    "P": "ibus",
+    "V": "1.5.35_beta2-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "ibus",
+    "c": "63745f5cff08c8cc57430e0c03d7de894a5ffa4d"
+  },
+  {
+    "P": "ibus-gtk3",
+    "V": "1.5.35_beta2-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "ibus",
+    "c": "63745f5cff08c8cc57430e0c03d7de894a5ffa4d"
+  },
+  {
+    "P": "ibus-gtk4",
+    "V": "1.5.35_beta2-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "ibus",
+    "c": "63745f5cff08c8cc57430e0c03d7de894a5ffa4d"
+  },
+  {
+    "P": "ibus-pyc",
+    "V": "1.5.35_beta2-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "ibus",
+    "c": "63745f5cff08c8cc57430e0c03d7de894a5ffa4d"
+  },
+  {
+    "P": "icu-data-en",
+    "V": "78.1-r0",
+    "A": "aarch64",
+    "L": "ICU",
+    "o": "icu",
+    "c": "6755fdb21483ba250d374c3244f0f48bc63447e2"
+  },
+  {
+    "P": "icu-libs",
+    "V": "78.1-r0",
+    "A": "aarch64",
+    "L": "ICU",
+    "o": "icu",
+    "c": "6755fdb21483ba250d374c3244f0f48bc63447e2"
+  },
+  {
+    "P": "ifupdown-ng",
+    "V": "0.13.0-r0",
+    "A": "aarch64",
+    "L": "ISC",
+    "o": "ifupdown-ng",
+    "c": "2c26ffc5e83fc3bc626f2516235b465e67606bf9"
+  },
+  {
+    "P": "ifupdown-ng-iproute2",
+    "V": "0.13.0-r0",
+    "A": "aarch64",
+    "L": "ISC",
+    "o": "ifupdown-ng",
+    "c": "2c26ffc5e83fc3bc626f2516235b465e67606bf9"
+  },
+  {
+    "P": "ifupdown-ng-wifi",
+    "V": "0.13.0-r0",
+    "A": "aarch64",
+    "L": "ISC",
+    "o": "ifupdown-ng",
+    "c": "2c26ffc5e83fc3bc626f2516235b465e67606bf9"
+  },
+  {
+    "P": "iio-sensor-proxy",
+    "V": "3.9-r2",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "iio-sensor-proxy",
+    "c": "5e69b3dafcf7b7ebab9026c0690b9c2f255b1cd1"
+  },
+  {
+    "P": "iio-sensor-proxy-openrc",
+    "V": "3.9-r2",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "iio-sensor-proxy",
+    "c": "5e69b3dafcf7b7ebab9026c0690b9c2f255b1cd1"
+  },
+  {
+    "P": "iio-sensor-proxy-udev",
+    "V": "3.9-r2",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "iio-sensor-proxy",
+    "c": "5e69b3dafcf7b7ebab9026c0690b9c2f255b1cd1"
+  },
+  {
+    "P": "imagemagick",
+    "V": "7.1.2.32-r0",
+    "A": "aarch64",
+    "L": "ImageMagick",
+    "o": "imagemagick",
+    "c": "e10a8c161a4543dcc40aae91a6136cabdc667644"
+  },
+  {
+    "P": "imagemagick-heic",
+    "V": "7.1.2.32-r0",
+    "A": "aarch64",
+    "L": "ImageMagick",
+    "o": "imagemagick",
+    "c": "e10a8c161a4543dcc40aae91a6136cabdc667644"
+  },
+  {
+    "P": "imagemagick-jp2",
+    "V": "7.1.2.32-r0",
+    "A": "aarch64",
+    "L": "ImageMagick",
+    "o": "imagemagick",
+    "c": "e10a8c161a4543dcc40aae91a6136cabdc667644"
+  },
+  {
+    "P": "imagemagick-jpeg",
+    "V": "7.1.2.32-r0",
+    "A": "aarch64",
+    "L": "ImageMagick",
+    "o": "imagemagick",
+    "c": "e10a8c161a4543dcc40aae91a6136cabdc667644"
+  },
+  {
+    "P": "imagemagick-jxl",
+    "V": "7.1.2.32-r0",
+    "A": "aarch64",
+    "L": "ImageMagick",
+    "o": "imagemagick",
+    "c": "e10a8c161a4543dcc40aae91a6136cabdc667644"
+  },
+  {
+    "P": "imagemagick-libs",
+    "V": "7.1.2.32-r0",
+    "A": "aarch64",
+    "L": "ImageMagick",
+    "o": "imagemagick",
+    "c": "e10a8c161a4543dcc40aae91a6136cabdc667644"
+  },
+  {
+    "P": "imagemagick-openexr",
+    "V": "7.1.2.32-r0",
+    "A": "aarch64",
+    "L": "ImageMagick",
+    "o": "imagemagick",
+    "c": "e10a8c161a4543dcc40aae91a6136cabdc667644"
+  },
+  {
+    "P": "imagemagick-pango",
+    "V": "7.1.2.32-r0",
+    "A": "aarch64",
+    "L": "ImageMagick",
+    "o": "imagemagick",
+    "c": "e10a8c161a4543dcc40aae91a6136cabdc667644"
+  },
+  {
+    "P": "imagemagick-raw",
+    "V": "7.1.2.32-r0",
+    "A": "aarch64",
+    "L": "ImageMagick",
+    "o": "imagemagick",
+    "c": "e10a8c161a4543dcc40aae91a6136cabdc667644"
+  },
+  {
+    "P": "imagemagick-svg",
+    "V": "7.1.2.32-r0",
+    "A": "aarch64",
+    "L": "ImageMagick",
+    "o": "imagemagick",
+    "c": "e10a8c161a4543dcc40aae91a6136cabdc667644"
+  },
+  {
+    "P": "imagemagick-tiff",
+    "V": "7.1.2.32-r0",
+    "A": "aarch64",
+    "L": "ImageMagick",
+    "o": "imagemagick",
+    "c": "e10a8c161a4543dcc40aae91a6136cabdc667644"
+  },
+  {
+    "P": "imagemagick-webp",
+    "V": "7.1.2.32-r0",
+    "A": "aarch64",
+    "L": "ImageMagick",
+    "o": "imagemagick",
+    "c": "e10a8c161a4543dcc40aae91a6136cabdc667644"
+  },
+  {
+    "P": "imath",
+    "V": "3.2.2-r1",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "imath",
+    "c": "ba80e98e4c18b25ca0d02269b2248abc4f039a10"
+  },
+  {
+    "P": "inih",
+    "V": "62-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "inih",
+    "c": "f62350e037a6e8cc2e4f21bd918862859b6169fd"
+  },
+  {
+    "P": "iproute2",
+    "V": "7.2.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "iproute2",
+    "c": "c33f3f8b7fee9474029fe4a3fa32eec54f11872e"
+  },
+  {
+    "P": "iproute2-minimal",
+    "V": "7.2.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "iproute2",
+    "c": "c33f3f8b7fee9474029fe4a3fa32eec54f11872e"
+  },
+  {
+    "P": "iproute2-ss",
+    "V": "7.2.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "iproute2",
+    "c": "c33f3f8b7fee9474029fe4a3fa32eec54f11872e"
+  },
+  {
+    "P": "iproute2-tc",
+    "V": "7.2.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "iproute2",
+    "c": "c33f3f8b7fee9474029fe4a3fa32eec54f11872e"
+  },
+  {
+    "P": "iskey",
+    "V": "3.6.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "buffybox",
+    "c": "-dirty"
+  },
+  {
+    "P": "iso-codes",
+    "V": "4.20.1-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "iso-codes",
+    "c": "3a49dfeacdd77c88349f55632e5f14195bd16cd5"
+  },
+  {
+    "P": "iw",
+    "V": "6.17-r0",
+    "A": "aarch64",
+    "L": "ISC",
+    "o": "iw",
+    "c": "805a627451de3746c0985ed7db52295306e2c895"
+  },
+  {
+    "P": "jansson",
+    "V": "2.15.0-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "jansson",
+    "c": "88919740865a31680e7f1c4cb568dfd7a87e9f08"
+  },
+  {
+    "P": "json-c",
+    "V": "0.19-r1",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "json-c",
+    "c": "1db62b9c8587ddc66a5d404ebc4ddb139f161416"
+  },
+  {
+    "P": "json-glib",
+    "V": "1.10.8-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "json-glib",
+    "c": "c27b0a1e0868ac5ee7c5748fb05c911853745f49"
+  },
+  {
+    "P": "keyutils-libs",
+    "V": "1.6.3-r4",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.0-or-later",
+    "o": "keyutils",
+    "c": "6bba4efe8c1909c6d5021ce2a30d133311d6688d"
+  },
+  {
+    "P": "kmod",
+    "V": "34.2-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "kmod",
+    "c": "1997195d08a4d0e04899714802276d89d1ad4cb2"
+  },
+  {
+    "P": "kmod-libs",
+    "V": "34.2-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "kmod",
+    "c": "1997195d08a4d0e04899714802276d89d1ad4cb2"
+  },
+  {
+    "P": "krb5-conf",
+    "V": "1.0-r2",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "krb5-conf",
+    "c": "4a46b2cb955e25fd6d6f913794d35bc6d876aea9"
+  },
+  {
+    "P": "krb5-libs",
+    "V": "1.22.2-r1",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "krb5",
+    "c": "92bc4f0d36aa5307e819fb57167fc19952cf515f"
+  },
+  {
+    "P": "lame-libs",
+    "V": "3.100-r5",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "lame",
+    "c": "ffd76e0bae9921b604c4d3fab6e236e6c7b4039a"
+  },
+  {
+    "P": "lcms2",
+    "V": "2.19.1-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "lcms2",
+    "c": "6db5bb1893bd91f06a208da1bc797b9218cc4eaa"
+  },
+  {
+    "P": "ldb",
+    "V": "4.23.10-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND LGPL-3.0-or-later",
+    "o": "samba",
+    "c": "6b9580d1dcbd1ea5b9fd23eadbc7fbebb2fbd44c"
+  },
+  {
+    "P": "libaccountsservice",
+    "V": "26.27.3-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "accountsservice",
+    "c": "dc37db8d1c7fa1f3513ce7db5d2802d325d16bf3"
+  },
+  {
+    "P": "libadwaita",
+    "V": "1.10.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libadwaita",
+    "c": "f16f65f70b820a87a4597e886952f341af8ef0b8"
+  },
+  {
+    "P": "libapk",
+    "V": "3.0.8-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "apk-tools",
+    "c": "31eb9b7d150e197c3a16f1d7a11dc829016a0fc7"
+  },
+  {
+    "P": "libarchive",
+    "V": "3.8.9-r0",
+    "A": "aarch64",
+    "L": "BSD-2-Clause AND BSD-3-Clause AND Public-Domain",
+    "o": "libarchive",
+    "c": "9d88179022a5907f0edf86f9c82b4c9222030492"
+  },
+  {
+    "P": "libass",
+    "V": "0.17.5-r0",
+    "A": "aarch64",
+    "L": "ISC",
+    "o": "libass",
+    "c": "98925f4a4571b0c9d27d8cedb7c97f046e4560ca"
+  },
+  {
+    "P": "libassuan",
+    "V": "3.0.2-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libassuan",
+    "c": "dc3fc2d94931a406ff0810e5fb276e289d771d99"
+  },
+  {
+    "P": "libasyncns",
+    "V": "0.8-r5",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "libasyncns",
+    "c": "a9e2a2dc46f377eb25884f7fea9834492de7f518"
+  },
+  {
+    "P": "libatasmart",
+    "V": "0.19-r4",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libatasmart",
+    "c": "66c5c73000ac3bcb005e252f9dcc7cd840847edc"
+  },
+  {
+    "P": "libatk-1.0",
+    "V": "2.62.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "at-spi2-core",
+    "c": "409085f774ec72def56cc88a4ed52a892d923de4"
+  },
+  {
+    "P": "libatk-bridge-2.0",
+    "V": "2.62.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "at-spi2-core",
+    "c": "409085f774ec72def56cc88a4ed52a892d923de4"
+  },
+  {
+    "P": "libauth-samba",
+    "V": "4.23.10-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND LGPL-3.0-or-later",
+    "o": "samba",
+    "c": "6b9580d1dcbd1ea5b9fd23eadbc7fbebb2fbd44c"
+  },
+  {
+    "P": "libavc1394",
+    "V": "0.5.4-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later LGPL-2.0-or-later",
+    "o": "libavc1394",
+    "c": "6d3f459f1e2a47230cb5fb845d196b48fbbe1ae5"
+  },
+  {
+    "P": "libavif",
+    "V": "1.4.2-r0",
+    "A": "aarch64",
+    "L": "BSD-2-Clause",
+    "o": "libavif",
+    "c": "dfe531eb544bfb938fcd094cfb7e8e63758a7ba1"
+  },
+  {
+    "P": "libblkid",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "libblockdev",
+    "V": "3.4.0-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libblockdev",
+    "c": "bb42d5c65a7e3b0312d76dce2babe65cf664845b"
+  },
+  {
+    "P": "libbpf",
+    "V": "1.8.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-only OR BSD-2-Clause",
+    "o": "libbpf",
+    "c": "adc0f75478561a818c7e0d1b79002a7acedf2d2b"
+  },
+  {
+    "P": "libbsd",
+    "V": "0.12.2-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "libbsd",
+    "c": "02365e78d654a7beb23fd35d7d69f4a649009ede"
+  },
+  {
+    "P": "libbytesize",
+    "V": "2.12-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libbytesize",
+    "c": "7e317a56dcb73220146364471fd24ab4749d82c5"
+  },
+  {
+    "P": "libbz2",
+    "V": "1.0.8-r6",
+    "A": "aarch64",
+    "L": "bzip2-1.0.6",
+    "o": "bzip2",
+    "c": "33283848034c9885d984c8e8697c645c57324938"
+  },
+  {
+    "P": "libcamera",
+    "V": "99990.7.2-r15",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later AND GPL-2.0-or-later",
+    "o": "libcamera"
+  },
+  {
+    "P": "libcamera-gstreamer",
+    "V": "99990.7.2-r15",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later AND GPL-2.0-or-later",
+    "o": "libcamera"
+  },
+  {
+    "P": "libcamera-ipa",
+    "V": "99990.7.2-r15",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later AND GPL-2.0-or-later",
+    "o": "libcamera"
+  },
+  {
+    "P": "libcamera-tools",
+    "V": "99990.7.2-r15",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later AND GPL-2.0-or-later",
+    "o": "libcamera"
+  },
+  {
+    "P": "libcamera-v4l2",
+    "V": "99990.7.2-r15",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later AND GPL-2.0-or-later",
+    "o": "libcamera"
+  },
+  {
+    "P": "libcanberra",
+    "V": "0.30-r12",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libcanberra",
+    "c": "bbbd9f6db61180d55bdd725c97b7cd15f3efb202"
+  },
+  {
+    "P": "libcanberra-gstreamer",
+    "V": "0.30-r12",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libcanberra",
+    "c": "bbbd9f6db61180d55bdd725c97b7cd15f3efb202"
+  },
+  {
+    "P": "libcanberra-gtk3",
+    "V": "0.30-r12",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libcanberra",
+    "c": "bbbd9f6db61180d55bdd725c97b7cd15f3efb202"
+  },
+  {
+    "P": "libcanberra-pulse",
+    "V": "0.30-r12",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libcanberra",
+    "c": "bbbd9f6db61180d55bdd725c97b7cd15f3efb202"
+  },
+  {
+    "P": "libcap-ng",
+    "V": "0.9.6-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "libcap-ng",
+    "c": "2cb8a6d57bd7fccea2f4f3c1d07525db10830122"
+  },
+  {
+    "P": "libcap2",
+    "V": "2.78-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause OR GPL-2.0-only",
+    "o": "libcap",
+    "c": "0c35848136c4c16a1b1672cb812efa88fffef1c2"
+  },
+  {
+    "P": "libcmatrix",
+    "V": "0.0.4-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libcmatrix",
+    "c": "e78f12fcaa0b36743b03d4c6f8ad1833dff264e0"
+  },
+  {
+    "P": "libcolord",
+    "V": "1.4.8-r4",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "colord",
+    "c": "a7c11fb75debe853e13fc2f6599506a001365611"
+  },
+  {
+    "P": "libcom_err",
+    "V": "1.47.4-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT",
+    "o": "e2fsprogs",
+    "c": "8683a6972cb245fbbdb535dad6435a9930bb9374"
+  },
+  {
+    "P": "libconfig",
+    "V": "1.8.2-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libconfig",
+    "c": "94e5bc1d41cf1aef500ad7c70d60ade22ea67e57"
+  },
+  {
+    "P": "libcrypto3",
+    "V": "3.5.9-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "openssl",
+    "c": "5ebc3527f96ca84caf382abd7f37d4009110e57d"
+  },
+  {
+    "P": "libcurl",
+    "V": "8.22.0-r0",
+    "A": "aarch64",
+    "L": "curl",
+    "o": "curl",
+    "c": "11e7d92d27e227ff80704b54df382652e4607db1"
+  },
+  {
+    "P": "libdaemon",
+    "V": "0.14-r6",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libdaemon",
+    "c": "f8d62aa6b1bf91ade408013dde5995156561903c"
+  },
+  {
+    "P": "libdav1d",
+    "V": "1.5.4-r0",
+    "A": "aarch64",
+    "L": "BSD-2-Clause",
+    "o": "dav1d",
+    "c": "e8dcb985e21542fd1a0a1e2db71cea4d747e5797"
+  },
+  {
+    "P": "libdbusmenu-glib",
+    "V": "16.04.0-r6",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND LGPL-2.1-or-later AND LGPL-3.0-or-later",
+    "o": "libdbusmenu-glib",
+    "c": "7ed38cb113df28c75332dbc9a1aea1ade3dde937"
+  },
+  {
+    "P": "libdbusmenu-gtk3",
+    "V": "16.04.0-r6",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND LGPL-2.1-or-later AND LGPL-3.0-or-later",
+    "o": "libdbusmenu-glib",
+    "c": "7ed38cb113df28c75332dbc9a1aea1ade3dde937"
+  },
+  {
+    "P": "libdc1394",
+    "V": "2.2.7-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libdc1394",
+    "c": "d8e5a6a7e53d6bc49239a4f84dd214681765b7bd"
+  },
+  {
+    "P": "libde265",
+    "V": "1.1.2-r0",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later",
+    "o": "libde265",
+    "c": "19b7588c43b5539b082ae7eda0f94264da09f23b"
+  },
+  {
+    "P": "libdeflate",
+    "V": "1.26-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libdeflate",
+    "c": "81da04c1ffef0664ac58fd66d9cc57af9d94b8e4"
+  },
+  {
+    "P": "libdisplay-info",
+    "V": "0.3.0-r1",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libdisplay-info",
+    "c": "219800e054ef6c497bdb924daec7765222bc2b83"
+  },
+  {
+    "P": "libdng",
+    "V": "0.2.2-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libdng",
+    "c": "cc478c365c460c7c0c089b88bdd3fdf996eeff9f"
+  },
+  {
+    "P": "libdrm",
+    "V": "2.4.134-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libdrm",
+    "c": "2015800769b781bef45917b668d10bffe2ac538f"
+  },
+  {
+    "P": "libdv",
+    "V": "1.0.0-r8",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "libdv",
+    "c": "98b958d3758ad4724ac66b960025c65c154ac101"
+  },
+  {
+    "P": "libdvdcss",
+    "V": "1.4.3-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "libdvdcss",
+    "c": "f99358e1fc5bfa1060ceed2e736b132a7b586ca6"
+  },
+  {
+    "P": "libdvdnav",
+    "V": "6.1.1-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "libdvdnav",
+    "c": "33283848034c9885d984c8e8697c645c57324938"
+  },
+  {
+    "P": "libdvdread",
+    "V": "6.1.3-r2",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "libdvdread",
+    "c": "33283848034c9885d984c8e8697c645c57324938"
+  },
+  {
+    "P": "libdw",
+    "V": "0.195-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND ( GPL-2.0-or-later OR LGPL-3.0-or-later )",
+    "o": "elfutils",
+    "c": "8f13294206888f3dd44ed74a8eb3dd9934499e81"
+  },
+  {
+    "P": "libeconf",
+    "V": "0.8.4-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libeconf",
+    "c": "96066c3b6d2992dd2b72db6492c4e65d7f17520f"
+  },
+  {
+    "P": "libedit",
+    "V": "20260508.3.1-r1",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "libedit",
+    "c": "7c805161e588c028cdee3f19f500849fb2c75d42"
+  },
+  {
+    "P": "libelf",
+    "V": "0.195-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND ( GPL-2.0-or-later OR LGPL-3.0-or-later )",
+    "o": "elfutils",
+    "c": "8f13294206888f3dd44ed74a8eb3dd9934499e81"
+  },
+  {
+    "P": "libelogind",
+    "V": "255.24-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later LGPL-2.1-or-later",
+    "o": "elogind",
+    "c": "f7e4c2c1ed47d57461b9cb50cd11cc2bc8168ad3"
+  },
+  {
+    "P": "libepoxy",
+    "V": "1.5.10-r1",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libepoxy",
+    "c": "84a227baf001b6e0208e3352b294e4d7a40e93de"
+  },
+  {
+    "P": "libevdev",
+    "V": "1.13.6-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libevdev",
+    "c": "2af4dd0082956420a61fe680bb3da04034e67e34"
+  },
+  {
+    "P": "libevent",
+    "V": "2.1.13-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "libevent",
+    "c": "a84430aef244db9c64c24f3c048f822c4b86ffe0"
+  },
+  {
+    "P": "libexif",
+    "V": "0.6.26-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "libexif",
+    "c": "a23b258858b29698b59c0f7b09cef0df1f8345dc"
+  },
+  {
+    "P": "libexpat",
+    "V": "2.9.0-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "expat",
+    "c": "46440e4654dc1e4e7d3a69b8a0a9e22fdeda4a88"
+  },
+  {
+    "P": "libfdisk",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "libffi",
+    "V": "3.8.0-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libffi",
+    "c": "58a77443f37614ab608c580baf2b7f898184bec9"
+  },
+  {
+    "P": "libflac",
+    "V": "1.5.0-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause AND GPL-2.0-or-later",
+    "o": "flac",
+    "c": "b96181e1c32041ce0f98aeee1cf3986334ec64f0"
+  },
+  {
+    "P": "libfontenc",
+    "V": "1.1.9-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libfontenc",
+    "c": "9667f1121e207bb3819d91ab6734375f7698e5a7"
+  },
+  {
+    "P": "libformw",
+    "V": "6.6_p20260822-r0",
+    "A": "aarch64",
+    "L": "X11",
+    "o": "ncurses",
+    "c": "6e2a3aef9dfb4a7d82e29b9418cf7d3a68835b52"
+  },
+  {
+    "P": "libfreeaptx",
+    "V": "0.2.2-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libfreeaptx",
+    "c": "dda0b5a100ff8cb4bd50d64de0fc75157b33ca48"
+  },
+  {
+    "P": "libfyaml",
+    "V": "0.9.6-r1",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libfyaml",
+    "c": "9c1e81401f40f590b4665527c060fcd3bd4d3780"
+  },
+  {
+    "P": "libgcc",
+    "V": "15.2.0-r9",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "gcc",
+    "c": "21530a8b7b00b34c648a6b3744d461f32203a885"
+  },
+  {
+    "P": "libgcrypt",
+    "V": "1.12.4-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later AND GPL-2.0-or-later",
+    "o": "libgcrypt",
+    "c": "65dfaa1a9014cacb629b57463bee2256f6df4003"
+  },
+  {
+    "P": "libgee",
+    "V": "0.20.8-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libgee",
+    "c": "c97799aa548f601eb43cfd276ba52f1a9da85d48"
+  },
+  {
+    "P": "libglycin",
+    "V": "2.2.1-r0",
+    "A": "aarch64",
+    "L": "MPL-2.0 OR LGPL-2.0-or-later",
+    "o": "libglycin",
+    "c": "981a10b7c2520fb92c09bbdcfcfa5820c9910cf5"
+  },
+  {
+    "P": "libglycin-gtk4",
+    "V": "2.2.1-r0",
+    "A": "aarch64",
+    "L": "MPL-2.0 OR LGPL-2.0-or-later",
+    "o": "libglycin-gtk4",
+    "c": "361deba1630139c45852cdffa278f38f29f25e8e"
+  },
+  {
+    "P": "libgnome-bg-4",
+    "V": "51.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "gnome-desktop",
+    "c": "ce2b54c8142d354479387f50cd23c3f0dfbb50c5"
+  },
+  {
+    "P": "libgnome-desktop-3",
+    "V": "51.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "gnome-desktop",
+    "c": "ce2b54c8142d354479387f50cd23c3f0dfbb50c5"
+  },
+  {
+    "P": "libgnome-desktop-4",
+    "V": "51.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "gnome-desktop",
+    "c": "ce2b54c8142d354479387f50cd23c3f0dfbb50c5"
+  },
+  {
+    "P": "libgnome-qr-4",
+    "V": "51.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "gnome-desktop",
+    "c": "ce2b54c8142d354479387f50cd23c3f0dfbb50c5"
+  },
+  {
+    "P": "libgomp",
+    "V": "15.2.0-r9",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "gcc",
+    "c": "21530a8b7b00b34c648a6b3744d461f32203a885"
+  },
+  {
+    "P": "libgpg-error",
+    "V": "1.61-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "libgpg-error",
+    "c": "8caf2102b9e8f0d9189cc11ad1069060d8a10f53"
+  },
+  {
+    "P": "libgsystemservice",
+    "V": "0.3.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libgsystemservice",
+    "c": "2c3ea5c7a222b959e6249a8d8c3040ad9e52793d"
+  },
+  {
+    "P": "libgtop",
+    "V": "2.41.3-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libgtop",
+    "c": "6313b174fa1e738932aebfc3caea2a24b0a5970e"
+  },
+  {
+    "P": "libgudev",
+    "V": "238-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libgudev",
+    "c": "c97799aa548f601eb43cfd276ba52f1a9da85d48"
+  },
+  {
+    "P": "libgusb",
+    "V": "0.4.9-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libgusb",
+    "c": "485a588713bef3f5766842121aba78282220b01f"
+  },
+  {
+    "P": "libgweather4",
+    "V": "4.6.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libgweather4",
+    "c": "cde6d7ca31cc8f68c3c04a9a1088e7b9db021cbe"
+  },
+  {
+    "P": "libhandy1",
+    "V": "1.8.3-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "libhandy1",
+    "c": "47ee2076d35f6004fbbb2bb22f100c534c53287a"
+  },
+  {
+    "P": "libheif",
+    "V": "1.23.4-r1",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later",
+    "o": "libheif",
+    "c": "1bd51bf4c3db2920493f847ccb268c0cb875fcfe"
+  },
+  {
+    "P": "libheif-aom",
+    "V": "1.23.4-r1",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later",
+    "o": "libheif",
+    "c": "1bd51bf4c3db2920493f847ccb268c0cb875fcfe"
+  },
+  {
+    "P": "libheif-dav1d",
+    "V": "1.23.4-r1",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later",
+    "o": "libheif",
+    "c": "1bd51bf4c3db2920493f847ccb268c0cb875fcfe"
+  },
+  {
+    "P": "libheif-ffmpeg",
+    "V": "1.23.4-r1",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later",
+    "o": "libheif",
+    "c": "1bd51bf4c3db2920493f847ccb268c0cb875fcfe"
+  },
+  {
+    "P": "libheif-jpeg",
+    "V": "1.23.4-r1",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later",
+    "o": "libheif",
+    "c": "1bd51bf4c3db2920493f847ccb268c0cb875fcfe"
+  },
+  {
+    "P": "libheif-libde265",
+    "V": "1.23.4-r1",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later",
+    "o": "libheif",
+    "c": "1bd51bf4c3db2920493f847ccb268c0cb875fcfe"
+  },
+  {
+    "P": "libheif-openh264",
+    "V": "1.23.4-r1",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later",
+    "o": "libheif",
+    "c": "1bd51bf4c3db2920493f847ccb268c0cb875fcfe"
+  },
+  {
+    "P": "libheif-openjpeg",
+    "V": "1.23.4-r1",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later",
+    "o": "libheif",
+    "c": "1bd51bf4c3db2920493f847ccb268c0cb875fcfe"
+  },
+  {
+    "P": "libheif-rav1e",
+    "V": "1.23.4-r1",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later",
+    "o": "libheif",
+    "c": "1bd51bf4c3db2920493f847ccb268c0cb875fcfe"
+  },
+  {
+    "P": "libheif-svtenc",
+    "V": "1.23.4-r1",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later",
+    "o": "libheif",
+    "c": "1bd51bf4c3db2920493f847ccb268c0cb875fcfe"
+  },
+  {
+    "P": "libheif-x264",
+    "V": "1.23.4-r1",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later",
+    "o": "libheif",
+    "c": "1bd51bf4c3db2920493f847ccb268c0cb875fcfe"
+  },
+  {
+    "P": "libheif-x265",
+    "V": "1.23.4-r1",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later",
+    "o": "libheif",
+    "c": "1bd51bf4c3db2920493f847ccb268c0cb875fcfe"
+  },
+  {
+    "P": "libhunspell",
+    "V": "1.7.3-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later OR LGPL-2.1-or-later OR MPL-1.1",
+    "o": "hunspell",
+    "c": "88fe9d7d1000629d4fe6548ca4e1bfea2e333218"
+  },
+  {
+    "P": "libhwy",
+    "V": "1.4.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "highway",
+    "c": "e2b6dd5ddd12eca03ed6a648e27afc481ef67827"
+  },
+  {
+    "P": "libical",
+    "V": "3.0.20-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-only OR MPL-2.0",
+    "o": "libical",
+    "c": "6d66ec17fd088cad0ccb815ed1a6c748e0e45ab3"
+  },
+  {
+    "P": "libice",
+    "V": "1.1.2-r0",
+    "A": "aarch64",
+    "L": "X11",
+    "o": "libice",
+    "c": "d4941e833167c30aa1172e6d8420d084698254ab"
+  },
+  {
+    "P": "libidn",
+    "V": "1.44-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libidn",
+    "c": "e8391360c1f556b83c145bcc64dd379cafcad2b6"
+  },
+  {
+    "P": "libidn2",
+    "V": "2.3.8-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+    "o": "libidn2",
+    "c": "8240e09aa2fdd8f9979b2016be082273965aff0c"
+  },
+  {
+    "P": "libiec61883",
+    "V": "1.2.0-r4",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libiec61883",
+    "c": "1e8a1d4b21c2b5fdfba2d16a82a3d47dc8839ede"
+  },
+  {
+    "P": "libimagequant",
+    "V": "4.4.1-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "libimagequant",
+    "c": "d135cc613d84479f9e65c28210f7ea8b2a1d0764"
+  },
+  {
+    "P": "libinput-libs",
+    "V": "1.32.0-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libinput",
+    "c": "465ef3d8307203fa3762b0871478ce2d702937a4"
+  },
+  {
+    "P": "libinput-udev",
+    "V": "1.32.0-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libinput",
+    "c": "465ef3d8307203fa3762b0871478ce2d702937a4"
+  },
+  {
+    "P": "libintl",
+    "V": "1.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "gettext",
+    "c": "a0b12dbf67fb047e79a1b76c6dfe6f2904d0d391"
+  },
+  {
+    "P": "libjpeg-turbo",
+    "V": "3.1.3-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause AND IJG AND Zlib",
+    "o": "libjpeg-turbo",
+    "c": "5fe6bebf850fc964a8525c81548397c39cb6f7cd"
+  },
+  {
+    "P": "libjxl",
+    "V": "0.11.2-r2",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "libjxl",
+    "c": "4add2db19ac1b706cfec4bd31077dc5dc23c97b7"
+  },
+  {
+    "P": "libksba",
+    "V": "1.7.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-3.0-only AND GPL-2.0-only AND GPL-3.0-only",
+    "o": "libksba",
+    "c": "a753c0e07020a12107aaf290e8e9b02e149f6666"
+  },
+  {
+    "P": "liblastlog2",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "BSD-2-Clause",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "libldac",
+    "V": "2.0.2.3-r1",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "libldac",
+    "c": "6757220ef0ecd071787927f781614b3dde692633"
+  },
+  {
+    "P": "libldap",
+    "V": "2.6.15-r0",
+    "A": "aarch64",
+    "L": "OLDAP-2.8",
+    "o": "openldap",
+    "c": "6ad358ae099e92d5c59fb8463b6b5e0ae58fd70f"
+  },
+  {
+    "P": "libltdl",
+    "V": "2.6.2-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later AND GPL-2.0-or-later",
+    "o": "libtool",
+    "c": "84ee0e3d5b19f4cee49036274ac3882bbe5afdb8"
+  },
+  {
+    "P": "libmagic",
+    "V": "5.48-r0",
+    "A": "aarch64",
+    "L": "BSD-2-Clause",
+    "o": "file",
+    "c": "34a8c432746095fabf79908e406045a9448a244d"
+  },
+  {
+    "P": "libmanette",
+    "V": "0.2.13-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libmanette",
+    "c": "cb428e0ffc49e5749bad660fa0a6b8a7637bcff4"
+  },
+  {
+    "P": "libmbim",
+    "V": "1.34.0-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "libmbim",
+    "c": "fe23dc0458c5ddb03514e2cb75f3c5e8fa919115"
+  },
+  {
+    "P": "libmbim-udev",
+    "V": "1.34.0-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "libmbim",
+    "c": "fe23dc0458c5ddb03514e2cb75f3c5e8fa919115"
+  },
+  {
+    "P": "libmd",
+    "V": "1.3.0-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain",
+    "o": "libmd",
+    "c": "b9f624c71024df38a4cd84bc84b51fc3498f15a7"
+  },
+  {
+    "P": "libmegapixels",
+    "V": "0.2.3-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "libmegapixels",
+    "c": "f65c59f53023dc6364c0cabd2ab61294541a94da"
+  },
+  {
+    "P": "libmenuw",
+    "V": "6.6_p20260822-r0",
+    "A": "aarch64",
+    "L": "X11",
+    "o": "ncurses",
+    "c": "6e2a3aef9dfb4a7d82e29b9418cf7d3a68835b52"
+  },
+  {
+    "P": "libmm-glib",
+    "V": "1.25.95_git20261005-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "modemmanager",
+    "c": "50e299499516a04bde89c5566034ccfec6e1063a"
+  },
+  {
+    "P": "libmnl",
+    "V": "1.0.5-r2",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libmnl",
+    "c": "33283848034c9885d984c8e8697c645c57324938"
+  },
+  {
+    "P": "libmodplug",
+    "V": "0.8.9.0-r3",
+    "A": "aarch64",
+    "L": "custom",
+    "o": "libmodplug",
+    "c": "33283848034c9885d984c8e8697c645c57324938"
+  },
+  {
+    "P": "libmount",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "libncursesw",
+    "V": "6.6_p20260822-r0",
+    "A": "aarch64",
+    "L": "X11",
+    "o": "ncurses",
+    "c": "6e2a3aef9dfb4a7d82e29b9418cf7d3a68835b52"
+  },
+  {
+    "P": "libndp",
+    "V": "1.9-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libndp",
+    "c": "00406a9c697d88f531962cb63e5343488a959b93"
+  },
+  {
+    "P": "libnftnl",
+    "V": "1.3.2-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "libnftnl",
+    "c": "3f568d5532084c2124867f5ef64ca09d8c473698"
+  },
+  {
+    "P": "libnl3",
+    "V": "3.12.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libnl3",
+    "c": "63678f40f591c3b449786e8a3121645af2a44b22"
+  },
+  {
+    "P": "libnm",
+    "V": "1.58.1-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "networkmanager",
+    "c": "5aa3692c67327edee605b006eb1a4f7ed953d407"
+  },
+  {
+    "P": "libnma-common",
+    "V": "1.10.6-r4",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libnma",
+    "c": "c97799aa548f601eb43cfd276ba52f1a9da85d48"
+  },
+  {
+    "P": "libnma-gtk4",
+    "V": "1.10.6-r4",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libnma",
+    "c": "c97799aa548f601eb43cfd276ba52f1a9da85d48"
+  },
+  {
+    "P": "libnotify",
+    "V": "0.8.8-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libnotify",
+    "c": "25517fad2ccae8578a3adceddc305d9718913ab9"
+  },
+  {
+    "P": "libnvme",
+    "V": "1.16.2-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libnvme",
+    "c": "30ca0fab936cca3f2974c72aca8da1c25e822ad0"
+  },
+  {
+    "P": "libogg",
+    "V": "1.3.6-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "libogg",
+    "c": "c17e8cd839de47006a648ae64294616569946b3f"
+  },
+  {
+    "P": "libomemo",
+    "V": "0.8.1-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libomemo",
+    "c": "f01ffdc75e2d7afd44828e79afddab17921eb0ec"
+  },
+  {
+    "P": "libpanelw",
+    "V": "6.6_p20260822-r0",
+    "A": "aarch64",
+    "L": "X11",
+    "o": "ncurses",
+    "c": "6e2a3aef9dfb4a7d82e29b9418cf7d3a68835b52"
+  },
+  {
+    "P": "libpciaccess",
+    "V": "0.19-r0",
+    "A": "aarch64",
+    "L": "X11",
+    "o": "libpciaccess",
+    "c": "d5de88aad8098d25c1b9e53d4ca5e6ff6c90e234"
+  },
+  {
+    "P": "libpeas2",
+    "V": "2.2.1-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libpeas2",
+    "c": "95500b6fc8aa2e821934f3ab795f445a798f00af"
+  },
+  {
+    "P": "libphonenumber",
+    "V": "9.0.40-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "libphonenumber",
+    "c": "44bb18d96b83eab9348873c49154007debd50e88"
+  },
+  {
+    "P": "libphosh",
+    "V": "0.57.0-r3",
+    "A": "aarch64",
+    "L": "GPL-3.0-only",
+    "o": "phosh",
+    "c": "97dba23dc382440e73c3813c9072a25099fb0d67"
+  },
+  {
+    "P": "libpisp",
+    "V": "1.7.0-r0",
+    "A": "aarch64",
+    "L": "BSD-2-Clause",
+    "o": "libpisp",
+    "c": "71c12409caa35d4c321a6840d20295c4f2d327e3"
+  },
+  {
+    "P": "libpng",
+    "V": "1.6.59-r0",
+    "A": "aarch64",
+    "L": "Libpng",
+    "o": "libpng",
+    "c": "a25817f5080047111598530e33f3589ff819d840"
+  },
+  {
+    "P": "libprotobuf",
+    "V": "31.1-r4",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "protobuf",
+    "c": "5407e14e1b616fe894028950ea7e1722805dbea3"
+  },
+  {
+    "P": "libprotobuf-lite",
+    "V": "31.1-r4",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "protobuf",
+    "c": "5407e14e1b616fe894028950ea7e1722805dbea3"
+  },
+  {
+    "P": "libprotoc",
+    "V": "31.1-r4",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "protobuf",
+    "c": "5407e14e1b616fe894028950ea7e1722805dbea3"
+  },
+  {
+    "P": "libproxy",
+    "V": "0.5.12-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "libproxy",
+    "c": "851c5e6677e09a71066d12f6585699453fd3d245"
+  },
+  {
+    "P": "libpsl",
+    "V": "0.21.5-r3",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libpsl",
+    "c": "398a5aee3025ec8a4d0d761e448dc86ac777fa09"
+  },
+  {
+    "P": "libpulse",
+    "V": "17.0-r7",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "pulseaudio",
+    "c": "e4821ce2dcff6f6918f0c32b3f5d9573887c4c6b"
+  },
+  {
+    "P": "libpulse-mainloop-glib",
+    "V": "17.0-r7",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "pulseaudio",
+    "c": "e4821ce2dcff6f6918f0c32b3f5d9573887c4c6b"
+  },
+  {
+    "P": "libpurple",
+    "V": "2.14.14-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "pidgin",
+    "c": "f4195c4b3e48092fb11a8c117678f7095f351b05"
+  },
+  {
+    "P": "libpwquality",
+    "V": "1.4.5-r6",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "libpwquality",
+    "c": "edcbd2cf71534ecf3230a154da3dad25fcc369ac"
+  },
+  {
+    "P": "libqmi",
+    "V": "1.38.0_git20261005-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "libqmi",
+    "c": "14b8753b0ff769970ffb9113b72f0d48143c1f35"
+  },
+  {
+    "P": "libqrtr-glib",
+    "V": "1.4.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libqrtr-glib",
+    "c": "2e7f17adb91f65d9dd620f699e46d59de744fd93"
+  },
+  {
+    "P": "libraqm",
+    "V": "0.10.2-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libraqm",
+    "c": "d4867318fe06bd2cd7d5953308962cdac00e2d1b"
+  },
+  {
+    "P": "libraw",
+    "V": "0.22.2-r0",
+    "A": "aarch64",
+    "L": "CDDL-1.0 OR LGPL-2.1-only",
+    "o": "libraw",
+    "c": "48bde945b9bd52b7b836f3a87bd7dc0af648e5a3"
+  },
+  {
+    "P": "libraw-tools",
+    "V": "0.22.2-r0",
+    "A": "aarch64",
+    "L": "CDDL-1.0 OR LGPL-2.1-only",
+    "o": "libraw",
+    "c": "48bde945b9bd52b7b836f3a87bd7dc0af648e5a3"
+  },
+  {
+    "P": "libraw1394",
+    "V": "2.1.2-r5",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libraw1394",
+    "c": "33283848034c9885d984c8e8697c645c57324938"
+  },
+  {
+    "P": "librsvg",
+    "V": "2.62.3-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "librsvg",
+    "c": "c760246e855451fa4c2a2d77c1938ce51d9d1c77"
+  },
+  {
+    "P": "librtmp",
+    "V": "2.4_git20190330-r5",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "rtmpdump",
+    "c": "a96a8227c86de32ad8f0c600abcf7d3469a8ff88"
+  },
+  {
+    "P": "libsasl",
+    "V": "2.1.28-r9",
+    "A": "aarch64",
+    "L": "BSD-3-Clause-Attribution AND BSD-4-Clause",
+    "o": "cyrus-sasl",
+    "c": "fac808c0fddf93e8980ec1f55972e6f69b78ba6f"
+  },
+  {
+    "P": "libseat",
+    "V": "0.9.3-r1",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "seatd",
+    "c": "d266f30be9d5c0e2d291e63f6458ce93128864a7"
+  },
+  {
+    "P": "libseccomp",
+    "V": "2.6.1-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libseccomp",
+    "c": "15695e2a02fd2e1905991685342160a313ce1bef"
+  },
+  {
+    "P": "libsecret",
+    "V": "0.21.7-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libsecret",
+    "c": "24404e5284f5f3b629e32591998437c91151c410"
+  },
+  {
+    "P": "libselinux",
+    "V": "3.11-r3",
+    "A": "aarch64",
+    "L": "Public-Domain",
+    "o": "libselinux",
+    "c": "6cf41def0c42067b8b4d76078f4e31059ea843e4"
+  },
+  {
+    "P": "libsharpyuv",
+    "V": "1.6.0-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "libwebp",
+    "c": "af8b48fabd19b69b00f5efe192f461896a38cf74"
+  },
+  {
+    "P": "libshout",
+    "V": "2.4.6-r4",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "libshout",
+    "c": "2bd4bf529a3f2bbf9719a02adc858c3073515291"
+  },
+  {
+    "P": "libsignal-protocol-c",
+    "V": "2.3.3-r3",
+    "A": "aarch64",
+    "L": "GPL-3.0-only",
+    "o": "libsignal-protocol-c",
+    "c": "69b6ff0273d814cb01f9d7a718508c7ac0d9225a"
+  },
+  {
+    "P": "libsm",
+    "V": "1.2.6-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libsm",
+    "c": "4eaa957537767ad0344894ad0e609068b26bf85d"
+  },
+  {
+    "P": "libsmartcols",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "libsmbclient",
+    "V": "4.23.10-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND LGPL-3.0-or-later",
+    "o": "samba",
+    "c": "6b9580d1dcbd1ea5b9fd23eadbc7fbebb2fbd44c"
+  },
+  {
+    "P": "libsndfile",
+    "V": "1.2.2-r3",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libsndfile",
+    "c": "52d4cb10a81c427b0162abdc704c2790ea9a0ccd"
+  },
+  {
+    "P": "libsoup3",
+    "V": "3.6.6-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "libsoup3",
+    "c": "6ac0d65df9dcb0c66d5ba608f73e36586059762e"
+  },
+  {
+    "P": "libsrt",
+    "V": "1.5.5-r0",
+    "A": "aarch64",
+    "L": "MPL-2.0",
+    "o": "libsrt",
+    "c": "eb1450d594343783a9d9fbd86f7a4c9c57c5e708"
+  },
+  {
+    "P": "libsrtp",
+    "V": "2.8.0-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "libsrtp",
+    "c": "c46e805a40afc007dcd34255e48b627830282264"
+  },
+  {
+    "P": "libssc",
+    "V": "0.4.4-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "libssc",
+    "c": "0a3c355c211e84767ca5a4e11964521b0974c2b8"
+  },
+  {
+    "P": "libssc-pyc",
+    "V": "0.4.4-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "libssc",
+    "c": "0a3c355c211e84767ca5a4e11964521b0974c2b8"
+  },
+  {
+    "P": "libssl3",
+    "V": "3.5.9-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "openssl",
+    "c": "5ebc3527f96ca84caf382abd7f37d4009110e57d"
+  },
+  {
+    "P": "libstdc++",
+    "V": "15.2.0-r9",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "gcc",
+    "c": "21530a8b7b00b34c648a6b3744d461f32203a885"
+  },
+  {
+    "P": "libSvtAv1Enc",
+    "V": "4.2.0-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause-Clear",
+    "o": "svt-av1",
+    "c": "4ecf8deb52417a3e0278bc90047c83e7dc360841"
+  },
+  {
+    "P": "libtag",
+    "V": "2.2.1-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-only OR MPL-1.1",
+    "o": "taglib",
+    "c": "7c95d685415bb367508db28c6af781eea79fba4e"
+  },
+  {
+    "P": "libtasn1",
+    "V": "4.21.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libtasn1",
+    "c": "771f180774aa0d9d3783d7f4eb9e3788c615658b"
+  },
+  {
+    "P": "libtheora",
+    "V": "1.2.0-r1",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "libtheora",
+    "c": "5e1b822309fb17cc2ebd46d6fbacb1763acbcdd1"
+  },
+  {
+    "P": "libtirpc-conf",
+    "V": "1.3.5-r1",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "libtirpc",
+    "c": "4519a8c0bafdd843397d13a9146c906ff64a6c2f"
+  },
+  {
+    "P": "libtirpc-nokrb",
+    "V": "1.3.5-r1",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "libtirpc",
+    "c": "4519a8c0bafdd843397d13a9146c906ff64a6c2f"
+  },
+  {
+    "P": "libucontext",
+    "V": "1.5.2-r0",
+    "A": "aarch64",
+    "L": "ISC",
+    "o": "libucontext",
+    "c": "91e8cfebbfc032ebee2ccff6c3e22114c3e495c9"
+  },
+  {
+    "P": "libunibreak",
+    "V": "6.1-r0",
+    "A": "aarch64",
+    "L": "Zlib",
+    "o": "libunibreak",
+    "c": "f54ddf8ffb89d6f6f3fe9f202b5fbf0f4f3623d0"
+  },
+  {
+    "P": "libunistring",
+    "V": "1.4.2-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+    "o": "libunistring",
+    "c": "30d9f19340385b2cd16eaf1cc6a9a8b30c4afe1c"
+  },
+  {
+    "P": "libunwind",
+    "V": "1.8.3-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libunwind",
+    "c": "1789f1e1e73cb18ef6050b7cbb544fc5cfcd65be"
+  },
+  {
+    "P": "libusb",
+    "V": "1.0.30-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libusb",
+    "c": "01432283613d87d80efdd9f78362a4c58c895439"
+  },
+  {
+    "P": "libuuid",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "libuv",
+    "V": "1.52.1-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libuv",
+    "c": "8d19451845edceeab46dad1dbb903e55f5b918d5"
+  },
+  {
+    "P": "libva",
+    "V": "2.24.1-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libva",
+    "c": "81518995b7e3d0626c7ec11bff246b688640c407"
+  },
+  {
+    "P": "libvdpau",
+    "V": "1.5-r4",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libvdpau",
+    "c": "398a5aee3025ec8a4d0d761e448dc86ac777fa09"
+  },
+  {
+    "P": "libverto",
+    "V": "0.3.2-r2",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libverto",
+    "c": "84a227baf001b6e0208e3352b294e4d7a40e93de"
+  },
+  {
+    "P": "libvorbis",
+    "V": "1.3.7-r2",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "libvorbis",
+    "c": "33283848034c9885d984c8e8697c645c57324938"
+  },
+  {
+    "P": "libvpx",
+    "V": "1.17.0-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "libvpx",
+    "c": "22a1e50bed7f8750d27326a20b5084cf4e32d4ce"
+  },
+  {
+    "P": "libwacom",
+    "V": "2.17.0-r2",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libwacom",
+    "c": "03e7a0e1609169945f40e5e3eac797735b033ead"
+  },
+  {
+    "P": "libwacom-udev",
+    "V": "2.17.0-r2",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libwacom",
+    "c": "03e7a0e1609169945f40e5e3eac797735b033ead"
+  },
+  {
+    "P": "libwbclient",
+    "V": "4.23.10-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND LGPL-3.0-or-later",
+    "o": "samba",
+    "c": "6b9580d1dcbd1ea5b9fd23eadbc7fbebb2fbd44c"
+  },
+  {
+    "P": "libwebp",
+    "V": "1.6.0-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "libwebp",
+    "c": "af8b48fabd19b69b00f5efe192f461896a38cf74"
+  },
+  {
+    "P": "libwebpdemux",
+    "V": "1.6.0-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "libwebp",
+    "c": "af8b48fabd19b69b00f5efe192f461896a38cf74"
+  },
+  {
+    "P": "libwebpmux",
+    "V": "1.6.0-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "libwebp",
+    "c": "af8b48fabd19b69b00f5efe192f461896a38cf74"
+  },
+  {
+    "P": "libwoff2common",
+    "V": "1.0.2-r4",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "woff2",
+    "c": "97d9d0b7cf506653c8dfe30846b41ea535d34a4d"
+  },
+  {
+    "P": "libwoff2enc",
+    "V": "1.0.2-r4",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "woff2",
+    "c": "97d9d0b7cf506653c8dfe30846b41ea535d34a4d"
+  },
+  {
+    "P": "libx11",
+    "V": "1.8.13-r0",
+    "A": "aarch64",
+    "L": "X11",
+    "o": "libx11",
+    "c": "f993bc30142d46271ede4a746c1abefaa1a78eee"
+  },
+  {
+    "P": "libxau",
+    "V": "1.0.12-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxau",
+    "c": "c911b00ecb8f42c3281d4be61ce9acb4fe985a14"
+  },
+  {
+    "P": "libxcb",
+    "V": "1.17.0-r2",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxcb",
+    "c": "5e1b822309fb17cc2ebd46d6fbacb1763acbcdd1"
+  },
+  {
+    "P": "libxcomposite",
+    "V": "0.4.7-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxcomposite",
+    "c": "c0827d5370257f42994fa6711c985015efdf9037"
+  },
+  {
+    "P": "libxcursor",
+    "V": "1.2.3-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxcursor",
+    "c": "1d6d12ed6f5cc1fc2e382d0bdc6fc90712745e8a"
+  },
+  {
+    "P": "libxcvt",
+    "V": "0.1.3-r0",
+    "A": "aarch64",
+    "L": "custom",
+    "o": "libxcvt",
+    "c": "68e887cbf59009caf08c641174e4d706c87074d7"
+  },
+  {
+    "P": "libxdamage",
+    "V": "1.1.7-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxdamage",
+    "c": "5ef54777a8564f6c7515d1e0b04883cbd11ffa32"
+  },
+  {
+    "P": "libxdmcp",
+    "V": "1.1.5-r1",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxdmcp",
+    "c": "614e9166706cec427fc3d907b8d981390a42e088"
+  },
+  {
+    "P": "libxext",
+    "V": "1.3.7-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxext",
+    "c": "4ec252fa3e6e8edf16d0d6da3fe6dd39e2263942"
+  },
+  {
+    "P": "libxfixes",
+    "V": "6.0.2-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxfixes",
+    "c": "9d33b3af389f39ad78c80e3274aaf5adbbdb8150"
+  },
+  {
+    "P": "libxfont2",
+    "V": "2.0.8-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxfont2",
+    "c": "9ec05102de0da5c34fde4d53a546e460cb7ff138"
+  },
+  {
+    "P": "libxft",
+    "V": "2.3.9-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxft",
+    "c": "9a4062b0f278b43370faa58195206c5ef94e7899"
+  },
+  {
+    "P": "libxi",
+    "V": "1.8.3-r0",
+    "A": "aarch64",
+    "L": "MIT AND X11",
+    "o": "libxi",
+    "c": "472fb58e237c5ace7489b1073b2758d28658d80d"
+  },
+  {
+    "P": "libxinerama",
+    "V": "1.1.6-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxinerama",
+    "c": "4b83e9a57e623461c4173c3cf261045b7f225b44"
+  },
+  {
+    "P": "libxkbcommon",
+    "V": "1.13.2-r0",
+    "A": "aarch64",
+    "L": "MIT AND MIT-open-group AND HPND AND HPND-sell-variant AND LicenseRef-digital-equipment-corporation",
+    "o": "libxkbcommon",
+    "c": "6ea05d8d07eb6e11dec2147cc1d07b2ab64bf6a0"
+  },
+  {
+    "P": "libxkbcommon-x11",
+    "V": "1.13.2-r0",
+    "A": "aarch64",
+    "L": "MIT AND MIT-open-group AND HPND AND HPND-sell-variant AND LicenseRef-digital-equipment-corporation",
+    "o": "libxkbcommon",
+    "c": "6ea05d8d07eb6e11dec2147cc1d07b2ab64bf6a0"
+  },
+  {
+    "P": "libxkbfile",
+    "V": "1.2.0-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxkbfile",
+    "c": "4caf66685895cb1db7bfdfc9f63c1dbf726712fd"
+  },
+  {
+    "P": "libxml2",
+    "V": "2.13.9-r2",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxml2",
+    "c": "f1bd5b6767a0e7fdda380c95138a1c938eb6e102"
+  },
+  {
+    "P": "libxmlb",
+    "V": "0.3.29-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "libxmlb",
+    "c": "8e911cfdb3f9f7b240c827d20697920806a94be6"
+  },
+  {
+    "P": "libxmu",
+    "V": "1.3.1-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxmu",
+    "c": "6975763371783f76ea45b6a55d224ca72b73d090"
+  },
+  {
+    "P": "libxrandr",
+    "V": "1.5.5-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxrandr",
+    "c": "4a608248a9e09710a60f3d9027f19a14a5971dac"
+  },
+  {
+    "P": "libxrender",
+    "V": "0.9.12-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxrender",
+    "c": "74030d4140b68e8d4d36a357751f156ab31840c2"
+  },
+  {
+    "P": "libxshmfence",
+    "V": "1.3.3-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxshmfence",
+    "c": "92c045b6cdda2c1d423337a68cc814cad86b651a"
+  },
+  {
+    "P": "libxslt",
+    "V": "1.1.43-r3",
+    "A": "aarch64",
+    "L": "X11",
+    "o": "libxslt",
+    "c": "ea6f3799a11813259bf1c5fc2eeae1e1e78fc7df"
+  },
+  {
+    "P": "libxt",
+    "V": "1.3.1-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxt",
+    "c": "60222ebeadec75e483e49194130c6963d0fcbf75"
+  },
+  {
+    "P": "libxtables",
+    "V": "1.8.13-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "iptables",
+    "c": "8848fb97f5ec1aa887b836cf412d88eaabe312b6"
+  },
+  {
+    "P": "libxtst",
+    "V": "1.2.5-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxtst",
+    "c": "f285d63f704f8e1c74e14ca7abceb419383922c9"
+  },
+  {
+    "P": "libxv",
+    "V": "1.0.13-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxv",
+    "c": "9ce32dfd15fa7aa84849ad3f5ec8e8044ac93b07"
+  },
+  {
+    "P": "libxxf86vm",
+    "V": "1.1.7-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "libxxf86vm",
+    "c": "ac89fbb35d37756385378e461847c2b0a61613dd"
+  },
+  {
+    "P": "libxxhash",
+    "V": "0.8.3-r1",
+    "A": "aarch64",
+    "L": "BSD-2-Clause",
+    "o": "xxhash",
+    "c": "3b2e469e223a5cb31932b1eae30c266e26b30148"
+  },
+  {
+    "P": "libyuv",
+    "V": "0.0.1928-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "libyuv",
+    "c": "6d055fa770a2fbbd807ee496c4dc8c69d00fbee4"
+  },
+  {
+    "P": "libzbar",
+    "V": "0.23.93-r2",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "zbar",
+    "c": "f3b3b20c95cbbcaf4f81fd1d083352a541c597fa"
+  },
+  {
+    "P": "linux-pam",
+    "V": "1.7.1-r4",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "linux-pam",
+    "c": "f3734bec196117b7972c32545594f3ab3a53a111"
+  },
+  {
+    "P": "llvm23-libs",
+    "V": "23.1.3-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "llvm23",
+    "c": "f83f6983d187146ddcb3ba0bb49e23b89f988919"
+  },
+  {
+    "P": "lmdb",
+    "V": "0.9.36-r0",
+    "A": "aarch64",
+    "L": "OLDAP-2.8",
+    "o": "lmdb",
+    "c": "481fa09ef85e1716e089fdd1780d45eefa7e4016"
+  },
+  {
+    "P": "logbookd",
+    "V": "0.2.4-r4",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "logbookd",
+    "c": "b0e42422db1610ed7b08699d7c3b6f8a4b833477"
+  },
+  {
+    "P": "logbookd-openrc",
+    "V": "0.2.4-r4",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "logbookd",
+    "c": "b0e42422db1610ed7b08699d7c3b6f8a4b833477"
+  },
+  {
+    "P": "logger",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "BSD-4-Clause-UC",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "losetup",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "lsblk",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "lscpu",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "lua5.4-libs",
+    "V": "5.4.9-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "lua5.4",
+    "c": "afbfdee5c8d567b6d0fc35dc66573ab579f413fb"
+  },
+  {
+    "P": "lz4",
+    "V": "1.10.0-r1",
+    "A": "aarch64",
+    "L": "BSD-2-Clause AND GPL-2.0-or-later",
+    "o": "lz4",
+    "c": "1f16962f34234a77fab0f4651459c4381b4a0cd6"
+  },
+  {
+    "P": "lz4-libs",
+    "V": "1.10.0-r1",
+    "A": "aarch64",
+    "L": "BSD-2-Clause AND GPL-2.0-or-later",
+    "o": "lz4",
+    "c": "1f16962f34234a77fab0f4651459c4381b4a0cd6"
+  },
+  {
+    "P": "lzo",
+    "V": "2.10-r5",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "lzo",
+    "c": "c657633f11b8430e2cfb0dd56b17f555ba305404"
+  },
+  {
+    "P": "malcontent",
+    "V": "0.14.0-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "malcontent",
+    "c": "625840db12ef547f9f48d2c0247c59a7ac54f412"
+  },
+  {
+    "P": "malcontent-libs",
+    "V": "0.14.0-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "malcontent",
+    "c": "625840db12ef547f9f48d2c0247c59a7ac54f412"
+  },
+  {
+    "P": "mcookie",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "Public-Domain",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "mdev-conf",
+    "V": "4.10-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "mdev-conf",
+    "c": "203310a84fe34bc9b8dad2c97cba2f5189303415"
+  },
+  {
+    "P": "megapixels",
+    "V": "2.1.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-only",
+    "o": "megapixels",
+    "c": "a3447eb2568eebcd29e76285c72ae6e6d2dbd40f"
+  },
+  {
+    "P": "merge-usr",
+    "V": "1.0.3_git20260616-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "merge-usr",
+    "c": "6889cd891254600c9d5920f56b584bc1166f2dbc"
+  },
+  {
+    "P": "mesa",
+    "V": "26.2.4-r1",
+    "A": "aarch64",
+    "L": "MIT AND SGI-B-2.0 AND BSL-1.0",
+    "o": "mesa",
+    "c": "2d7942ded48bd1fcf619894d72b88cfa14102cd3"
+  },
+  {
+    "P": "mesa-dri-gallium",
+    "V": "26.2.4-r1",
+    "A": "aarch64",
+    "L": "MIT AND SGI-B-2.0 AND BSL-1.0",
+    "o": "mesa",
+    "c": "2d7942ded48bd1fcf619894d72b88cfa14102cd3"
+  },
+  {
+    "P": "mesa-egl",
+    "V": "26.2.4-r1",
+    "A": "aarch64",
+    "L": "MIT AND SGI-B-2.0 AND BSL-1.0",
+    "o": "mesa",
+    "c": "2d7942ded48bd1fcf619894d72b88cfa14102cd3"
+  },
+  {
+    "P": "mesa-gbm",
+    "V": "26.2.4-r1",
+    "A": "aarch64",
+    "L": "MIT AND SGI-B-2.0 AND BSL-1.0",
+    "o": "mesa",
+    "c": "2d7942ded48bd1fcf619894d72b88cfa14102cd3"
+  },
+  {
+    "P": "mesa-gl",
+    "V": "26.2.4-r1",
+    "A": "aarch64",
+    "L": "MIT AND SGI-B-2.0 AND BSL-1.0",
+    "o": "mesa",
+    "c": "2d7942ded48bd1fcf619894d72b88cfa14102cd3"
+  },
+  {
+    "P": "mesa-gles",
+    "V": "26.2.4-r1",
+    "A": "aarch64",
+    "L": "MIT AND SGI-B-2.0 AND BSL-1.0",
+    "o": "mesa",
+    "c": "2d7942ded48bd1fcf619894d72b88cfa14102cd3"
+  },
+  {
+    "P": "mesa-vulkan-freedreno",
+    "V": "26.2.4-r1",
+    "A": "aarch64",
+    "L": "MIT AND SGI-B-2.0 AND BSL-1.0",
+    "o": "mesa",
+    "c": "2d7942ded48bd1fcf619894d72b88cfa14102cd3"
+  },
+  {
+    "P": "mmsd-tng",
+    "V": "2.6.4-r30",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "mmsd-tng",
+    "c": "fe55ded4176a44754d26ad5c75ab2c840e286564"
+  },
+  {
+    "P": "mmsd-tng-openrc",
+    "V": "2.6.4-r30",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "mmsd-tng",
+    "c": "fe55ded4176a44754d26ad5c75ab2c840e286564"
+  },
+  {
+    "P": "mobile-broadband-provider-info",
+    "V": "20251101-r1",
+    "A": "aarch64",
+    "L": "CC-PDDC",
+    "o": "mobile-broadband-provider-info",
+    "c": "542c1d4b2bdebb381b6017b5045e1c430525fee6"
+  },
+  {
+    "P": "mobile-config-firefox",
+    "V": "5.5.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "mobile-config-firefox",
+    "c": "ec9ab4713bd434efbf60f84c4efb0335583ee042"
+  },
+  {
+    "P": "modemmanager",
+    "V": "1.25.95_git20261005-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "modemmanager"
+  },
+  {
+    "P": "modemmanager-openrc",
+    "V": "1.25.95_git20261005-r1",
+    "A": "noarch",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "modemmanager"
+  },
+  {
+    "P": "modemmanager-udev",
+    "V": "1.25.95_git20261005-r1",
+    "A": "noarch",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "modemmanager"
+  },
+  {
+    "P": "mount",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "mozjs",
+    "V": "140.17.0-r0",
+    "A": "aarch64",
+    "L": "MPL-2.0",
+    "o": "mozjs",
+    "c": "0f1afd751fe28b70383a38be33bc575d7d0e1572"
+  },
+  {
+    "P": "mpdecimal",
+    "V": "4.0.1-r0",
+    "A": "aarch64",
+    "L": "BSD-2-Clause",
+    "o": "mpdecimal",
+    "c": "c0519b85456e9b838e3142e1d233aab0b433b476"
+  },
+  {
+    "P": "mpfr4",
+    "V": "4.2.2-r0",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later",
+    "o": "mpfr4",
+    "c": "5ffc883d3afe2e0c4397fe046b4ca520f31681b9"
+  },
+  {
+    "P": "mpg123-libs",
+    "V": "1.33.7-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-only",
+    "o": "mpg123",
+    "c": "a4df9227a8dc3521460bdfeea72c1c34a588795a"
+  },
+  {
+    "P": "mtdev",
+    "V": "1.1.7-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "mtdev",
+    "c": "e08040e6d605215afce727b42ff584868d0a61df"
+  },
+  {
+    "P": "musl",
+    "V": "1.2.6-r5",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "musl",
+    "c": "d72a964d7f68bb113225a61d9425ba48005a99e0"
+  },
+  {
+    "P": "musl-fts",
+    "V": "1.2.7-r7",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "musl-fts",
+    "c": "4e8cdf57b4b8e4d2ce691447ea0dc2fcf7c4e281"
+  },
+  {
+    "P": "musl-utils",
+    "V": "1.2.6-r5",
+    "A": "aarch64",
+    "L": "MIT AND BSD-2-Clause AND GPL-2.0-or-later",
+    "o": "musl",
+    "c": "d72a964d7f68bb113225a61d9425ba48005a99e0"
+  },
+  {
+    "P": "mutter-schemas",
+    "V": "51.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "mutter",
+    "c": "efd6d12aabbcb946a867aa949b2aa8a807512f83"
+  },
+  {
+    "P": "mxml",
+    "V": "3.3.1-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "mxml",
+    "c": "f3eacdfc95792239ca353e29b48cfe0c0f0a3957"
+  },
+  {
+    "P": "nano",
+    "V": "9.2-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "nano",
+    "c": "18166ced2446c3c4a028b716a0cf40abe9b740b3"
+  },
+  {
+    "P": "ncurses-terminfo-base",
+    "V": "6.6_p20260822-r0",
+    "A": "aarch64",
+    "L": "X11",
+    "o": "ncurses",
+    "c": "6e2a3aef9dfb4a7d82e29b9418cf7d3a68835b52"
+  },
+  {
+    "P": "ndctl-libs",
+    "V": "80-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-only AND LGPL-2.1-only",
+    "o": "ndctl",
+    "c": "02a45ff2fc3864a6bf7749b521e44a13d028e764"
+  },
+  {
+    "P": "neon",
+    "V": "0.36.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "neon",
+    "c": "932473be5945fbbc94d2932d0d9408a142e6aaf7"
+  },
+  {
+    "P": "nettle",
+    "V": "3.10.2-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+    "o": "nettle",
+    "c": "bf898e6d067c1c0ecc0f5ff39c79fc893399acd8"
+  },
+  {
+    "P": "networkmanager",
+    "V": "1.58.1-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "networkmanager",
+    "c": "5aa3692c67327edee605b006eb1a4f7ed953d407"
+  },
+  {
+    "P": "networkmanager-bluetooth",
+    "V": "1.58.1-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "networkmanager",
+    "c": "5aa3692c67327edee605b006eb1a4f7ed953d407"
+  },
+  {
+    "P": "networkmanager-cli",
+    "V": "1.58.1-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "networkmanager",
+    "c": "5aa3692c67327edee605b006eb1a4f7ed953d407"
+  },
+  {
+    "P": "networkmanager-openrc",
+    "V": "1.58.1-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "networkmanager",
+    "c": "5aa3692c67327edee605b006eb1a4f7ed953d407"
+  },
+  {
+    "P": "networkmanager-tui",
+    "V": "1.58.1-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "networkmanager",
+    "c": "5aa3692c67327edee605b006eb1a4f7ed953d407"
+  },
+  {
+    "P": "networkmanager-wifi",
+    "V": "1.58.1-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "networkmanager",
+    "c": "5aa3692c67327edee605b006eb1a4f7ed953d407"
+  },
+  {
+    "P": "networkmanager-wwan",
+    "V": "1.58.1-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "networkmanager",
+    "c": "5aa3692c67327edee605b006eb1a4f7ed953d407"
+  },
+  {
+    "P": "newt",
+    "V": "0.52.25-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.0-only",
+    "o": "newt",
+    "c": "003f2e072d794d33c8234a236e1d5f3fae28fce9"
+  },
+  {
+    "P": "nftables",
+    "V": "1.1.7-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "nftables",
+    "c": "201b2e1d027107008e20e9beb2a4b3e0769018fc"
+  },
+  {
+    "P": "nftables-openrc",
+    "V": "1.1.7-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "nftables",
+    "c": "201b2e1d027107008e20e9beb2a4b3e0769018fc"
+  },
+  {
+    "P": "nghttp2-libs",
+    "V": "1.70.0-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "nghttp2",
+    "c": "9e30efb76c55a806e089d65ec5da2ebf062ef9c8"
+  },
+  {
+    "P": "npth",
+    "V": "1.8-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "npth",
+    "c": "bf86ff2a6bc3bc18850fada852dc3653434f2d41"
+  },
+  {
+    "P": "nspr",
+    "V": "4.38.2-r0",
+    "A": "aarch64",
+    "L": "MPL-2.0",
+    "o": "nspr",
+    "c": "4e10628e0ece580cd8f88bec18b55ddbd0be249a"
+  },
+  {
+    "P": "nss",
+    "V": "3.130-r0",
+    "A": "aarch64",
+    "L": "MPL-2.0",
+    "o": "nss",
+    "c": "3c2121ab76fc235d0cd0a374863635a6eb2d874a"
+  },
+  {
+    "P": "numactl",
+    "V": "2.0.19-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-only",
+    "o": "numactl",
+    "c": "ac972e48bfad3673dd72e92890f04ffd879215be"
+  },
+  {
+    "P": "obex-capabilities",
+    "V": "0.2.1-r9",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "obex-capabilities",
+    "c": "f6bc0a8dbcfdee6970ab771e52841024de70a0e3"
+  },
+  {
+    "P": "obex-capabilities-pyc",
+    "V": "0.2.1-r9",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "obex-capabilities",
+    "c": "f6bc0a8dbcfdee6970ab771e52841024de70a0e3"
+  },
+  {
+    "P": "obexd-enhanced",
+    "V": "5.87-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "obexd-enhanced",
+    "c": "97dba23dc382440e73c3813c9072a25099fb0d67"
+  },
+  {
+    "P": "olm",
+    "V": "3.2.16-r2",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "olm",
+    "c": "82cf7682a505a2b17c2f0647f6dd05352286c842"
+  },
+  {
+    "P": "onetbb",
+    "V": "2023.1.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "onetbb",
+    "c": "920ebaa5e63631b4a810bd2ea7535a85b9a8320b"
+  },
+  {
+    "P": "openal-soft-libs",
+    "V": "1.25.2-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "openal-soft",
+    "c": "4d13e391dec1c8baee89c7f4692bfc4d9cfa08f1"
+  },
+  {
+    "P": "opencore-amr",
+    "V": "0.1.6-r1",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "opencore-amr",
+    "c": "2477b2996cfc5d8908d04db97bf2cd876da39e22"
+  },
+  {
+    "P": "openexr-libiex",
+    "V": "3.4.15-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "openexr",
+    "c": "24f2653806951fc83249f1b67dd8d869cf263cb8"
+  },
+  {
+    "P": "openexr-libilmthread",
+    "V": "3.4.15-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "openexr",
+    "c": "24f2653806951fc83249f1b67dd8d869cf263cb8"
+  },
+  {
+    "P": "openexr-libopenexr",
+    "V": "3.4.15-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "openexr",
+    "c": "24f2653806951fc83249f1b67dd8d869cf263cb8"
+  },
+  {
+    "P": "openexr-libopenexrcore",
+    "V": "3.4.15-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "openexr",
+    "c": "24f2653806951fc83249f1b67dd8d869cf263cb8"
+  },
+  {
+    "P": "openh264",
+    "V": "2.6.0-r0",
+    "A": "aarch64",
+    "L": "BSD-2-Clause",
+    "o": "openh264",
+    "c": "3e3fa0ef3b551ddcd1db850617252696ef8b092a"
+  },
+  {
+    "P": "openjpeg",
+    "V": "2.5.4-r2",
+    "A": "aarch64",
+    "L": "BSD-2-Clause",
+    "o": "openjpeg",
+    "c": "eea9a43a66c211edd48b0542eb2c38329942a118"
+  },
+  {
+    "P": "openrc",
+    "V": "0.63.2-r1",
+    "A": "aarch64",
+    "L": "BSD-2-Clause",
+    "o": "openrc",
+    "c": "2f3ff9120b8bad6648b2f53ffd7bdde512b133b2"
+  },
+  {
+    "P": "openrc-settingsd",
+    "V": "1.5.0-r2",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "openrc-settingsd",
+    "c": "48fac9b3c446f9c6bfb5b741fd2a00a72da547a3"
+  },
+  {
+    "P": "openrc-settingsd-openrc",
+    "V": "1.5.0-r2",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "openrc-settingsd",
+    "c": "48fac9b3c446f9c6bfb5b741fd2a00a72da547a3"
+  },
+  {
+    "P": "openrc-user-pam",
+    "V": "0.63.2-r1",
+    "A": "aarch64",
+    "L": "BSD-2-Clause",
+    "o": "openrc",
+    "c": "2f3ff9120b8bad6648b2f53ffd7bdde512b133b2"
+  },
+  {
+    "P": "openssh-client-common",
+    "V": "10.6_p1-r1",
+    "A": "aarch64",
+    "L": "SSH-OpenSSH",
+    "o": "openssh",
+    "c": "58d00f74f15fbac6136c564840a87f03a5c681d4"
+  },
+  {
+    "P": "openssh-client-default",
+    "V": "10.6_p1-r1",
+    "A": "aarch64",
+    "L": "SSH-OpenSSH",
+    "o": "openssh",
+    "c": "58d00f74f15fbac6136c564840a87f03a5c681d4"
+  },
+  {
+    "P": "openssh-keygen",
+    "V": "10.6_p1-r1",
+    "A": "aarch64",
+    "L": "SSH-OpenSSH",
+    "o": "openssh",
+    "c": "58d00f74f15fbac6136c564840a87f03a5c681d4"
+  },
+  {
+    "P": "openssh-nftrules",
+    "V": "10.6_p1-r1",
+    "A": "aarch64",
+    "L": "SSH-OpenSSH",
+    "o": "openssh",
+    "c": "58d00f74f15fbac6136c564840a87f03a5c681d4"
+  },
+  {
+    "P": "openssh-server-common",
+    "V": "10.6_p1-r1",
+    "A": "aarch64",
+    "L": "SSH-OpenSSH",
+    "o": "openssh",
+    "c": "58d00f74f15fbac6136c564840a87f03a5c681d4"
+  },
+  {
+    "P": "openssh-server-common-openrc",
+    "V": "10.6_p1-r1",
+    "A": "aarch64",
+    "L": "SSH-OpenSSH",
+    "o": "openssh",
+    "c": "58d00f74f15fbac6136c564840a87f03a5c681d4"
+  },
+  {
+    "P": "openssh-server-pam",
+    "V": "10.6_p1-r1",
+    "A": "aarch64",
+    "L": "SSH-OpenSSH",
+    "o": "openssh",
+    "c": "58d00f74f15fbac6136c564840a87f03a5c681d4"
+  },
+  {
+    "P": "opus",
+    "V": "1.6.1-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "opus",
+    "c": "6664b23b1c7a2d0887ff2cb0edc93fccb1474c8b"
+  },
+  {
+    "P": "orc",
+    "V": "0.4.42-r1",
+    "A": "aarch64",
+    "L": "BSD-2-Clause",
+    "o": "orc",
+    "c": "16737cbcaf9f95f9c58cb485be84a88b7177e03f"
+  },
+  {
+    "P": "ostree",
+    "V": "2026.4-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "ostree",
+    "c": "fb6e0915783b68cd5721ecee9d40b3f56596d378"
+  },
+  {
+    "P": "p11-kit",
+    "V": "0.26.2-r1",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "p11-kit",
+    "c": "ee64d9bdc216cf3813c7d3807aedb83f22e4455b"
+  },
+  {
+    "P": "pango",
+    "V": "1.58.2-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "pango",
+    "c": "cffccd8e464575ed5dbf71486eac9fe8ea745585"
+  },
+  {
+    "P": "parted",
+    "V": "3.7-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "parted",
+    "c": "e98b87fc087ad8a95585b3b00045cfc7e0972e92"
+  },
+  {
+    "P": "partx",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "pciutils-libs",
+    "V": "3.15.0-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "pciutils",
+    "c": "6f2cdac966e30da20250e59cb11b899fbc03a957"
+  },
+  {
+    "P": "pcre2",
+    "V": "10.49-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "pcre2",
+    "c": "da48785f59e5dda94cfe8e5017f13499dbde6e8d"
+  },
+  {
+    "P": "pcsc-lite-libs",
+    "V": "2.5.2-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause AND BSD-2-Clause AND ISC",
+    "o": "pcsc-lite",
+    "c": "2db26b3af5964ba2443197037b94181d8ce78574"
+  },
+  {
+    "P": "perl",
+    "V": "5.44.0-r0",
+    "A": "aarch64",
+    "L": "Artistic-1.0-Perl OR GPL-1.0-or-later",
+    "o": "perl",
+    "c": "7b4fdda76a7038d2249cbc5d56f7f2cad890f62d"
+  },
+  {
+    "P": "perl-image-exiftool",
+    "V": "13.55-r0",
+    "A": "aarch64",
+    "L": "Artistic-1.0-Perl GPL-1.0-or-later",
+    "o": "perl-image-exiftool",
+    "c": "b23f98ea4190d1561aeecfd7db8d974d3a5430d4"
+  },
+  {
+    "P": "phoc",
+    "V": "0.57.0-r1",
+    "A": "aarch64",
+    "L": "GPL-3.0-only",
+    "o": "phoc",
+    "c": "a3d7c1b7525dbabef762e0445ac71956203d6a12"
+  },
+  {
+    "P": "phoc-schemas",
+    "V": "0.57.0-r1",
+    "A": "aarch64",
+    "L": "GPL-3.0-only",
+    "o": "phoc",
+    "c": "a3d7c1b7525dbabef762e0445ac71956203d6a12"
+  },
+  {
+    "P": "phosh",
+    "V": "0.57.0-r3",
+    "A": "aarch64",
+    "L": "GPL-3.0-only",
+    "o": "phosh",
+    "c": "97dba23dc382440e73c3813c9072a25099fb0d67"
+  },
+  {
+    "P": "phosh-portalsconf",
+    "V": "0.57.0-r3",
+    "A": "aarch64",
+    "L": "GPL-3.0-only",
+    "o": "phosh",
+    "c": "97dba23dc382440e73c3813c9072a25099fb0d67"
+  },
+  {
+    "P": "phosh-schemas",
+    "V": "0.57.0-r3",
+    "A": "aarch64",
+    "L": "GPL-3.0-only",
+    "o": "phosh",
+    "c": "97dba23dc382440e73c3813c9072a25099fb0d67"
+  },
+  {
+    "P": "phosh-wallpapers",
+    "V": "0.55.0-r1",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND CC-BY-SA-4.0 AND CC0-1.0",
+    "o": "phosh-wallpapers",
+    "c": "d0487f3b9afd9e28ec83bb46fb1602ecd8e268ed"
+  },
+  {
+    "P": "pinentry",
+    "V": "1.3.2-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "pinentry",
+    "c": "0c05b7bd82c7560340de5c02bf96db417366b697"
+  },
+  {
+    "P": "pipewire",
+    "V": "1.6.9-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "pipewire",
+    "c": "0afac626498565714f7a06c04589112584cc95f4"
+  },
+  {
+    "P": "pipewire-libs",
+    "V": "1.6.9-r0",
+    "A": "aarch64",
+    "L": "MIT AND LGPL-2.1-or-later",
+    "o": "pipewire",
+    "c": "0afac626498565714f7a06c04589112584cc95f4"
+  },
+  {
+    "P": "pipewire-openrc",
+    "V": "1.6.9-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "pipewire",
+    "c": "0afac626498565714f7a06c04589112584cc95f4"
+  },
+  {
+    "P": "pipewire-spa-libcamera",
+    "V": "1.6.9-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "pipewire",
+    "c": "0afac626498565714f7a06c04589112584cc95f4"
+  },
+  {
+    "P": "pipewire-udev",
+    "V": "1.6.9-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "pipewire",
+    "c": "0afac626498565714f7a06c04589112584cc95f4"
+  },
+  {
+    "P": "pipewire-webrtc",
+    "V": "1.6.9-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "pipewire",
+    "c": "0afac626498565714f7a06c04589112584cc95f4"
+  },
+  {
+    "P": "pixman",
+    "V": "0.46.4-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "pixman",
+    "c": "9337ac809a431f004386ea3e279e3d55f770e7d3"
+  },
+  {
+    "P": "pkgconf",
+    "V": "3.0.8-r0",
+    "A": "aarch64",
+    "L": "ISC",
+    "o": "pkgconf",
+    "c": "83e5ba9223ef757cadbca2533d29ebaaa7aa7b76"
+  },
+  {
+    "P": "plymouth",
+    "V": "26.134.222-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "plymouth",
+    "c": "aa6094808ac6c3aa0fbf8d5fa8b8bc195ff86d69"
+  },
+  {
+    "P": "plymouth-drm",
+    "V": "26.134.222-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "plymouth",
+    "c": "aa6094808ac6c3aa0fbf8d5fa8b8bc195ff86d69"
+  },
+  {
+    "P": "plymouth-openrc-plugin",
+    "V": "0.4.0_git20250822-r2",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "plymouth-openrc-plugin",
+    "c": "4e0d17dbe3a6bc26a06e07a043982f3e8f506ba5"
+  },
+  {
+    "P": "polkit-common",
+    "V": "127-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "polkit",
+    "c": "acf7a71d0e86ba000838edb853e0adbb04138f4a"
+  },
+  {
+    "P": "polkit-elogind",
+    "V": "127-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "polkit",
+    "c": "acf7a71d0e86ba000838edb853e0adbb04138f4a"
+  },
+  {
+    "P": "polkit-elogind-libs",
+    "V": "127-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "polkit",
+    "c": "acf7a71d0e86ba000838edb853e0adbb04138f4a"
+  },
+  {
+    "P": "polkit-openrc",
+    "V": "127-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "polkit",
+    "c": "acf7a71d0e86ba000838edb853e0adbb04138f4a"
+  },
+  {
+    "P": "poppler",
+    "V": "25.12.0-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "poppler",
+    "c": "5e1b822309fb17cc2ebd46d6fbacb1763acbcdd1"
+  },
+  {
+    "P": "poppler-glib",
+    "V": "25.12.0-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "poppler",
+    "c": "5e1b822309fb17cc2ebd46d6fbacb1763acbcdd1"
+  },
+  {
+    "P": "popt",
+    "V": "1.19-r4",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "popt",
+    "c": "d3abe30d43524bed75a29a3006e703ab51836548"
+  },
+  {
+    "P": "postmarketos-artwork-icons",
+    "V": "26.06-r2",
+    "A": "aarch64",
+    "L": "CC-BY-SA-4.0",
+    "o": "postmarketos-artwork",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-artwork-wallpapers",
+    "V": "26.06-r2",
+    "A": "aarch64",
+    "L": "CC-BY-SA-4.0",
+    "o": "postmarketos-artwork",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-artwork-wallpapers-gnome",
+    "V": "26.06-r2",
+    "A": "aarch64",
+    "L": "CC-BY-SA-4.0",
+    "o": "postmarketos-artwork",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base",
+    "V": "78-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-apk",
+    "V": "78-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-fwupd",
+    "V": "78-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-mesa",
+    "V": "78-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-nftables",
+    "V": "78-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-nftables-openrc",
+    "V": "78-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-nofde",
+    "V": "62-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-nofde",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-openrc",
+    "V": "78-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-ssh",
+    "V": "78-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-sudo",
+    "V": "78-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-udev",
+    "V": "78-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-ui",
+    "V": "61-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-ui",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-ui-alsa-utils",
+    "V": "61-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-ui",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-ui-audio",
+    "V": "61-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-ui",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-ui-audio-backend-pulseaudio",
+    "V": "61-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-ui",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-ui-bluez-openrc",
+    "V": "61-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-ui",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-ui-elogind",
+    "V": "61-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-ui",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-ui-gnome",
+    "V": "14-r1",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-ui-gnome",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-ui-gnome-mobile",
+    "V": "1-r3",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-ui-gnome-mobile",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-ui-gnome-openrc",
+    "V": "14-r1",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-ui-gnome",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-ui-modemmanager",
+    "V": "61-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-ui",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-ui-modemmanager-openrc",
+    "V": "61-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-ui",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-ui-networkmanager",
+    "V": "61-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-ui",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-ui-openrc",
+    "V": "61-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-ui",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-ui-openrc-settingsd",
+    "V": "61-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-ui",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-ui-qt-tweaks",
+    "V": "61-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-ui",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-ui-qt-wayland",
+    "V": "61-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-ui",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-ui-wifi-wpa_supplicant",
+    "V": "61-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-ui",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-base-ui-wifi-wpa_supplicant-openrc",
+    "V": "61-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base-ui",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-baselayout",
+    "V": "78-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-bootsplash",
+    "V": "3-r0",
+    "A": "aarch64",
+    "L": "CC-BY-SA-3.0",
+    "o": "postmarketos-bootsplash",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-bootsplash-openrc",
+    "V": "3-r0",
+    "A": "aarch64",
+    "L": "CC-BY-SA-3.0",
+    "o": "postmarketos-bootsplash",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-buffybox-iskey",
+    "V": "1-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-buffybox",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-config-nftables",
+    "V": "1-r4",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "postmarketos-config-nftables",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-config-nftables-networkmanager",
+    "V": "1-r4",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "postmarketos-config-nftables",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-initramfs",
+    "V": "3.12.5-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "postmarketos-initramfs",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-keys",
+    "V": "1-r1",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "postmarketos-keys",
+    "c": "33d35c0835799de6a94c4da505a4b7d133fd3323-dirty"
+  },
+  {
+    "P": "postmarketos-mkinitfs",
+    "V": "2.11.1-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "postmarketos-mkinitfs",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-plymouth-themes",
+    "V": "1.2.3-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-plymouth-themes",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-release",
+    "V": "78-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-base",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-ui-console",
+    "V": "1-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-ui-console",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-ui-console-openrc",
+    "V": "1-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-ui-console",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-ui-phosh",
+    "V": "33-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-ui-phosh",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-ui-phosh-default-osk",
+    "V": "33-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-ui-phosh",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-ui-phosh-openrc",
+    "V": "33-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-ui-phosh",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-usb-moded",
+    "V": "11-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-usb-moded",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-usb-moded-default-profile-developer",
+    "V": "11-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-usb-moded",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-usb-moded-openrc",
+    "V": "11-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-usb-moded",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-zram",
+    "V": "4-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-zram",
+    "c": "-dirty"
+  },
+  {
+    "P": "postmarketos-zram-openrc",
+    "V": "4-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "postmarketos-zram",
+    "c": "-dirty"
+  },
+  {
+    "P": "power-profiles-daemon",
+    "V": "0.30-r1",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "power-profiles-daemon",
+    "c": "4b720f1505330430319b02d59f9a63c6871c939f"
+  },
+  {
+    "P": "presage",
+    "V": "0.9.1-r3",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "presage",
+    "c": "33283848034c9885d984c8e8697c645c57324938"
+  },
+  {
+    "P": "protobuf",
+    "V": "31.1-r4",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "protobuf",
+    "c": "5407e14e1b616fe894028950ea7e1722805dbea3"
+  },
+  {
+    "P": "protobuf-c",
+    "V": "1.5.2-r4",
+    "A": "aarch64",
+    "L": "BSD-2-Clause",
+    "o": "protobuf-c",
+    "c": "5407e14e1b616fe894028950ea7e1722805dbea3"
+  },
+  {
+    "P": "protoc",
+    "V": "31.1-r4",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "protobuf",
+    "c": "5407e14e1b616fe894028950ea7e1722805dbea3"
+  },
+  {
+    "P": "pulseaudio",
+    "V": "17.0-r7",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "pulseaudio",
+    "c": "e4821ce2dcff6f6918f0c32b3f5d9573887c4c6b"
+  },
+  {
+    "P": "pulseaudio-alsa",
+    "V": "17.0-r7",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "pulseaudio",
+    "c": "e4821ce2dcff6f6918f0c32b3f5d9573887c4c6b"
+  },
+  {
+    "P": "pulseaudio-bluez",
+    "V": "17.0-r7",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "pulseaudio",
+    "c": "e4821ce2dcff6f6918f0c32b3f5d9573887c4c6b"
+  },
+  {
+    "P": "pulseaudio-openrc",
+    "V": "17.0-r7",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "pulseaudio",
+    "c": "e4821ce2dcff6f6918f0c32b3f5d9573887c4c6b"
+  },
+  {
+    "P": "pulseaudio-utils",
+    "V": "17.0-r7",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "pulseaudio",
+    "c": "e4821ce2dcff6f6918f0c32b3f5d9573887c4c6b"
+  },
+  {
+    "P": "pulseaudio-wireplumber",
+    "V": "17.0-r7",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "pulseaudio",
+    "c": "e4821ce2dcff6f6918f0c32b3f5d9573887c4c6b"
+  },
+  {
+    "P": "purple-carbons",
+    "V": "0.2.3-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "purple-carbons",
+    "c": "199418d4d02381fefd8dd4629cd244ebf7455039"
+  },
+  {
+    "P": "purple-lurch",
+    "V": "0.7.0-r2",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "purple-lurch",
+    "c": "9c6bf11261d3d852a4b1b53465f2e8216763abe2"
+  },
+  {
+    "P": "purple-xmpp",
+    "V": "2.14.14-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "pidgin",
+    "c": "f4195c4b3e48092fb11a8c117678f7095f351b05"
+  },
+  {
+    "P": "purple-xmpp-http-upload",
+    "V": "0.2.4-r1",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "purple-xmpp-http-upload",
+    "c": "3340b9b1d54b7d93eb004f6f1800375802e66ec8"
+  },
+  {
+    "P": "py3-certifi",
+    "V": "2026.7.22-r0",
+    "A": "aarch64",
+    "L": "MPL-2.0",
+    "o": "py3-certifi",
+    "c": "84e0c23c6e17ff2ce7ddb6ce4aff9850f54aa40b"
+  },
+  {
+    "P": "py3-certifi-pyc",
+    "V": "2026.7.22-r0",
+    "A": "aarch64",
+    "L": "MPL-2.0",
+    "o": "py3-certifi",
+    "c": "84e0c23c6e17ff2ce7ddb6ce4aff9850f54aa40b"
+  },
+  {
+    "P": "py3-charset-normalizer",
+    "V": "3.5.1-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "py3-charset-normalizer",
+    "c": "00723a4029c3547773b4170fe031aae01c70993d"
+  },
+  {
+    "P": "py3-charset-normalizer-pyc",
+    "V": "3.5.1-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "py3-charset-normalizer",
+    "c": "00723a4029c3547773b4170fe031aae01c70993d"
+  },
+  {
+    "P": "py3-dbus",
+    "V": "1.4.0-r1",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "py3-dbus",
+    "c": "8cf4104b8b283cd19d0b5dafaa5f191051acef6b"
+  },
+  {
+    "P": "py3-dbus-pyc",
+    "V": "1.4.0-r1",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "py3-dbus",
+    "c": "8cf4104b8b283cd19d0b5dafaa5f191051acef6b"
+  },
+  {
+    "P": "py3-docopt",
+    "V": "0.6.2-r12",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "py3-docopt",
+    "c": "484594cee07f8d5b532e28d06ceb21da190956f1"
+  },
+  {
+    "P": "py3-docopt-pyc",
+    "V": "0.6.2-r12",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "py3-docopt",
+    "c": "484594cee07f8d5b532e28d06ceb21da190956f1"
+  },
+  {
+    "P": "py3-gobject3",
+    "V": "3.58.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "py3-gobject3",
+    "c": "dfbb6f9e058abed5c27cb8935464a271786eff47"
+  },
+  {
+    "P": "py3-gobject3-atspi",
+    "V": "2.62.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "at-spi2-core",
+    "c": "409085f774ec72def56cc88a4ed52a892d923de4"
+  },
+  {
+    "P": "py3-gobject3-atspi-pyc",
+    "V": "2.62.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "at-spi2-core",
+    "c": "409085f774ec72def56cc88a4ed52a892d923de4"
+  },
+  {
+    "P": "py3-gobject3-pyc",
+    "V": "3.58.0-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "py3-gobject3",
+    "c": "dfbb6f9e058abed5c27cb8935464a271786eff47"
+  },
+  {
+    "P": "py3-idna",
+    "V": "3.20-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "py3-idna",
+    "c": "8013ecaab257c82af904dc71ac8d71a4a9257bbe"
+  },
+  {
+    "P": "py3-idna-pyc",
+    "V": "3.20-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "py3-idna",
+    "c": "8013ecaab257c82af904dc71ac8d71a4a9257bbe"
+  },
+  {
+    "P": "py3-requests",
+    "V": "2.34.2-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "py3-requests",
+    "c": "b633566751ddf56a16bba85d7cf50e5e6a81678c"
+  },
+  {
+    "P": "py3-requests-pyc",
+    "V": "2.34.2-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "py3-requests",
+    "c": "b633566751ddf56a16bba85d7cf50e5e6a81678c"
+  },
+  {
+    "P": "py3-ruamel.yaml",
+    "V": "0.19.1-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "py3-ruamel.yaml",
+    "c": "e7ed3fe1d9bb801f1dc21609d0924f0190179a21"
+  },
+  {
+    "P": "py3-ruamel.yaml-pyc",
+    "V": "0.19.1-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "py3-ruamel.yaml",
+    "c": "e7ed3fe1d9bb801f1dc21609d0924f0190179a21"
+  },
+  {
+    "P": "py3-ruamel.yaml.clib",
+    "V": "0.2.15-r3",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "py3-ruamel.yaml.clib",
+    "c": "5881674e8bd165e1014a050579e3b629a5a7bfad"
+  },
+  {
+    "P": "py3-urllib3",
+    "V": "2.8.0-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "py3-urllib3",
+    "c": "83be72cebd5e81ddb5a783031f9f23453c5c198e"
+  },
+  {
+    "P": "py3-urllib3-pyc",
+    "V": "2.8.0-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "py3-urllib3",
+    "c": "83be72cebd5e81ddb5a783031f9f23453c5c198e"
+  },
+  {
+    "P": "py3-yaml",
+    "V": "6.0.3-r2",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "py3-yaml",
+    "c": "d56248db1804f4c5744f4b2349f3ecc25588bb2b"
+  },
+  {
+    "P": "py3-yaml-pyc",
+    "V": "6.0.3-r2",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "py3-yaml",
+    "c": "d56248db1804f4c5744f4b2349f3ecc25588bb2b"
+  },
+  {
+    "P": "pyc",
+    "V": "3.14.8-r0",
+    "A": "aarch64",
+    "L": "PSF-2.0",
+    "o": "python3",
+    "c": "0bf1a90a44a0b3ca3fbca87f8c5a9af5c2041253"
+  },
+  {
+    "P": "python3",
+    "V": "3.14.8-r0",
+    "A": "aarch64",
+    "L": "PSF-2.0",
+    "o": "python3",
+    "c": "0bf1a90a44a0b3ca3fbca87f8c5a9af5c2041253"
+  },
+  {
+    "P": "python3-pyc",
+    "V": "3.14.8-r0",
+    "A": "aarch64",
+    "L": "PSF-2.0",
+    "o": "python3",
+    "c": "0bf1a90a44a0b3ca3fbca87f8c5a9af5c2041253"
+  },
+  {
+    "P": "python3-pycache-pyc0",
+    "V": "3.14.8-r0",
+    "A": "aarch64",
+    "L": "PSF-2.0",
+    "o": "python3",
+    "c": "0bf1a90a44a0b3ca3fbca87f8c5a9af5c2041253"
+  },
+  {
+    "P": "qmi-utils",
+    "V": "1.38.0_git20261005-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "libqmi",
+    "c": "14b8753b0ff769970ffb9113b72f0d48143c1f35"
+  },
+  {
+    "P": "qrcodegen",
+    "V": "1.8.0-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "qrcodegen",
+    "c": "7f493ba30401f8bdd7a12ce6460e647ccb29661e"
+  },
+  {
+    "P": "rav1e-libs",
+    "V": "0.8.1-r0",
+    "A": "aarch64",
+    "L": "BSD-2-Clause custom",
+    "o": "rav1e",
+    "c": "0f7061c11f34e1653f80475dd8e8917016fe4634"
+  },
+  {
+    "P": "readline",
+    "V": "8.3.3-r1",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "readline",
+    "c": "a854c03acdac188901fb012f7acbee70a36e8041"
+  },
+  {
+    "P": "rest1",
+    "V": "0.9.1-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "rest1",
+    "c": "c76155ebfb111fbafa5d9b235025319eaa4d6859"
+  },
+  {
+    "P": "roc-toolkit-libs",
+    "V": "0.4.0-r1",
+    "A": "aarch64",
+    "L": "MPL-2.0",
+    "o": "roc-toolkit",
+    "c": "abecfaf3def832a14984011a75c1d9a3b536b7c1"
+  },
+  {
+    "P": "routewrangler",
+    "V": "0.3.1-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "routewrangler",
+    "c": "d77d706b05e4984af9e6a5ae182ee66f66f505f1"
+  },
+  {
+    "P": "routewrangler-openrc",
+    "V": "0.3.1-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "routewrangler",
+    "c": "d77d706b05e4984af9e6a5ae182ee66f66f505f1"
+  },
+  {
+    "P": "rsync",
+    "V": "3.5.1-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "rsync",
+    "c": "4de196a1de55ac9219aa10d0dda8e6efc76ba3e2"
+  },
+  {
+    "P": "rsync-openrc",
+    "V": "3.5.1-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "rsync",
+    "c": "4de196a1de55ac9219aa10d0dda8e6efc76ba3e2"
+  },
+  {
+    "P": "runuser",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "samba-client-libs",
+    "V": "4.23.10-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND LGPL-3.0-or-later",
+    "o": "samba",
+    "c": "6b9580d1dcbd1ea5b9fd23eadbc7fbebb2fbd44c"
+  },
+  {
+    "P": "samba-libs",
+    "V": "4.23.10-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND LGPL-3.0-or-later",
+    "o": "samba",
+    "c": "6b9580d1dcbd1ea5b9fd23eadbc7fbebb2fbd44c"
+  },
+  {
+    "P": "samba-util-libs",
+    "V": "4.23.10-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND LGPL-3.0-or-later",
+    "o": "samba",
+    "c": "6b9580d1dcbd1ea5b9fd23eadbc7fbebb2fbd44c"
+  },
+  {
+    "P": "samurai-camera-config",
+    "V": "0.1.0-r10",
+    "A": "noarch",
+    "L": "LicenseRef-Local-Project",
+    "o": "samurai-camera-config"
+  },
+  {
+    "P": "samurai-camera-stack",
+    "V": "0.1.0-r10",
+    "A": "noarch",
+    "L": "LicenseRef-Local-Project",
+    "o": "samurai-camera-config"
+  },
+  {
+    "P": "samurai-gnss-assist",
+    "V": "0.1.0-r0",
+    "A": "noarch",
+    "L": "LicenseRef-Local-Project",
+    "o": "samurai-gnss-assist"
+  },
+  {
+    "P": "samurai-gnss-stack",
+    "V": "0.1.0-r0",
+    "A": "noarch",
+    "L": "LicenseRef-Local-Project",
+    "o": "samurai-gnss-assist"
+  },
+  {
+    "P": "sbc",
+    "V": "2.1-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+    "o": "sbc",
+    "c": "2158fff9179327ffdbaaf7789c377cf57964da17"
+  },
+  {
+    "P": "scanelf",
+    "V": "1.3.11-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "pax-utils",
+    "c": "b52be3442ea62ff9338745ccac4792fd4c57ab46"
+  },
+  {
+    "P": "scudo-malloc",
+    "V": "23.1.3-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0 WITH LLVM-exception",
+    "o": "scudo-malloc",
+    "c": "98217ca401d801c37e7cc7f2f3f6665bc0e9e622"
+  },
+  {
+    "P": "setarch",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "setpriv",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "setxkbmap",
+    "V": "1.3.5-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "setxkbmap",
+    "c": "c2d6a70bd12824ac6f7582f9e81ef918c6063454"
+  },
+  {
+    "P": "sfdisk",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-1.0-or-later",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "shadow",
+    "V": "4.20.3-r2",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "shadow",
+    "c": "3cba2c905ad7a34253086753d1f0297b9643646d"
+  },
+  {
+    "P": "shared-mime-info",
+    "V": "2.4-r7",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "shared-mime-info",
+    "c": "74df86bcbb3a36bdffe8a4738fadbd44ede405bc"
+  },
+  {
+    "P": "skalibs-libs",
+    "V": "2.15.1.0-r0",
+    "A": "aarch64",
+    "L": "ISC",
+    "o": "skalibs",
+    "c": "bce2c5d7f7308c6f45d1b55e58f2551df11c3f0a"
+  },
+  {
+    "P": "slang",
+    "V": "2.3.3-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "slang",
+    "c": "36787ea43e1dcf0c5d94c9c538fe7a7aede0ae11"
+  },
+  {
+    "P": "sleep-inhibitor",
+    "V": "1.25-r2",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "sleep-inhibitor",
+    "c": "90212f4f477e10b10b9c16d6c53d1c5f6c273b74"
+  },
+  {
+    "P": "sleep-inhibitor-openrc",
+    "V": "1.25-r2",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "sleep-inhibitor",
+    "c": "90212f4f477e10b10b9c16d6c53d1c5f6c273b74"
+  },
+  {
+    "P": "sleep-inhibitor-pyc",
+    "V": "1.25-r2",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "sleep-inhibitor",
+    "c": "90212f4f477e10b10b9c16d6c53d1c5f6c273b74"
+  },
+  {
+    "P": "snapshot",
+    "V": "51.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "snapshot",
+    "c": "0a78399a80dcab717d0688b7cc9b7e97ed36531e"
+  },
+  {
+    "P": "sndio-libs",
+    "V": "1.10.0-r7",
+    "A": "aarch64",
+    "L": "ISC",
+    "o": "sndio",
+    "c": "5c89cb8b02dc0e20143ab053ef7a6c0d874c4642"
+  },
+  {
+    "P": "sofia-sip-linphone",
+    "V": "1.13.45-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-only",
+    "o": "sofia-sip-linphone",
+    "c": "643d0e106b356748a6e6f352dd9a7b280c16da69"
+  },
+  {
+    "P": "sound-theme-freedesktop",
+    "V": "0.8-r2",
+    "A": "aarch64",
+    "L": "CC-BY-SA-3.0 AND GPL-2.0-or-later AND GPL-2.0-only AND CC-BY-3.0",
+    "o": "sound-theme-freedesktop",
+    "c": "619f65318054bd14324e296f2b003c8e1482c3ca"
+  },
+  {
+    "P": "sound-theme-phosh",
+    "V": "0.55.0-r1",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND CC-BY-SA-4.0 AND CC0-1.0",
+    "o": "phosh-wallpapers",
+    "c": "d0487f3b9afd9e28ec83bb46fb1602ecd8e268ed"
+  },
+  {
+    "P": "soundtouch",
+    "V": "2.4.1-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "soundtouch",
+    "c": "eca3b12c11bd315f8fc843808cf1e89dea4043fc"
+  },
+  {
+    "P": "soxr",
+    "V": "0.1.3-r7",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "soxr",
+    "c": "46765a0eade20ce05a3b3483d7df3dab282af6fd"
+  },
+  {
+    "P": "spandsp",
+    "V": "0.0.6-r5",
+    "A": "aarch64",
+    "L": "LGPL-2.1-only",
+    "o": "spandsp",
+    "c": "84a227baf001b6e0208e3352b294e4d7a40e93de"
+  },
+  {
+    "P": "speex",
+    "V": "1.2.1-r2",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "speex",
+    "c": "33283848034c9885d984c8e8697c645c57324938"
+  },
+  {
+    "P": "speexdsp",
+    "V": "1.2.1-r2",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "speexdsp",
+    "c": "33283848034c9885d984c8e8697c645c57324938"
+  },
+  {
+    "P": "spirv-tools",
+    "V": "1.4.357.0-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "spirv-tools",
+    "c": "b88f47732da41328dbfb110d3e555a0e14228716"
+  },
+  {
+    "P": "sqlite-libs",
+    "V": "3.53.4-r0",
+    "A": "aarch64",
+    "L": "blessing",
+    "o": "sqlite",
+    "c": "d20bb50f021e7943ea34728b7cb6647eefb89347"
+  },
+  {
+    "P": "ssl_client",
+    "V": "1.38.0-r7",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "busybox",
+    "c": "768a1e8764c8ddda36995c2a4ba8ab9a9c78ef91"
+  },
+  {
+    "P": "stevia",
+    "V": "0.57.0-r2",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "stevia",
+    "c": "a3d7c1b7525dbabef762e0445ac71956203d6a12"
+  },
+  {
+    "P": "stevia-schemas",
+    "V": "0.57.0-r2",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "stevia",
+    "c": "a3d7c1b7525dbabef762e0445ac71956203d6a12"
+  },
+  {
+    "P": "strace",
+    "V": "7.2-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "strace",
+    "c": "4d6057d427d72d7c51fdb6637a9c051e79f465c5"
+  },
+  {
+    "P": "sudo",
+    "V": "1.9.17_p2-r3",
+    "A": "aarch64",
+    "L": "custom ISC",
+    "o": "sudo",
+    "c": "db678c1bca875c6f91ff7905614aa043ef6b4cc8"
+  },
+  {
+    "P": "systemd-boot",
+    "V": "262-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "systemd-boot",
+    "c": "2d5b575dca582c878a48034e4eea6b62c7704dc3"
+  },
+  {
+    "P": "talloc",
+    "V": "2.4.4-r1",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later",
+    "o": "talloc",
+    "c": "d8fab7ed2b8cafee310462a078ec8a9b7943fec1"
+  },
+  {
+    "P": "tdb-libs",
+    "V": "1.4.15-r1",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later",
+    "o": "tdb",
+    "c": "138cce73b696a2c7b1af3f4d4c2e7da8b643839d"
+  },
+  {
+    "P": "telepathy-glib",
+    "V": "0.24.2-r3",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "telepathy-glib",
+    "c": "119c9dc41bf456a195288a791ccb65f81bcdd3c2"
+  },
+  {
+    "P": "tevent",
+    "V": "0.17.1-r1",
+    "A": "aarch64",
+    "L": "LGPL-3.0-or-later",
+    "o": "tevent",
+    "c": "d903585f7ff1c950e7848ddbb6c4ee717c3b8e95"
+  },
+  {
+    "P": "tiff",
+    "V": "4.7.2-r0",
+    "A": "aarch64",
+    "L": "libtiff",
+    "o": "tiff",
+    "c": "3d43d2988fa7c8f32ad9fc8974eef6688aac04de"
+  },
+  {
+    "P": "tinyxml",
+    "V": "2.6.2-r6",
+    "A": "aarch64",
+    "L": "Zlib",
+    "o": "tinyxml",
+    "c": "b01c471c954a054e703baee3fa242df2cea570c1"
+  },
+  {
+    "P": "tslib",
+    "V": "1.24-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "tslib",
+    "c": "a83fa360ad5763f7af99da39c0e948c824f0926b"
+  },
+  {
+    "P": "tzdata",
+    "V": "2026e-r0",
+    "A": "aarch64",
+    "L": "Public-Domain",
+    "o": "tzdata",
+    "c": "cda14c83f09d51b5e04129ba528c3273621c2d78"
+  },
+  {
+    "P": "udev-init-scripts",
+    "V": "35-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "udev-init-scripts",
+    "c": "7501172a312403cb494042f8aa8f9faf7b354790"
+  },
+  {
+    "P": "udev-init-scripts-openrc",
+    "V": "35-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "udev-init-scripts",
+    "c": "7501172a312403cb494042f8aa8f9faf7b354790"
+  },
+  {
+    "P": "udiskie",
+    "V": "2.7.0-r1",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "udiskie",
+    "c": "d264cc99add16a14579e906a9ce2bc471f3814e6"
+  },
+  {
+    "P": "udiskie-pyc",
+    "V": "2.7.0-r1",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "udiskie",
+    "c": "d264cc99add16a14579e906a9ce2bc471f3814e6"
+  },
+  {
+    "P": "udisks2",
+    "V": "2.11.0-r2",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "udisks2",
+    "c": "5e1b822309fb17cc2ebd46d6fbacb1763acbcdd1"
+  },
+  {
+    "P": "udisks2-libs",
+    "V": "2.11.0-r2",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "udisks2",
+    "c": "5e1b822309fb17cc2ebd46d6fbacb1763acbcdd1"
+  },
+  {
+    "P": "udisks2-openrc",
+    "V": "2.11.0-r2",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "udisks2",
+    "c": "5e1b822309fb17cc2ebd46d6fbacb1763acbcdd1"
+  },
+  {
+    "P": "uim",
+    "V": "1.9.6-r4",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "uim",
+    "c": "664fc4b93d21c0d2a7ea5638b4009d6ddaa0568d"
+  },
+  {
+    "P": "uim-anthy",
+    "V": "1.9.6-r4",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "uim",
+    "c": "664fc4b93d21c0d2a7ea5638b4009d6ddaa0568d"
+  },
+  {
+    "P": "uim-gtk3",
+    "V": "1.9.6-r4",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "uim",
+    "c": "664fc4b93d21c0d2a7ea5638b4009d6ddaa0568d"
+  },
+  {
+    "P": "umount",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "umtprd",
+    "V": "1.8.1-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-only",
+    "o": "umtprd",
+    "c": "11477dc094f3217fb4ac60c3b26f7f1a347560d8"
+  },
+  {
+    "P": "umtprd-openrc",
+    "V": "1.8.1-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-only",
+    "o": "umtprd",
+    "c": "11477dc094f3217fb4ac60c3b26f7f1a347560d8"
+  },
+  {
+    "P": "unudhcpd",
+    "V": "0.5.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "unudhcpd",
+    "c": "7801ccfe0ef91bf94fef9ea4aa7cfe13e78010f1"
+  },
+  {
+    "P": "unudhcpd-openrc",
+    "V": "0.5.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "unudhcpd",
+    "c": "7801ccfe0ef91bf94fef9ea4aa7cfe13e78010f1"
+  },
+  {
+    "P": "upower",
+    "V": "1.91.0-r2",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "upower",
+    "c": "ab329cc95719eba4b967c403f5e2e034184a37d1"
+  },
+  {
+    "P": "upower-udev",
+    "V": "1.91.0-r2",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "upower",
+    "c": "ab329cc95719eba4b967c403f5e2e034184a37d1"
+  },
+  {
+    "P": "usb-moded-notify",
+    "V": "0.4.2-r1",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "usb-moded-notify",
+    "c": "21c861cce91e0e0583e6ed303fb409d26e79060e"
+  },
+  {
+    "P": "usb-moded-notify-openrc",
+    "V": "0.4.2-r1",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "usb-moded-notify",
+    "c": "21c861cce91e0e0583e6ed303fb409d26e79060e"
+  },
+  {
+    "P": "usb-signaller",
+    "V": "0.4.2-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "usb-signaller",
+    "c": "f4ed47fbe1133a05fbccd34ce380662a90e2f262"
+  },
+  {
+    "P": "usb-signaller-openrc",
+    "V": "0.4.2-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "usb-signaller",
+    "c": "f4ed47fbe1133a05fbccd34ce380662a90e2f262"
+  },
+  {
+    "P": "userspace-rcu",
+    "V": "0.15.3-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "userspace-rcu",
+    "c": "e7494294eddc019bc834a79e1eedeca35de22733"
+  },
+  {
+    "P": "util-linux",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "util-linux-login",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND BSD-1-Clause",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "util-linux-misc",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "util-linux-openrc",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later AND GPL-2.0-or-later AND GPL-2.0-only AND GPL-1.0-only AND LGPL-2.1-or-later AND BSD-1-Clause AND BSD-3-Clause AND BSD-4-Clause-UC AND MIT AND Public-Domain",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "utmps-libs",
+    "V": "0.1.3.4-r0",
+    "A": "aarch64",
+    "L": "ISC",
+    "o": "utmps",
+    "c": "716dd08c0f27067e83a18cc618b6e40c06dc0c3d"
+  },
+  {
+    "P": "uuidgen",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-1.0-only",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "v4l-utils",
+    "V": "1.32.0-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "v4l-utils",
+    "c": "5e1b822309fb17cc2ebd46d6fbacb1763acbcdd1"
+  },
+  {
+    "P": "v4l-utils-libs",
+    "V": "1.32.0-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later",
+    "o": "v4l-utils",
+    "c": "5e1b822309fb17cc2ebd46d6fbacb1763acbcdd1"
+  },
+  {
+    "P": "vips",
+    "V": "8.18.7-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "vips",
+    "c": "795ba785583fcb5556a8da8cced22c3e11b4039b"
+  },
+  {
+    "P": "vips-heif",
+    "V": "8.18.7-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "vips",
+    "c": "795ba785583fcb5556a8da8cced22c3e11b4039b"
+  },
+  {
+    "P": "vips-jxl",
+    "V": "8.18.7-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "vips",
+    "c": "795ba785583fcb5556a8da8cced22c3e11b4039b"
+  },
+  {
+    "P": "vips-magick",
+    "V": "8.18.7-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "vips",
+    "c": "795ba785583fcb5556a8da8cced22c3e11b4039b"
+  },
+  {
+    "P": "vips-poppler",
+    "V": "8.18.7-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "vips",
+    "c": "795ba785583fcb5556a8da8cced22c3e11b4039b"
+  },
+  {
+    "P": "vo-aacenc",
+    "V": "0.1.3-r3",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "vo-aacenc",
+    "c": "1e40ebb81e1bd430682f1e567f49def3e88314d0"
+  },
+  {
+    "P": "vo-amrwbenc",
+    "V": "0.1.3-r3",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "vo-amrwbenc",
+    "c": "1e40ebb81e1bd430682f1e567f49def3e88314d0"
+  },
+  {
+    "P": "volume_key",
+    "V": "0.3.12-r9",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "volume_key",
+    "c": "f72770bfd59c3268e5a5e664b0d0418568f30b9b"
+  },
+  {
+    "P": "vulkan-loader",
+    "V": "1.4.360-r0",
+    "A": "aarch64",
+    "L": "Apache-2.0",
+    "o": "vulkan-loader",
+    "c": "48337777063f6f6f08ba0dc001e6e7f465206da9"
+  },
+  {
+    "P": "wavpack-libs",
+    "V": "5.9.0-r0",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "wavpack",
+    "c": "38f2cc6d72156d6197e436aac6107a1efceb37a1"
+  },
+  {
+    "P": "wayland-libs-client",
+    "V": "1.26.0-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "wayland",
+    "c": "13b755bcd1f1ee9fc241c6e02d7ea22519ea7729"
+  },
+  {
+    "P": "wayland-libs-cursor",
+    "V": "1.26.0-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "wayland",
+    "c": "13b755bcd1f1ee9fc241c6e02d7ea22519ea7729"
+  },
+  {
+    "P": "wayland-libs-egl",
+    "V": "1.26.0-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "wayland",
+    "c": "13b755bcd1f1ee9fc241c6e02d7ea22519ea7729"
+  },
+  {
+    "P": "wayland-libs-server",
+    "V": "1.26.0-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "wayland",
+    "c": "13b755bcd1f1ee9fc241c6e02d7ea22519ea7729"
+  },
+  {
+    "P": "webkit2gtk-6.0",
+    "V": "2.48.1-r4",
+    "A": "aarch64",
+    "L": "LGPL-2.0-or-later AND BSD-2-Clause",
+    "o": "webkit2gtk-6.0",
+    "c": "e57b89272298556d050031a6e4ba575937f86c8e"
+  },
+  {
+    "P": "webrtc-audio-processing-1",
+    "V": "1.3-r5",
+    "A": "aarch64",
+    "L": "custom",
+    "o": "webrtc-audio-processing-1",
+    "c": "e1a0ce67c9843fe4fec3aeef4b2b64a1bd1fe200"
+  },
+  {
+    "P": "webrtc-audio-processing-2",
+    "V": "2.1-r3",
+    "A": "aarch64",
+    "L": "custom",
+    "o": "webrtc-audio-processing-2",
+    "c": "e1a0ce67c9843fe4fec3aeef4b2b64a1bd1fe200"
+  },
+  {
+    "P": "wipefs",
+    "V": "2.42.4-r3",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "util-linux",
+    "c": "087ea48145e24307010ba91f403c5ff8f402568c"
+  },
+  {
+    "P": "wireless-regdb",
+    "V": "2025.10.07-r0",
+    "A": "aarch64",
+    "L": "ISC",
+    "o": "wireless-regdb",
+    "c": "b622fe09a3d285b16d15fac251b30464be85f7aa"
+  },
+  {
+    "P": "wireless-tools",
+    "V": "30_pre9-r5",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "wireless-tools",
+    "c": "999fda402ae45258bb76de73c05946c52eae3067"
+  },
+  {
+    "P": "wireless-tools-libs",
+    "V": "30_pre9-r5",
+    "A": "aarch64",
+    "L": "GPL-2.0-only",
+    "o": "wireless-tools",
+    "c": "999fda402ae45258bb76de73c05946c52eae3067"
+  },
+  {
+    "P": "wireplumber",
+    "V": "0.5.18-r2",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "wireplumber",
+    "c": "253a269e5bdbfc9b3b6211700e0f168d396ad000"
+  },
+  {
+    "P": "wireplumber-libs",
+    "V": "0.5.18-r2",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "wireplumber",
+    "c": "253a269e5bdbfc9b3b6211700e0f168d396ad000"
+  },
+  {
+    "P": "wireplumber-openrc",
+    "V": "0.5.18-r2",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "wireplumber",
+    "c": "253a269e5bdbfc9b3b6211700e0f168d396ad000"
+  },
+  {
+    "P": "wlr-randr",
+    "V": "0.5.0-r1",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "wlr-randr",
+    "c": "28186404017058f4d4ee234e3b7683d3dac1b0bb"
+  },
+  {
+    "P": "wpa_supplicant",
+    "V": "2.11-r4",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "wpa_supplicant",
+    "c": "a5e7e28d156656420281cc42d2671d795239e6a7"
+  },
+  {
+    "P": "wpa_supplicant-openrc",
+    "V": "2.11-r4",
+    "A": "aarch64",
+    "L": "BSD-3-Clause",
+    "o": "wpa_supplicant",
+    "c": "a5e7e28d156656420281cc42d2671d795239e6a7"
+  },
+  {
+    "P": "x264-libs",
+    "V": "0.164.3108-r1",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "x264",
+    "c": "21efe0fb007d881e130592303c1a454434e055eb"
+  },
+  {
+    "P": "x265-libs",
+    "V": "4.2-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "x265",
+    "c": "e4d27a563252a7a9ed008764d6ea8d1da0c36b64"
+  },
+  {
+    "P": "xcb-util-renderutil",
+    "V": "0.3.10-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "xcb-util-renderutil",
+    "c": "95b351aa422c84f91063c9fe0209c93526694bc0"
+  },
+  {
+    "P": "xcb-util-wm",
+    "V": "0.4.2-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "xcb-util-wm",
+    "c": "09f36efd1faed68206751e23079ceed553287bb4"
+  },
+  {
+    "P": "xdg-dbus-proxy",
+    "V": "0.1.9-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "xdg-dbus-proxy",
+    "c": "b962ce4b08ac2c5df6354dce535edfbe4cf75a4e"
+  },
+  {
+    "P": "xdg-desktop-portal",
+    "V": "1.22.1-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "xdg-desktop-portal",
+    "c": "4e89932c64572ec969b80177a1695dc202cec1a6"
+  },
+  {
+    "P": "xdg-desktop-portal-gtk",
+    "V": "1.15.3-r2",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "xdg-desktop-portal-gtk",
+    "c": "a3d7c1b7525dbabef762e0445ac71956203d6a12"
+  },
+  {
+    "P": "xdg-desktop-portal-openrc",
+    "V": "1.22.1-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "xdg-desktop-portal",
+    "c": "4e89932c64572ec969b80177a1695dc202cec1a6"
+  },
+  {
+    "P": "xdg-desktop-portal-phosh",
+    "V": "0.57.0-r0",
+    "A": "aarch64",
+    "L": "GPL-3.0-or-later",
+    "o": "xdg-desktop-portal-phosh",
+    "c": "edcc68c00eec237fd683bd307eabdbdd2ef2d2ee"
+  },
+  {
+    "P": "xdg-desktop-portal-wlr",
+    "V": "0.8.4-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "xdg-desktop-portal-wlr",
+    "c": "465306d385967174af3c0c335372dee484e98a15"
+  },
+  {
+    "P": "xdg-desktop-portal-wlr-openrc",
+    "V": "0.8.4-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "xdg-desktop-portal-wlr",
+    "c": "465306d385967174af3c0c335372dee484e98a15"
+  },
+  {
+    "P": "xdg-document-portal",
+    "V": "1.22.1-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "xdg-desktop-portal",
+    "c": "4e89932c64572ec969b80177a1695dc202cec1a6"
+  },
+  {
+    "P": "xdg-document-portal-openrc",
+    "V": "1.22.1-r0",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "xdg-desktop-portal",
+    "c": "4e89932c64572ec969b80177a1695dc202cec1a6"
+  },
+  {
+    "P": "xdg-user-dirs",
+    "V": "0.20-r0",
+    "A": "aarch64",
+    "L": "MIT AND GPL-2.0-only",
+    "o": "xdg-user-dirs",
+    "c": "dd2093daa7a2b37eb37be77b4621b0d3459bc70e"
+  },
+  {
+    "P": "xdg-user-dirs-gtk",
+    "V": "0.16-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "xdg-user-dirs-gtk",
+    "c": "d764357830ccf6f7d92ebabf9bb2b1b794ba84c3"
+  },
+  {
+    "P": "xdg-utils",
+    "V": "1.2.1-r1",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "xdg-utils",
+    "c": "d49de1af6ae14fedd285a43658664d01c71cdbe5"
+  },
+  {
+    "P": "xfsprogs",
+    "V": "7.1.1-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "xfsprogs",
+    "c": "0168497de43971ecf457fb223a4d4399197526da"
+  },
+  {
+    "P": "xfsprogs-extra",
+    "V": "7.1.1-r1",
+    "A": "aarch64",
+    "L": "LGPL-2.1-or-later",
+    "o": "xfsprogs",
+    "c": "0168497de43971ecf457fb223a4d4399197526da"
+  },
+  {
+    "P": "xkbcomp",
+    "V": "1.5.0-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "xkbcomp",
+    "c": "aa8ee026b4c1ab3a33ac7feeba3bbdd2ee151ea6"
+  },
+  {
+    "P": "xkeyboard-config",
+    "V": "99992.48-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "xkeyboard-config",
+    "c": "-dirty"
+  },
+  {
+    "P": "xorg-server-common",
+    "V": "21.1.25-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "xorg-server",
+    "c": "460ea88b4ae9df66d51f5ea1c1f4e5d53e214993"
+  },
+  {
+    "P": "xprop",
+    "V": "1.2.8-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "xprop",
+    "c": "d6565c1cae11539e578c658755243a30d0db5582"
+  },
+  {
+    "P": "xset",
+    "V": "1.2.5-r1",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "xset",
+    "c": "1c8874eacceeaf02712129a30a1bbdab7be04528"
+  },
+  {
+    "P": "xvidcore",
+    "V": "1.3.7-r2",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later",
+    "o": "xvidcore",
+    "c": "33283848034c9885d984c8e8697c645c57324938"
+  },
+  {
+    "P": "xwayland",
+    "V": "24.1.14-r0",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "xwayland",
+    "c": "0cc4517b3b3c15b040837fb942f469b56b3fc4cf"
+  },
+  {
+    "P": "xz",
+    "V": "5.8.4-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later",
+    "o": "xz",
+    "c": "950af2f9ad0e4518d167e8ce0b41e7be0a7a730e"
+  },
+  {
+    "P": "xz-libs",
+    "V": "5.8.4-r0",
+    "A": "aarch64",
+    "L": "GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later",
+    "o": "xz",
+    "c": "950af2f9ad0e4518d167e8ce0b41e7be0a7a730e"
+  },
+  {
+    "P": "yaml",
+    "V": "0.2.5-r2",
+    "A": "aarch64",
+    "L": "MIT",
+    "o": "yaml",
+    "c": "33283848034c9885d984c8e8697c645c57324938"
+  },
+  {
+    "P": "zlib",
+    "V": "1.3.2-r1",
+    "A": "aarch64",
+    "L": "Zlib",
+    "o": "zlib",
+    "c": "ed7d11b8c5de5f1744b2cf762c160c2385f28212"
+  },
+  {
+    "P": "zstd-libs",
+    "V": "1.5.7-r2",
+    "A": "aarch64",
+    "L": "BSD-3-Clause OR GPL-2.0-or-later",
+    "o": "zstd",
+    "c": "3c6e2ee2b16f403d53eab39c4426eb61f003c322"
+  }
+]

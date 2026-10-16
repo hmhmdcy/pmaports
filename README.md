@@ -1,3 +1,5 @@
+> Realme X2 Pro: start with [README.samurai.md](README.samurai.md).
+
 # postmarketOS aports repository
 
 This repository contains the APKBUILD files for postmarketOS-specific packages, along with the required patches and scripts, if any.
