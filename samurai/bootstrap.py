@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Prepare a new, isolated pmbootstrap workspace; never flashes a device."""
 from pathlib import Path
-import argparse, configparser, os, subprocess, platform
+import argparse, configparser, os, subprocess, platform, json
 
 PIN='200f5123615808326ac796f66b02fdc6cebbcbf1'
 PACKAGES=['libcamera','samurai-camera-config','mesa-vulkan-freedreno-samurai',
@@ -31,6 +31,17 @@ if not tool.exists():
  run(['git','-C',tool,'fetch','--depth=1','mirror',PIN])
  run(['git','-C',tool,'checkout','--detach',PIN])
 assert subprocess.check_output(['git','-C',tool,'rev-parse','HEAD'],text=True).strip()==PIN
+# pmbootstrap resolves channel metadata through the canonical GitLab remote.
+# Initialize that metadata ref from the explicitly pinned imported commit.
+base_pin=json.loads((repo/'samurai/sources.json').read_text())['pmaports_base']
+if subprocess.run(['git','-C',repo,'cat-file','-e',base_pin],capture_output=True).returncode:
+ run(['git','-C',repo,'fetch','--depth=1','origin',base_pin])
+canonical='https://gitlab.postmarketos.org/postmarketOS/pmaports.git'
+remote=subprocess.run(['git','-C',repo,'remote','get-url','upstream'],capture_output=True,text=True)
+if remote.returncode:run(['git','-C',repo,'remote','add','upstream',canonical])
+else:assert remote.stdout.strip()==canonical,'Unexpected upstream URL'
+if subprocess.run(['git','-C',repo,'show-ref','--verify','--quiet','refs/remotes/upstream/main']).returncode:
+ run(['git','-C',repo,'update-ref','refs/remotes/upstream/main',base_pin])
 cfg=configparser.ConfigParser()
 cfg['pmbootstrap']={'aports':str(repo),'work':str(base/'work'),'device':'realme-samurai',
  'kernel':'none','ui':'phosh','ui_extras':'false','service_manager':'openrc',
@@ -46,7 +57,9 @@ if not config.exists():
 cmd=['python3',tool/'pmbootstrap.py']
 if os.geteuid()==0:cmd+=['--as-root']
 cmd+=['-y','-j',str(a.jobs),'-c',config]
-if not (base/'work/version').exists():run(cmd+['init'],input='\n'*100,text=True)
+if not (base/'initialized').exists():
+ run(cmd+['init'],input='\n'*100,text=True)
+ (base/'initialized').write_text(PIN+'\n')
 run(cmd+['status'])
 if a.build:
  run(cmd+['build','--arch',platform.machine(),'--lax','crossdirect'])
