@@ -1,6 +1,6 @@
 # Realme X2 Pro rootfs 重建
 
-本仓库是用户态 APKBUILD、补丁、服务和设备配置的正式归属。内核源码在 [`hmhmdcy/linux`](https://github.com/hmhmdcy/linux/tree/samurai-ipe-variable-pd10-441)，EDK2、DTB、历史快照和发布证据在 [`hmhmdcy/edk2-realme-x2-pro`](https://github.com/hmhmdcy/edk2-realme-x2-pro)。先读 [STATUS.md](STATUS.md)，不要把构建成功等同于所有硬件通过。
+本仓库是用户态 APKBUILD、补丁、服务和设备配置的正式归属。内核源码在 [`hmhmdcy/realme-x2-pro-linux`](https://github.com/hmhmdcy/realme-x2-pro-linux/tree/samurai-ipe-variable-pd10-441)，EDK2、DTB、历史快照和发布证据在 [`hmhmdcy/realme-x2-pro-edk2`](https://github.com/hmhmdcy/realme-x2-pro-edk2)。先读 [STATUS.md](STATUS.md)，不要把构建成功等同于所有硬件通过。
 
 推荐 `samurai-userspace`：前六个提交按主题整理工具链、相机、Turnip、radio/GNSS、平台和文档，之后继续记录 r33/r28、GeoClue/PipeWire 及验证修正；原 `samurai-bringup` 保留历史。当前候选固定 libcamera `99990.7.2-r33`、config/stack `0.1.0-r28`、platform `5-r3`、desktop `3-r1`、GNSS `2-r1`、GeoClue `2.8.2-r1` 和 PipeWire `1.6.9-r3`。`r34/r29` 没有安装证据，不是稳定发布。**IMX319 的内核实验供电/OF 依赖尚未正式化，整机纯净维护版本未发布。**
 
@@ -9,8 +9,8 @@
 需要 Linux x86_64 或 ARM64、Python 3.12以上、Git、sudo/挂载权限、约 25 GiB 可用的 ext4 工作空间。WSL2 可以使用，但 work 目录必须在 Linux 文件系统，不能放在 `/mnt/c`、`/mnt/e` 等 NTFS 挂载上。需联网获取 APK 和已锁定的源码。构建期间保持 WSL 实例运行。
 
 ```sh
-git clone --branch samurai-userspace https://github.com/hmhmdcy/pmaports.git
-cd pmaports
+git clone --branch samurai-userspace https://github.com/hmhmdcy/realme-x2-pro-pmaports.git
+cd realme-x2-pro-pmaports
 python3 samurai/bootstrap.py --work "$HOME/samurai-build" --build --lax --jobs 4
 ```
 
@@ -55,7 +55,7 @@ sudo python3 samurai/provision-firmware.py \
   --radio-manifest /private/own/modem-sha256.txt
 ```
 
-firmware 是完整的本机固件树，包含 ADSP、GPU、Wi-Fi、BT 文件。slpi-firmware 单独提供自己的 A.11 `slpi.mdt` 及完整分片；安装时规范化到 `qcom/sm8150/realme/samurai-slpi-a11/`。sensor-sources 包含 `sdsp/`、`sensors-vendor/config/`、`sensors-vendor/sns_reg_config`、`sensors-persist/registry/`。modemType 预期为 4。磁力计转义修正及固件出处见 [113](https://github.com/hmhmdcy/edk2-realme-x2-pro/tree/master/Platform/Realme/sm8150/reference/kernel113) 和 [186–187](https://github.com/hmhmdcy/edk2-realme-x2-pro/tree/master/Platform/Realme/sm8150/reference/kernel187)。脚本验证已知配置 SHA；不同固件不能直接跳过检查。
+firmware 是完整的本机固件树，包含 ADSP、GPU、Wi-Fi、BT 文件。slpi-firmware 单独提供自己的 A.11 `slpi.mdt` 及完整分片；安装时规范化到 `qcom/sm8150/realme/samurai-slpi-a11/`。sensor-sources 包含 `sdsp/`、`sensors-vendor/config/`、`sensors-vendor/sns_reg_config`、`sensors-persist/registry/`。modemType 预期为 4。磁力计转义修正及固件出处见 [113](https://github.com/hmhmdcy/realme-x2-pro-edk2/tree/master/Platform/Realme/sm8150/reference/kernel113) 和 [186–187](https://github.com/hmhmdcy/realme-x2-pro-edk2/tree/master/Platform/Realme/sm8150/reference/kernel187)。脚本验证已知配置 SHA；不同固件不能直接跳过检查。
 
 已有本机 Linux 只读备份可提供这些输入；`/etc/samurai-ssc.json` 标识原始来源位置，`/etc/samurai-wifi/modem-sha256.txt` 提供 radio manifest。新候选统一存放在 `/var/lib/samurai/firmware/`，不会依赖历史 `kNNN` 工作目录。也可从自己的合法固件包/只读备份整理输入，但该提取过程及许可需自行确认。
 
@@ -65,7 +65,7 @@ firmware 是完整的本机固件树，包含 ADSP、GPU、Wi-Fi、BT 文件。s
 
 本设备包选择 `kernel=none`、`flash_method=none`。它不产生可独立启动的手机镜像。最后实机是 EDK2 boot235 + Image183，另有已核对的 775 个模块；不是安装一个通用上游内核就能恢复。屏幕修复还依赖 UEFI164 和内核 DSI/DPU153–165，GLES 依赖147内核地址对齐，不能只恢复用户态。
 
-外置启动链的来源与尚未闭环的步骤见 [BOOT-PROVENANCE.md](BOOT-PROVENANCE.md)，回退另见 [240 交接](https://github.com/hmhmdcy/edk2-realme-x2-pro/blob/master/Platform/Realme/sm8150/reference/kernel240/HANDOFF.md)。历史 rootfs handoff 的 PARTUUID/F2FS UUID 是私人部署参数，新文件系统必须重新生成绑定，不能复制旧 UUID 或凭 `uname -r` 认定模块匹配。完整逐字节回退仍使用个人248离线备份。
+外置启动链的来源与尚未闭环的步骤见 [BOOT-PROVENANCE.md](BOOT-PROVENANCE.md)，回退另见 [240 交接](https://github.com/hmhmdcy/realme-x2-pro-edk2/blob/master/Platform/Realme/sm8150/reference/kernel240/HANDOFF.md)。历史 rootfs handoff 的 PARTUUID/F2FS UUID 是私人部署参数，新文件系统必须重新生成绑定，不能复制旧 UUID 或凭 `uname -r` 认定模块匹配。完整逐字节回退仍使用个人248离线备份。
 
 本流程没有刷写命令。产物须先完成离线检查，再经过设备身份、备份和模块匹配核对，才进入单独的部署/实机验收步骤。
 

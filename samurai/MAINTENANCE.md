@@ -24,7 +24,7 @@ fork 中的 `temp/libcamera`、`temp/modemmanager` 要同时比较对应 Alpine/
 
 ## 内核仓库与当前边界
 
-内核态补丁的正式归属是 [`hmhmdcy/linux`](https://github.com/hmhmdcy/linux)，不是 pmaports 或 EDK2。当前公开分支：
+内核态补丁的正式归属是 [`hmhmdcy/realme-x2-pro-linux`](https://github.com/hmhmdcy/realme-x2-pro-linux)，不是 pmaports 或 EDK2。当前公开分支：
 
 | 分支 | 提交 | 作用 |
 | --- | --- | --- |

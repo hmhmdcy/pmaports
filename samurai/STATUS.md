@@ -15,11 +15,11 @@
 | 蜂窝 | 无 SIM，未验语音/数据；MM 状态 −1/reason2/power1 | MM 与 radio 配置；不是业务通过 |
 | GNSS | 零 CNR、无 fix；1240 份日志/2586 个原始 C/No 全 0；GeoClue 生命周期和 no-SIM 电源策略已有更新，但 MEMSHARE 等试验未证明根因 | GeoClue、MM、gnss-assist；保持未解决 |
 
-历史记录入口：[硬件状态](https://github.com/hmhmdcy/edk2-realme-x2-pro/blob/master/Platform/Realme/sm8150/linux-port/docs/HARDWARE-STATUS.md)、[240](https://github.com/hmhmdcy/edk2-realme-x2-pro/tree/master/Platform/Realme/sm8150/reference/kernel240)、[247](https://github.com/hmhmdcy/edk2-realme-x2-pro/tree/master/Platform/Realme/sm8150/reference/kernel247)、[248](https://github.com/hmhmdcy/edk2-realme-x2-pro/tree/master/Platform/Realme/sm8150/reference/kernel248)、[481](https://github.com/hmhmdcy/edk2-realme-x2-pro/tree/master/Platform/Realme/sm8150/reference/kernel481)、[484](https://github.com/hmhmdcy/edk2-realme-x2-pro/tree/master/Platform/Realme/sm8150/reference/kernel484)、[491](https://github.com/hmhmdcy/edk2-realme-x2-pro/tree/master/Platform/Realme/sm8150/reference/kernel491)。
+历史记录入口：[硬件状态](https://github.com/hmhmdcy/realme-x2-pro-edk2/blob/master/Platform/Realme/sm8150/linux-port/docs/HARDWARE-STATUS.md)、[240](https://github.com/hmhmdcy/realme-x2-pro-edk2/tree/master/Platform/Realme/sm8150/reference/kernel240)、[247](https://github.com/hmhmdcy/realme-x2-pro-edk2/tree/master/Platform/Realme/sm8150/reference/kernel247)、[248](https://github.com/hmhmdcy/realme-x2-pro-edk2/tree/master/Platform/Realme/sm8150/reference/kernel248)、[481](https://github.com/hmhmdcy/realme-x2-pro-edk2/tree/master/Platform/Realme/sm8150/reference/kernel481)、[484](https://github.com/hmhmdcy/realme-x2-pro-edk2/tree/master/Platform/Realme/sm8150/reference/kernel484)、[491](https://github.com/hmhmdcy/realme-x2-pro-edk2/tree/master/Platform/Realme/sm8150/reference/kernel491)。
 
 ## 当前用户态候选
 
-该分支的正式源码归属是 [`hmhmdcy/pmaports`](https://github.com/hmhmdcy/pmaports/tree/samurai-userspace)；内核源码归属是 [`hmhmdcy/linux`](https://github.com/hmhmdcy/linux/tree/samurai-ipe-variable-pd10-441)。EDK2 只保存快照、历史和证据，不是内核或 APKBUILD 的最终仓库。
+该分支的正式源码归属是 [`hmhmdcy/realme-x2-pro-pmaports`](https://github.com/hmhmdcy/realme-x2-pro-pmaports/tree/samurai-userspace)；内核源码归属是 [`hmhmdcy/realme-x2-pro-linux`](https://github.com/hmhmdcy/realme-x2-pro-linux/tree/samurai-ipe-variable-pd10-441)。EDK2 只保存快照、历史和证据，不是内核或 APKBUILD 的最终仓库。
 
 当前仓库固定：
 

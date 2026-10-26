@@ -3,7 +3,7 @@ pkgname=mesa-vulkan-freedreno-samurai
 pkgver=26.2.4
 pkgrel=2
 pkgdesc="Realme X2 Pro mesa-vulkan-freedreno-samurai"
-url="https://github.com/hmhmdcy/pmaports"
+url="https://github.com/hmhmdcy/realme-x2-pro-pmaports"
 arch="aarch64"
 license="MIT AND SGI-B-2.0 AND BSL-1.0"
 provides="mesa-vulkan-freedreno=$pkgver-r$pkgrel"

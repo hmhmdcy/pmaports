@@ -4,9 +4,11 @@
 
 仓库边界：
 
-- 用户态：[`hmhmdcy/pmaports`](https://github.com/hmhmdcy/pmaports/tree/samurai-userspace)，保存 APKBUILD、补丁、OpenRC/udev/桌面配置和服务脚本。
-- 内核态：[`hmhmdcy/linux`](https://github.com/hmhmdcy/linux/tree/samurai-ipe-variable-pd10-441)，保存 Linux 驱动、DTS 和后续相机分支。
-- 快照与证据：[`hmhmdcy/edk2-realme-x2-pro`](https://github.com/hmhmdcy/edk2-realme-x2-pro)，保存 EDK2、发布索引、历史源码快照和验证记录，不替代上述两个正式源码仓库。
+- 用户态：[`hmhmdcy/realme-x2-pro-pmaports`](https://github.com/hmhmdcy/realme-x2-pro-pmaports/tree/samurai-userspace)，保存 APKBUILD、补丁、OpenRC/udev/桌面配置和服务脚本。
+- 内核态：[`hmhmdcy/realme-x2-pro-linux`](https://github.com/hmhmdcy/realme-x2-pro-linux/tree/samurai-ipe-variable-pd10-441)，保存 Linux 驱动、DTS 和后续相机分支。
+- 快照与证据：[`hmhmdcy/realme-x2-pro-edk2`](https://github.com/hmhmdcy/realme-x2-pro-edk2)，保存 EDK2、发布索引、历史源码快照和验证记录，不替代上述两个正式源码仓库。
+
+2026-10-26 起三个正式仓库统一采用 `realme-x2-pro-<组件>` 命名；旧名 `linux`、`pmaports`、`edk2-realme-x2-pro` 的 GitHub 重定向只用于兼容，文档、脚本和新建 clone 应使用上表新名称。
 
 这是从 postmarketOS/Nura 的 GitLab pmaports 导入的个人适配分支；不是官方已合入的设备支持，也不是完整 rootfs 二进制备份。上游完整历史保留，基线为 `862c5af2ca9a48f43e934d9ea55fee0dd47a67f2`；`main` 保留该基线，设备改动位于设备分支。GitHub 没有 GitLab 项目的原生 fork 关系。
 

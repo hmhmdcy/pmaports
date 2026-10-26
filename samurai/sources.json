@@ -3,14 +3,14 @@
   "pmaports_base": "862c5af2ca9a48f43e934d9ea55fee0dd47a67f2",
   "pmbootstrap": "200f5123615808326ac796f66b02fdc6cebbcbf1",
   "pmaports": {
-    "url": "https://github.com/hmhmdcy/pmaports",
+    "url": "https://github.com/hmhmdcy/realme-x2-pro-pmaports",
     "branch": "samurai-userspace",
     "base_commit": "862c5af2ca9a48f43e934d9ea55fee0dd47a67f2",
     "initial_thematic_commits": 6,
     "later_commits_are_appended": true
   },
   "kernel": {
-    "url": "https://github.com/hmhmdcy/linux",
+    "url": "https://github.com/hmhmdcy/realme-x2-pro-linux",
     "branch": "samurai-ipe-variable-pd10-441",
     "commit": "5b0e7a9ac5b311a4c4fe17cf48b7ed4fc9a7b91d",
     "branches": {
@@ -22,7 +22,7 @@
     "maintenance_purity": "not established; experimental OF fixtures, overlays and lab PMIC history remain"
   },
   "edk2": {
-    "url": "https://github.com/hmhmdcy/edk2-realme-x2-pro",
+    "url": "https://github.com/hmhmdcy/realme-x2-pro-edk2",
     "branch": "master",
     "commit": "75f69d524c13c34783177d4e6d5e4269a7ae4980",
     "role": "EDK2, DTB, source snapshots and publication evidence; not the canonical kernel or APKBUILD repository"

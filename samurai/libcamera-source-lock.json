@@ -3,10 +3,10 @@
   "package_version": "99990.7.2-r33",
   "configuration_version": "0.1.0-r28",
   "patch_count": 52,
-  "canonical_recipe_repository": "https://github.com/hmhmdcy/pmaports/tree/samurai-userspace/temp/libcamera",
-  "canonical_configuration_repository": "https://github.com/hmhmdcy/pmaports/tree/samurai-userspace/device/testing/samurai-camera-config",
-  "source_recipe_evidence": "https://github.com/hmhmdcy/edk2-realme-x2-pro/tree/master/Platform/Realme/sm8150/reference/kernel475",
-  "hardware_evidence": "https://github.com/hmhmdcy/edk2-realme-x2-pro/blob/master/Platform/Realme/sm8150/reference/kernel484/hardware-validation.json",
-  "r34_r29_excluded": "https://github.com/hmhmdcy/edk2-realme-x2-pro/blob/master/Platform/Realme/sm8150/reference/kernel490/README.md",
+  "canonical_recipe_repository": "https://github.com/hmhmdcy/realme-x2-pro-pmaports/tree/samurai-userspace/temp/libcamera",
+  "canonical_configuration_repository": "https://github.com/hmhmdcy/realme-x2-pro-pmaports/tree/samurai-userspace/device/testing/samurai-camera-config",
+  "source_recipe_evidence": "https://github.com/hmhmdcy/realme-x2-pro-edk2/tree/master/Platform/Realme/sm8150/reference/kernel475",
+  "hardware_evidence": "https://github.com/hmhmdcy/realme-x2-pro-edk2/blob/master/Platform/Realme/sm8150/reference/kernel484/hardware-validation.json",
+  "r34_r29_excluded": "https://github.com/hmhmdcy/realme-x2-pro-edk2/blob/master/Platform/Realme/sm8150/reference/kernel490/README.md",
   "patched_tree_sha256": "ae7785b15bc1c9d7434e0804961a0a6713f737beade9668630b8541680587307"
 }
