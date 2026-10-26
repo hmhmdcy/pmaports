@@ -1,28 +1,12 @@
 {
   "source_version": "0.7.2",
-  "functional_patch_count": 6,
-  "upstream_distro_patch_count": 6,
-  "final_sources_sha256": {
-    "include/libcamera/internal/delayed_controls.h": "6b1e94cb362f9ed8f887e2b9a0b284b92f5efad3f0e6b1ed52ab0d4c3b8e3234",
-    "include/libcamera/internal/software_isp/software_isp.h": "ed74444a09a24329b84ab77e510df27a2798ff66b9a44babc20c6240924407e7",
-    "include/libcamera/internal/software_isp/swstats_cpu.h": "034390b863bbf6961fe2e8fbfbf648a42c94b008efa66e3b786996d873125cd3",
-    "include/libcamera/ipa/soft.mojom": "4dd2a42c3a7802333b915495a6e41a5a354dc18e2ac8fda898ad7c2916eafd31",
-    "src/ipa/libipa/camera_sensor_helper.cpp": "31ab13c6c2f81f5c1bd90e2392d2722f8b4bd40f6ccdf265fa7a12575f50087c",
-    "src/ipa/simple/algorithms/agc.cpp": "a31fc8a19d4a390cea6f7cb8fba87ca9bb59d6c3000176d2d1c17aa5cbeaacce",
-    "src/ipa/simple/algorithms/agc.h": "18c7f0dc7a7a608298a7fc21232e26a883913e6dbd8e15a81f43d066b5c2834b",
-    "src/ipa/simple/ipa_context.h": "9260784b8bf92bd0498a6cf58ba0d4fbb4f07bcc4ebeb770652a557d157a3da6",
-    "src/ipa/simple/soft_simple.cpp": "e93a803b9eeb29924a6e29e4b63ab7b2d3bd1de42745c0e45f3e0dfe5bb3bd01",
-    "src/libcamera/delayed_controls.cpp": "2b4a34c3c0c2b8a14b8499d052ea1d0cae3e01889fed157ea558561521e790ef",
-    "src/libcamera/pipeline/simple/simple.cpp": "d761f690655cc6eb898b06caa698e4aeeb0310fac044ccf30370fb12c43b869a",
-    "src/libcamera/sensor/camera_sensor_properties.cpp": "938ea102ca456b3d853d7bffc18822a2c674dfd76d4c65c4e3c282e13d618b14",
-    "src/libcamera/software_isp/debayer.h": "cdd660b8ff2b4cf730f2511584eae8016b1475a40c3ee3911a0c0fad0e3eafea",
-    "src/libcamera/software_isp/debayer_cpu.cpp": "5ea41aa49f156537aa778384a017e68d7f0ee71c2f6f20ffdffe11690365671e",
-    "src/libcamera/software_isp/debayer_cpu.h": "dc69512230da61120f266100c8fd5316d18d3fbee78358191f4d2eeb52232c09",
-    "src/libcamera/software_isp/native_quad_bayer.h": "d7a78eafbd1b4cdefa200359fca0e65696fcaa2ace8abbe0b6a9dff5534fc1ad",
-    "src/libcamera/software_isp/software_isp.cpp": "0e7fb3c0e26c18cf6f7af15c7df5f77aa62e27a4ef642e37501511dfe3d31a2c",
-    "test/meson.build": "36e65e271567a78141ff54743b25a69be97be4852a956ef7a48d458e818dc2e8",
-    "test/native-quad-cpu.cpp": "88ed5e09f4872447c894211b6c95c134cf062f3c4c6a57392189c676b8f95cb4",
-    "test/native-quad.cpp": "f695ee60a744f9962a6c966841fff6543181ed8ea677b927c2f2a90c28ce686b",
-    "utils/codegen/ipc/generators/libcamera_templates/module_ipa_proxy.h.tmpl": "a9ce2d2ec1766e24d57ea826f0d2ae9b4474bda5d680888eecb6b0d724d87cbd"
-  }
+  "package_version": "99990.7.2-r33",
+  "configuration_version": "0.1.0-r28",
+  "patch_count": 52,
+  "canonical_recipe_repository": "https://github.com/hmhmdcy/pmaports/tree/samurai-userspace/temp/libcamera",
+  "canonical_configuration_repository": "https://github.com/hmhmdcy/pmaports/tree/samurai-userspace/device/testing/samurai-camera-config",
+  "source_recipe_evidence": "https://github.com/hmhmdcy/edk2-realme-x2-pro/tree/master/Platform/Realme/sm8150/reference/kernel475",
+  "hardware_evidence": "https://github.com/hmhmdcy/edk2-realme-x2-pro/blob/master/Platform/Realme/sm8150/reference/kernel484/hardware-validation.json",
+  "r34_r29_excluded": "https://github.com/hmhmdcy/edk2-realme-x2-pro/blob/master/Platform/Realme/sm8150/reference/kernel490/README.md",
+  "patched_tree_sha256": "ae7785b15bc1c9d7434e0804961a0a6713f737beade9668630b8541680587307"
 }
