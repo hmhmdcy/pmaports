@@ -1,14 +1,14 @@
 maintainer="hmhmdcy <hmhmdcy@users.noreply.github.com>"
 pkgname=samurai-platform
 pkgver=5
-pkgrel=0
+pkgrel=3
 pkgdesc="Realme X2 Pro platform"
 url="https://github.com/hmhmdcy/pmaports"
 arch="aarch64"
 license="LicenseRef-Local-Project"
 options="!check"
-depends="samurai-radio-tools python3 openrc eudev iproute2 util-linux coreutils qrtr libqmi networkmanager bluez wpa_supplicant openssh openssh-server-pam alsa-ucm-conf alsa-utils pulseaudio"
-source="usr_libexec_samurai-audio-route etc_pulse_daemon.conf.d_90-samurai.conf etc_phoc_phoc.ini etc_phosh_phoc.ini usr_sbin_samurai-bluetooth usr_sbin_samurai-modem-configs usr_sbin_samurai-modem-remoteproc usr_sbin_samurai-radio-address usr_sbin_samurai-udhcpc-wlan usr_sbin_samurai-wifi usr_sbin_samurai-usb etc_init.d_samurai-loopback etc_init.d_samurai-radio etc_init.d_samurai-usb etc_NetworkManager_conf.d_20-samurai-wlan.conf etc_NetworkManager_conf.d_90-samurai-usb.conf etc_modprobe.d_samurai-pmic-bringup.conf usr_share_alsa_ucm2_conf.d_Realme_X2_Pro_HiFi.conf usr_share_alsa_ucm2_conf.d_Realme_X2_Pro_Realme_X2_Pro.conf"
+depends="samurai-radio-tools python3 openrc eudev iproute2 util-linux coreutils qrtr libqmi networkmanager bluez wpa_supplicant openssh openssh-server-pam alsa-ucm-conf alsa-utils pulseaudio pulseaudio-bluez"
+source="usr_libexec_samurai-audio-route etc_pulse_daemon.conf.d_90-samurai.conf etc_phoc_phoc.ini etc_phosh_phoc.ini usr_sbin_samurai-bluetooth usr_sbin_samurai-modem-configs usr_sbin_samurai-modem-remoteproc usr_sbin_samurai-radio-address usr_sbin_samurai-udhcpc-wlan usr_sbin_samurai-wifi usr_sbin_samurai-usb etc_init.d_samurai-loopback etc_init.d_samurai-radio etc_init.d_samurai-usb etc_NetworkManager_conf.d_20-samurai-wlan.conf etc_NetworkManager_conf.d_90-samurai-usb.conf 99-realme-rmx1931-sensors.rules usr_share_alsa_ucm2_conf.d_Realme_X2_Pro_HiFi.conf usr_share_alsa_ucm2_conf.d_Realme_X2_Pro_Realme_X2_Pro.conf"
 package() {
  install -Dm755 "$srcdir"/usr_libexec_samurai-audio-route "$pkgdir"/usr/libexec/samurai-audio-route
  install -Dm644 "$srcdir"/etc_pulse_daemon.conf.d_90-samurai.conf "$pkgdir"/etc/pulse/daemon.conf.d/90-samurai.conf
@@ -26,7 +26,7 @@ package() {
  install -Dm755 "$srcdir"/etc_init.d_samurai-usb "$pkgdir"/etc/init.d/samurai-usb
  install -Dm644 "$srcdir"/etc_NetworkManager_conf.d_20-samurai-wlan.conf "$pkgdir"/etc/NetworkManager/conf.d/20-samurai-wlan.conf
  install -Dm644 "$srcdir"/etc_NetworkManager_conf.d_90-samurai-usb.conf "$pkgdir"/etc/NetworkManager/conf.d/90-samurai-usb.conf
- install -Dm644 "$srcdir"/etc_modprobe.d_samurai-pmic-bringup.conf "$pkgdir"/etc/modprobe.d/samurai-pmic-bringup.conf
+ install -Dm644 "$srcdir"/99-realme-rmx1931-sensors.rules "$pkgdir"/usr/lib/udev/rules.d/99-realme-rmx1931-sensors.rules
  install -Dm644 "$srcdir"/usr_share_alsa_ucm2_conf.d_Realme_X2_Pro_HiFi.conf "$pkgdir"/usr/share/alsa/ucm2/conf.d/Realme_X2_Pro/HiFi.conf
  install -Dm644 "$srcdir"/usr_share_alsa_ucm2_conf.d_Realme_X2_Pro_Realme_X2_Pro.conf "$pkgdir"/usr/share/alsa/ucm2/conf.d/Realme_X2_Pro/Realme_X2_Pro.conf
 }
@@ -42,13 +42,13 @@ sha512sums="
 6dc665811144147f81c70ad7477088be47f15d97f9db3a5e2de4c73855911bb717e0be5d5b433f588f4af55f57442febb3abbc763edbe2b9f1f94dd42de71609  usr_sbin_samurai-radio-address
 62414aa3e2087a97c71954a630070cf61d3873a1e825e33e58328edafe94193cdcde6258e09ad045700c9969325660a286e8448645df6f7da344e30644ecab65  usr_sbin_samurai-udhcpc-wlan
 9b113a1e5dddc050d0e4f114ceb23fdf93dce67f336156406c2f2b6b7fba75ba3581785cdb8153864061d0d8647dcd85643f376d8ee82dbf6bf334e840729463  usr_sbin_samurai-wifi
-09d6687e264f0c405c78f73957c7145fc3e4e37f5e9494548287ace94d923d9f89378e8d33103f19c36fe0e53dd7e5aa9372a0b704cacf144930a63d0b626065  usr_sbin_samurai-usb
+381d87ea3132ef0b48c304868e5ab1420f9bfcdb243475b17cd6200e9e0a8c0db290d7c74f533761ed56bbcc97039dd76c85c171884cca0ce448ce97d6f03766  usr_sbin_samurai-usb
 99766805c16cfdc8d280ab84d77dd8d98da85794c380ba62a67a20d56e7fed32c6c60ae22f8b782238d8685cf4c6cf1634e2e7c0585fccaaa3f64360fdf32137  etc_init.d_samurai-loopback
 fb17427fb2223606c7e2a95d964e280e7bf123d720dd9716b15e719796f8b6329b7acd0ccee9612fcd7e8d95cbe78c2e531d6166c0186a7cfd3380ce702ec795  etc_init.d_samurai-radio
 ee6c752e81617833417cc2cdced47bc4bc9283ea9f9046e629e3bd582ceb8ae7ea5cd99571fd484ebbe7b6ba5ca43031cbca82088130ed4a3996d97b6c508072  etc_init.d_samurai-usb
 7d81890122f63c43c4c99062986818156ae091a05ffb8352c1f4c372b20a797efe4e901266f4222f61fea2e44d3711216fa58d3a014874de1cd3aaebd25276e8  etc_NetworkManager_conf.d_20-samurai-wlan.conf
 98357776e02b8aff3b585280bf9d4a3082ae8ad694ac880616ca66fec423ee2a645bf65840194e51d0345c6a60fa4c426f183a955ac0233e77c1fa476fb90499  etc_NetworkManager_conf.d_90-samurai-usb.conf
-018ff7036f909b67b8262c115169cceb891738888d037f23578e4f9dbc8f1fadb6505857229938aedd7437c257fbcff4eb02bd24b051057c7c5e049fd0bc6761  etc_modprobe.d_samurai-pmic-bringup.conf
+7621e2d3eb93b331b7e9f8f764cf682ba876ce105b2afbda3313ccbb8e0e029a6dc9c0915a50275f307513224f745b00247935103706eef952c321d04aeb6ba9  99-realme-rmx1931-sensors.rules
 410defad388c39ba1b716d2152c3713f4db4437e5f778472e665536f6025861801fb9df626fab1b45f1b0ea546c12cc5c873ff63487736ba20a71bab59c85916  usr_share_alsa_ucm2_conf.d_Realme_X2_Pro_HiFi.conf
 efdfbc28b7df599202613648a782cd8b485c3f91f50f73dd092e500bce298c2a08dcf7dd5b72d823cf9a1761a40fc2af43165618dd4c6418abadf05296cfefa8  usr_share_alsa_ucm2_conf.d_Realme_X2_Pro_Realme_X2_Pro.conf
 "

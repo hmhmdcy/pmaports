@@ -40,20 +40,31 @@ if [ ! -d "$g" ]; then
  echo samurai > "$g/strings/0x409/manufacturer"
  echo SamuraiNCM > "$g/strings/0x409/product"
  mkdir "$g/configs/c.1"
- echo 100 > "$g/configs/c.1/MaxPower"
+ echo 500 > "$g/configs/c.1/MaxPower"
  mkdir "$g/functions/ncm.usb0"
  echo "02:$octets"01 > "$g/functions/ncm.usb0/dev_addr"
  echo "02:$octets"02 > "$g/functions/ncm.usb0/host_addr"
  ln -s "$g/functions/ncm.usb0" "$g/configs/c.1/ncm.usb0"
 fi
-# The initramfs may already own this exact gadget. Preserve its private USB
-# identity and live host link rather than changing descriptors after binding.
+# The initramfs may already own this exact gadget. Preserve its USB identity;
+# a changed power request needs a fresh host configuration before it is usable.
 test "$(cat "$g/idVendor")" = 0x0525
 test "$(cat "$g/idProduct")" = 0xa4a1
 test "$(cat "$g/strings/0x409/product")" = SamuraiNCM
 test -L "$g/configs/c.1/ncm.usb0"
-if [ -z "$(cat "$g/UDC")" ]; then echo "$udc" > "$g/UDC"; fi
-test "$(cat "$g/UDC")" = "$udc"
+power=$(cat "$g/configs/c.1/MaxPower")
+if [ "$power" != 500 ]; then
+ bound=$(cat "$g/UDC")
+ if [ -n "$bound" ]; then printf '\n' > "$g/UDC"; fi
+ bound=$(cat "$g/UDC")
+ test -z "$bound"
+ echo 500 > "$g/configs/c.1/MaxPower"
+ sleep 2
+fi
+bound=$(cat "$g/UDC")
+if [ -z "$bound" ]; then echo "$udc" > "$g/UDC"; fi
+bound=$(cat "$g/UDC")
+test "$bound" = "$udc"
 interface=$(cat "$g/functions/ncm.usb0/ifname")
 ip link set "$interface" up
 if ! ip -4 addr show dev "$interface" | grep -q "inet $address/16 "; then
