@@ -57,7 +57,7 @@ for level,names in levels.items():
 # Existing pmbootstrap USB gadget services must not race the Samurai gadget.
 for directory in (root/'etc/runlevels').iterdir():
  if directory.is_dir():
-  for name in ['usb-moded','postmarketos-usb','usb-signaller','unudhcpd.usb0']: 
+  for name in ['usb-moded','postmarketos-usb','usb-signaller','unudhcpd.usb0']:
    f=directory/name
    if f.is_symlink():f.unlink()
 release=root/'etc/samurai-rootfs-release'
