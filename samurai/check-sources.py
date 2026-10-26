@@ -3,10 +3,10 @@
 from pathlib import Path
 import ast,hashlib,json,re,subprocess
 root=Path(__file__).resolve().parents[1]
-recipes=[root/'cross/crossdirect',root/'temp/libcamera',root/'temp/modemmanager']
+recipes=[root/'cross/crossdirect',root/'temp/libcamera',root/'temp/modemmanager',root/'temp/geoclue',root/'temp/pipewire']
 recipes+=sorted((root/'device/testing').glob('samurai-*'))
 recipes+=[root/'device/testing/mesa-vulkan-freedreno-samurai',root/'device/testing/device-realme-samurai']
-hashes=0;checked=0
+hashes=0;checked=0;libcamera_patches=[]
 for directory in recipes:
  recipe=(directory/'APKBUILD').read_text()
  subprocess.run(['sh','-n',str(directory/'APKBUILD')],check=True)
@@ -27,6 +27,8 @@ for directory in recipes:
  source_names=[t.split('::',1)[0] if '::' in t else t.rsplit('/',1)[-1] for t in sources]
  checksum_names=re.findall(r'^[0-9a-f]{128}  (.+)$',recipe,re.M)
  assert source_names==checksum_names,'Source/checksum order mismatch: '+str(directory)
+ if directory==root/'temp/libcamera':
+  libcamera_patches=sorted(name for name in source_names if name.endswith('.patch'))
  for digest,name in re.findall(r'^([0-9a-f]{128})  (.+)$',recipe,re.M):
   p=directory/name
   if p.is_file():assert hashlib.sha512(p.read_bytes()).hexdigest()==digest,str(p);hashes+=1
@@ -46,8 +48,24 @@ tool_patches=json.loads((root/'samurai/sources.json').read_text()).get('pmbootst
 for item in tool_patches:
  p=root/'samurai'/item['path']
  assert hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256'],str(p)
+lock=json.loads((root/'samurai/libcamera-source-lock.json').read_text())
+libcamera_recipe=(root/'temp/libcamera/APKBUILD').read_text()
+libcamera_rel=re.search(r'^pkgrel=([0-9]+)$',libcamera_recipe,re.M)[1]
+camera_recipe=(root/'device/testing/samurai-camera-config/APKBUILD').read_text()
+camera_ver=re.search(r'^pkgver=([^\n]+)$',camera_recipe,re.M)[1]
+camera_rel=re.search(r'^pkgrel=([0-9]+)$',camera_recipe,re.M)[1]
+assert lock['source_version']=='0.7.2'
+assert lock['package_version']=='99990.7.2-r'+libcamera_rel
+assert lock['configuration_version']==camera_ver+'-r'+camera_rel
+assert lock['patch_count']==len(libcamera_patches)
+sources=json.loads((root/'samurai/sources.json').read_text())
+for name,commit in sources['kernel']['branches'].items():
+ assert re.fullmatch(r'[0-9a-f]{40}',commit),(name,commit)
+assert sources['kernel']['commit']==sources['kernel']['branches'][sources['kernel']['branch']]
 baseline=json.loads((root/'samurai/observed-packages-248.json').read_text())
 assert len(baseline)==958
-assert len(list((root/'temp/libcamera').glob('00*.patch')))==12
+assert len(libcamera_patches)==52
+assert sorted(p.name for p in (root/'temp/libcamera').glob('00*.patch'))==libcamera_patches
 print(json.dumps({'recipes':len(recipes),'local_sha512_checks':hashes,'source_files_checked':checked,
- 'tool_patches_verified':len(tool_patches),'observed_package_records':len(baseline),'private_build_paths_required':False,'hardware_tested':False},indent=2))
+ 'tool_patches_verified':len(tool_patches),'libcamera_patches':len(libcamera_patches),'observed_package_records':len(baseline),
+ 'private_build_paths_required':False,'hardware_tested':False},indent=2))

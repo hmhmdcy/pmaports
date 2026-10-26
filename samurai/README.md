@@ -1,8 +1,8 @@
 # Realme X2 Pro rootfs 重建
 
-本仓库负责用户态与配置；[Linux 内核](https://github.com/hmhmdcy/linux/tree/samurai-bringup)和[EDK2/DTB/bring-up 记录](https://github.com/hmhmdcy/edk2-realme-x2-pro)分别保存。先读 [STATUS.md](STATUS.md)，不要把构建成功等同于所有硬件通过。
+本仓库是用户态 APKBUILD、补丁、服务和设备配置的正式归属。内核源码在 [`hmhmdcy/linux`](https://github.com/hmhmdcy/linux/tree/samurai-ipe-variable-pd10-441)，EDK2、DTB、历史快照和发布证据在 [`hmhmdcy/edk2-realme-x2-pro`](https://github.com/hmhmdcy/edk2-realme-x2-pro)。先读 [STATUS.md](STATUS.md)，不要把构建成功等同于所有硬件通过。
 
-推荐samurai-userspace：相对上游基线按6个主题保存最终用户态差异，原samurai-bringup保留整理历史。**这仍是构建候选；IMX319的内核实验供电依赖尚未正式化，整机纯净维护版本未发布。**
+推荐 `samurai-userspace`：前六个提交按主题整理工具链、相机、Turnip、radio/GNSS、平台和文档，之后继续记录 r33/r28、GeoClue/PipeWire 及验证修正；原 `samurai-bringup` 保留历史。当前候选固定 libcamera `99990.7.2-r33`、config/stack `0.1.0-r28`、platform `5-r3`、desktop `3-r1`、GNSS `2-r1`、GeoClue `2.8.2-r1` 和 PipeWire `1.6.9-r3`。`r34/r29` 没有安装证据，不是稳定发布。**IMX319 的内核实验供电/OF 依赖尚未正式化，整机纯净维护版本未发布。**
 
 ## 环境与隔离构建
 
@@ -14,7 +14,7 @@ cd pmaports
 python3 samurai/bootstrap.py --work "$HOME/samurai-build" --build --lax --jobs 4
 ```
 
-脚本从公开镜像取得并验证 pmbootstrap `200f5123615808326ac796f66b02fdc6cebbcbf1`，官方来源仍为 GitLab。随后应用sources.json锁定的一个功能补丁：选择kernel=none时跳过无内核可用的initramfs生成；不替换mkinitfs程序，也不生成占位内核。它先构建修正过的 crossdirect，再构建设备包和依赖。`--lax` 只是在这次全新工作区内复用 chroot；不读取原手机 SDK。省略它可为每个包重建 chroot。失败后修正/更新源码，再使用同一参数加 `--resume`。不要运行 `pmbootstrap pull`，否则会推进上游基线。
+脚本从公开镜像取得并验证 pmbootstrap `200f5123615808326ac796f66b02fdc6cebbcbf1`，官方来源仍为 GitLab。随后应用 sources.json 锁定的一个功能补丁：选择 `kernel=none` 时跳过无内核可用的 initramfs 生成；不替换 mkinitfs 程序，也不生成占位内核。它先构建修正过的 crossdirect，再构建 15 个目标软件包及依赖，其中明确包含 GeoClue 和 PipeWire，确保本地 GNSS/相机缓冲补丁实际参与构建。`--lax` 只是在这次全新工作区内复用 chroot；不读取原手机 SDK。省略它可为每个包重建 chroot。失败后修正/更新源码，再使用同一参数加 `--resume`。不要运行 `pmbootstrap pull`，否则会推进上游基线。
 
 配方中的本地补丁有 SHA512，工具补丁有独立 SHA256；外部源码有固定版本/提交及 SHA512。构建会生成自己的 APK 签名密钥和 libcamera IPA 密钥，不需要项目作者的私钥。结果不承诺与历史 APK 逐字节相同。APK 仓库仍是滚动的 edge；[958 包清单](observed-packages-248.json)记录历史版本，但不是永久可用的二进制镜像。
 
@@ -32,7 +32,8 @@ sudo chroot "$HOME/samurai-build/work/chroot_rootfs_realme-samurai" \
   apk --no-network add device-realme-samurai@samurai samurai-camera-stack@samurai \
   libcamera@samurai libcamera-ipa@samurai libcamera-tools@samurai \
   libcamera-gstreamer@samurai libcamera-v4l2@samurai \
-  modemmanager@samurai libmm-glib@samurai mesa-vulkan-freedreno-samurai@samurai
+  modemmanager@samurai libmm-glib@samurai geoclue@samurai pipewire@samurai \
+  gst-plugin-pipewire@samurai mesa-vulkan-freedreno-samurai@samurai
 sudo python3 samurai/finalize-rootfs.py \
   --root "$HOME/samurai-build/work/chroot_rootfs_realme-samurai" --user user
 ```
@@ -88,7 +89,7 @@ sudo chroot "$HOME/samurai-build/work/chroot_rootfs_realme-samurai" apk update
 sudo chroot "$HOME/samurai-build/work/chroot_rootfs_realme-samurai" apk upgrade --simulate
 ```
 
-check-rootfs添加--require-maintenance-clean会拒绝尚存的lab供电配置，这是当前候选预期的阻塞，不应关闭该检查来标成纯净版。
+`check-rootfs --require-maintenance-clean` 会拒绝 rootfs 中仍残留的 lab 供电配置。本轮已移除旧的 `samurai-pmic-bringup.conf`，但内核源码里实验 OF/供电机制是否清理仍需单独审查；rootfs 检查通过不能代替内核纯度检查。
 
 后两项另需主机的 patch 和 C 编译器（支持ASan/UBSan），以及可用的 /dev/shm tmpfs。
 RAM/RPC检查保留上游builder已知的进程寿命分配，不把关闭leak检查解释为内存泄漏已修复。
@@ -100,4 +101,4 @@ export脚本把本次构建的已签名索引、索引内APK和既有公钥信�
 
 维护者先构建新的候选并验收，用户再更新修复仓库；GitHub源仓库本身不是apk仓库。对libcamera、libmm-glib、modemmanager和设备包使用对应samurai仓库标签，避免发行版新版本无意替换设备修复。标签限制来源，不永久锁死版本；以后发布该仓库的新版本仍可更新。新的索引和APK必须同时更新，不能仅复制so。
 
-本轮离线测试的实际安装、完整性及升级模拟结果见[REPRODUCIBILITY.md](REPRODUCIBILITY.md)。内核和模块属于外置启动链，不能通过当前设备APK自动升级。
+本轮源码、补丁和离线验证结果见 [REPRODUCIBILITY.md](REPRODUCIBILITY.md)。r33/r28 的既有实机安装及精确回退记录在 EDK2 481/484/491 证据中，本次发布没有新的刷写或硬件验收。内核和模块属于外置启动链，不能通过当前设备 APK 自动升级。

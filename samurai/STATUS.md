@@ -1,33 +1,42 @@
-# 最后已验证的手机状态与新构建候选
+# 最后已验证状态与当前发布候选
 
-基准：2026-10-17 的248只读 Linux 备份；全机功能验收沿用240，GNSS新增记录到247。用户随后计划自行刷Android，本页不能证明此刻物理手机运行哪个系统。249只做PC侧打包与复现，没有新刷写或新硬件验收。
+文档核对：2026-10-26。硬件基线沿用 2026-10-17 的 248 只读备份、240 全机验收和 2026-10-24 的 484 相机包事务；用户随后继续使用手机做其它工作，本页不能证明此刻物理手机运行哪个系统。本次只做仓库整理、源码检查和离线重放，没有刷写、重启或新增硬件验收。
 
 | 部分 | 最后实测与限制 | 保存位置 |
 | --- | --- | --- |
-| 启动/屏幕 | EDK2 boot235 + Image183；白屏/花屏修复含UEFI与内核；Phosh启动约20.62秒 | EDK2164、内核153–165；用户态greetd顺序 |
-| 触摸/USB | 既有原生桌面触摸和NCM/SSH通路；新镜像需新密钥/身份 | 内核及samurai-platform |
-| GPU | 147内核GLES对齐；149 Turnip A640 VM_BIND 64KiB修复通过185个像素回读；240 Snapshot默认Vulkan仍GPU fault/device lost | 内核 + mesa-vulkan-freedreno-samurai；不能标为全部修好 |
-| 音频 | 已有UCM/路由、扬声器/耳麦/采集修复；具体测试边界见166–184 | 内核 + samurai-platform |
-| Wi-Fi/BT | Wi-Fi/chrony运行；同机DMS地址、RAM NV服务；BT已扫描/既有连接有观察，未新增配对/连接验收 | radio-tools/platform/openrc；固件为私人输入 |
-| 传感器 | A.11 SLPI、wise_light兼容；accel/gyro/mag与SensorProxy出数；精度、动作/亮暗响应、旋转仍未完整验收；SLPI同boot重启生命周期仍未解决 | samurai-libssc/hexagonrpcd/ssc/openrc |
-| 相机 | IMX471、IMX319与CAMSS/PMIC，libcamera r15/config r10；Snapshot仅该应用CPU路径两轮运行和清理通过 | 内核 + libcamera/config + desktop |
-| 相机待办 | 未完成实屏画面/颜色验收；buffer回收告警仍在；其它后摄未适配，S5K3M5候选未部署 | 239–240原始记录 |
-| 蜂窝 | 无SIM，未验语音/数据；MM状态−1/reason2/power1 | MM与radio配置；不是业务通过 |
-| GNSS | 零CNR、无fix；1240份日志/2586个原始C/No全0；MEMSHARE等试验未证明根因；Android定位基线未知 | 241–247记录 + MM/gnss-assist；保持未解决 |
+| 启动/屏幕 | EDK2 boot235 + Image183；白屏/花屏修复含 UEFI 与内核；Phosh 启动约 20.62 秒 | EDK2 164、内核 153–165；用户态 greetd 顺序 |
+| 触摸/USB | 既有原生桌面触摸和 NCM/SSH 通路；新镜像需新密钥/身份；本轮把 gadget `MaxPower` 提高到 500 并要求重新绑定后再启用 | 内核 + samurai-platform |
+| GPU | 147 内核 GLES 对齐；149 Turnip A640 VM_BIND 64 KiB 修复通过 185 个像素回读；240 Snapshot 默认 Vulkan 仍有 GPU fault/device lost | 内核 + mesa-vulkan-freedreno-samurai；不能标为全部修好 |
+| 音频 | 已有 UCM/路由、扬声器/耳麦/采集修复；本轮增加 PulseAudio Bluetooth 依赖并继续保留既有路由 | 内核 + samurai-platform |
+| Wi-Fi/BT | Wi-Fi/chrony 运行；同机 DMS 地址、RAM NV 服务；BT 已扫描/既有连接有观察，未新增配对/连接验收 | radio-tools/platform/openrc；固件为私人输入 |
+| 传感器 | A.11 SLPI、wise_light 兼容；accel/gyro/mag 与 SensorProxy 出数；本轮移除旧 PMIC lab modprobe，加入 SensorProxy 加速度方向 udev 规则；精度、动作/亮暗响应、旋转仍未完整验收 | samurai-libssc/hexagonrpcd/ssc/openrc/platform |
+| 相机 | 481/484 已原生安装 libcamera r33/config r28，精确回退到 r32/r27 后再次升级到 r33/r28；两次 forward 共 14 个默认路径用例通过 | 内核相机分支 + libcamera/config + desktop |
+| 相机待办 | r34/r29 七包仅离线签名和模拟求解，禁止写成当前版本；实屏色彩、共享 Manager 重开/long-run、编码录像/HDR、多摄同步及第五摄仍未闭环 | 490/491 记录；r33/r28 为当前稳定候选 |
+| 蜂窝 | 无 SIM，未验语音/数据；MM 状态 −1/reason2/power1 | MM 与 radio 配置；不是业务通过 |
+| GNSS | 零 CNR、无 fix；1240 份日志/2586 个原始 C/No 全 0；GeoClue 生命周期和 no-SIM 电源策略已有更新，但 MEMSHARE 等试验未证明根因 | GeoClue、MM、gnss-assist；保持未解决 |
 
-历史记录入口：[硬件状态](https://github.com/hmhmdcy/edk2-realme-x2-pro/blob/master/Platform/Realme/sm8150/linux-port/docs/HARDWARE-STATUS.md)、[240](https://github.com/hmhmdcy/edk2-realme-x2-pro/tree/master/Platform/Realme/sm8150/reference/kernel240)、[247](https://github.com/hmhmdcy/edk2-realme-x2-pro/tree/master/Platform/Realme/sm8150/reference/kernel247)、[248](https://github.com/hmhmdcy/edk2-realme-x2-pro/tree/master/Platform/Realme/sm8150/reference/kernel248)。
+历史记录入口：[硬件状态](https://github.com/hmhmdcy/edk2-realme-x2-pro/blob/master/Platform/Realme/sm8150/linux-port/docs/HARDWARE-STATUS.md)、[240](https://github.com/hmhmdcy/edk2-realme-x2-pro/tree/master/Platform/Realme/sm8150/reference/kernel240)、[247](https://github.com/hmhmdcy/edk2-realme-x2-pro/tree/master/Platform/Realme/sm8150/reference/kernel247)、[248](https://github.com/hmhmdcy/edk2-realme-x2-pro/tree/master/Platform/Realme/sm8150/reference/kernel248)、[481](https://github.com/hmhmdcy/edk2-realme-x2-pro/tree/master/Platform/Realme/sm8150/reference/kernel481)、[484](https://github.com/hmhmdcy/edk2-realme-x2-pro/tree/master/Platform/Realme/sm8150/reference/kernel484)、[491](https://github.com/hmhmdcy/edk2-realme-x2-pro/tree/master/Platform/Realme/sm8150/reference/kernel491)。
 
-## 249候选与历史部署的明确差别
+## 当前用户态候选
 
-历史958包清单在 `observed-packages-248.json`。重建配方是新候选：libcamera r18/config r13使用同一功能补丁、默认新IPA密钥，下游改动合为6个最终功能补丁，移除实验追踪并修正配方校验顺序；Turnip有专用r2包；MM完整native重建为r4（含库），历史MM r1沿用r0库；服务文件改为有归属的包；私人固件来源改成统一路径；USB身份改为本安装生成。不得把候选APK的SHA或包版本当作历史实机SHA/版本。
+该分支的正式源码归属是 [`hmhmdcy/pmaports`](https://github.com/hmhmdcy/pmaports/tree/samurai-userspace)；内核源码归属是 [`hmhmdcy/linux`](https://github.com/hmhmdcy/linux/tree/samurai-ipe-variable-pd10-441)。EDK2 只保存快照、历史和证据，不是内核或 APKBUILD 的最终仓库。
 
-读取现有只读备份时，扫描了958包元数据、所有 `/etc` 与 `/usr` 的包文件SHA1及未归属文件，发现140项与数据库校验和不同、6124项未归属文件。数量包含账户/生成缓存、旧模块树、手工重打包后的数据库差异，不等于140个硬件补丁。运行代码/服务/配置的相关项已整理到配方，私人账户/网络、旧诊断trace和构建缓存不导入新镜像。
+当前仓库固定：
 
-## 维护纯度的尚未完成项
+- libcamera / IPA / tools / GStreamer / V4L2：`99990.7.2-r33`
+- samurai-camera-config / samurai-camera-stack：`0.1.0-r28`
+- samurai-platform：`5-r3`；samurai-desktop：`3-r1`；samurai-gnss-assist：`2-r1`
+- GeoClue：`2.8.2-r1`；PipeWire：`1.6.9-r3`（含 `gst-plugin-pipewire` 子包）
+- ModemManager / libmm-glib：`1.25.95_git20261005-r4`；Mesa Turnip：`26.2.4-r2`
 
-推荐用户态分支为samurai-userspace，按6个主题保存最终差异；samurai-bringup保留整理历史。并未发布已验收的纯净维护内核。
-它为保持最后部署配置，仍记录 IMX319 的 experimental_p_imx319_power 选项；
-该配置依赖235/237 lab PMIC provider，不能当作已经完成的标准regulator驱动。
-正式化和功能回归之前，不把它包装成“纯净修复”，也不通过直接删除使既有功能悄悄回退。
+libcamera 队列共 52 个补丁，零 fuzz 重放后的源码树 SHA256 为 `ae7785b15bc1c9d7434e0804961a0a6713f737beade9668630b8541680587307`。r33/r28 的历史实机事务、精确回退和最终保留见 484 独立审计；本轮只重新验证源码和配方，没有再次安装。
 
-249离线候选检查已完成：13个目标配方和crossdirect构建通过，882包根目录、189项包文件校验、78个ARM64 ELF及QMI GI加载通过；签名仓库和升级模拟通过。详见[独立复现核验](REPRODUCIBILITY.md)。这些数字不代表新硬件验收。
+## 与历史 249 候选的差别
+
+历史 958 包清单在 `observed-packages-248.json`。早期 249 候选使用 libcamera r18/config r13、12 个相机补丁；当前候选已更新为 r33/r28、52 个补丁、GeoClue/PipeWire 修复和正常传感器 udev 规则。不得把当前 APK 的 SHA 或包版本当作 248 历史实机版本，也不得把 r34/r29 的离线候选当成已部署版本。
+
+本轮公开验证确认：16 个配方、149 个本地 SHA512、168 个源码文件、1 个工具补丁、52 个 libcamera 补丁和 GNSS 14 个电源策略场景通过；这些检查没有连接手机。现有 r33/r28 硬件证据见 484，当前分支的完整 rootfs 重建和新硬件验收尚未在本轮执行。详见[复现记录](REPRODUCIBILITY.md)。
+
+## 尚未完成的维护纯度
+
+内核侧已有更清晰的相机分支，但从 `samurai-bringup` 到最新 `samurai-ipe-variable-pd10-441` 的累计差异仍很大，包含实验 OF fixture、前摄 overlay、专用 trace 和 lab PMIC 历史。分支推送和源码可构建不等于这些机制已转成上游可接受的标准驱动。必须先收敛电源/复位/共享资源、拆分诊断改动并完成断电/相机开关/DSP 重启回归，才能发布纯净维护内核。

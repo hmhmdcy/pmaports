@@ -61,6 +61,6 @@ for directory in (root/'etc/runlevels').iterdir():
    f=directory/name
    if f.is_symlink():f.unlink()
 release=root/'etc/samurai-rootfs-release'
-release.write_text('ROOTFS_ID=samurai-f2fs-rootfs01\nBUILD_PROFILE=github-pmaports-249\n')
+release.write_text('ROOTFS_ID=samurai-f2fs-rootfs01\nBUILD_PROFILE=github-pmaports-samurai-userspace\n')
 # No credentials or machine identity are imported; set a personal login and SSH key before deployment.
 print(json.dumps({'offline_configuration_complete':True,'firmware_provisioning_required':True,'hardware_tested':False}))

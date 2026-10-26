@@ -13,7 +13,8 @@ db=(root/'lib/apk/db/installed').read_text()
 records={};file_checks=[];selected=set()
 required=['device-realme-samurai','device-realme-samurai-kernel-none','samurai-camera-config','samurai-camera-stack',
  'libcamera','libcamera-ipa','libcamera-tools','libcamera-gstreamer','libcamera-v4l2',
- 'mesa-vulkan-freedreno-samurai','modemmanager','libmm-glib','samurai-libssc','samurai-hexagonrpcd',
+ 'mesa-vulkan-freedreno-samurai','modemmanager','libmm-glib','geoclue','pipewire','pipewire-libs',
+ 'pipewire-spa-libcamera','gst-plugin-pipewire','samurai-libssc','samurai-hexagonrpcd',
  'samurai-radio-tools','samurai-platform','samurai-gnss-assist','samurai-ssc','samurai-openrc','samurai-desktop']
 for block in db.split('\n\n'):
  row={}
@@ -51,7 +52,7 @@ assert checks>50,'Unrecognized installed-file checksum format'
 greet=tomllib.loads((root/'etc/greetd/samurai-phosh.toml').read_text())
 assert greet['initial_session']['user']==a.user
 assert greet['initial_session']['command']=='/usr/bin/samurai-phosh-session'
-assert re.search(r'^rc_before=.*samurai-radio', (root/'etc/conf.d/greetd').read_text(), re.M)
+assert re.search(r'^rc_need=.*dbus iio-sensor-proxy', (root/'etc/conf.d/greetd').read_text(), re.M)
 entries=[line.split(':') for line in (root/'etc/passwd').read_text().splitlines()]
 home=root/next(row[5].lstrip('/') for row in entries if row[0]==a.user)
 for relative in ['applications/org.gnome.Snapshot.desktop','dbus-1/services/org.gnome.Snapshot.service']:

@@ -5,7 +5,7 @@ import argparse, configparser, os, subprocess, platform, json, hashlib
 
 PIN='200f5123615808326ac796f66b02fdc6cebbcbf1'
 PACKAGES=['libcamera','samurai-camera-config','mesa-vulkan-freedreno-samurai',
- 'modemmanager','samurai-libssc','samurai-hexagonrpcd','samurai-radio-tools',
+ 'modemmanager','geoclue','pipewire','samurai-libssc','samurai-hexagonrpcd','samurai-radio-tools',
  'samurai-platform','samurai-gnss-assist','samurai-ssc','samurai-openrc',
  'samurai-desktop','device-realme-samurai']
 p=argparse.ArgumentParser(description=__doc__)
