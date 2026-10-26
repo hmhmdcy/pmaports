@@ -4,11 +4,15 @@
 maintainer=""
 pkgname=linux-xiaomi-latte
 pkgver=6.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Upstream Kernel For XiaoMi Pad2"
 arch="x86_64"
 _carch="x86_64"
 _flavor="xiaomi-latte"
+# Secure Boot signing is opt-in. Point these variables at a key/cert pair
+# stored outside the repository; never commit private key material.
+_mok_key="${SAMURAI_XIAOMI_MOK_KEY:-}"
+_mok_cert="${SAMURAI_XIAOMI_MOK_CERT:-}"
 url="https://github.com/torvalds/linux"
 license="GPL-2.0-only"
 options="!strip !check !tracedeps pmb:cross-native pmb:kconfigcheck-community pmb:kconfigcheck-uefi"
@@ -38,8 +42,6 @@ source="
 	$_config
 	latte-audio-fix.patch
 	latte-i915-fix.patch
-	MOK.crt
-	MOK.key
 "
 builddir="$srcdir/linux-$_commit"
 _outdir="out"
@@ -74,8 +76,17 @@ package() {
 	install -D "$builddir"/include/config/kernel.release \
 		"$pkgdir"/usr/share/kernel/$_flavor/kernel.release
 
-	# self sign kernel for Secure Boot
-	sbsign --key "$startdir"/MOK.key --cert "$startdir"/MOK.crt --output "$pkgdir"/boot/vmlinuz "$pkgdir"/boot/vmlinuz
+	# Secure Boot signing is optional and must use an external key pair.
+	if [ -n "$_mok_key" ] || [ -n "$_mok_cert" ]; then
+		if [ -z "$_mok_key" ] || [ -z "$_mok_cert" ]; then
+			echo "Set both SAMURAI_XIAOMI_MOK_KEY and SAMURAI_XIAOMI_MOK_CERT" >&2
+			return 1
+		fi
+		sbsign --key "$_mok_key" --cert "$_mok_cert" \
+			--output "$pkgdir"/boot/vmlinuz "$pkgdir"/boot/vmlinuz
+	else
+		echo "Secure Boot signing skipped: no external MOK key pair supplied" >&2
+	fi
 }
 
 sha512sums="
@@ -83,6 +94,4 @@ sha512sums="
 75d693df309cd3884fb39d69cd71bd8f3e628653c26ef6103aa7ec0f9d2abd53a0925b90e1711971615c4edc57918cd3244a4b518b31f9032b13e8cdf8b67348  config-xiaomi-latte.x86_64
 7e3eeb8d54e2bf13bd9b126259daf2dd38cf698c3e66401a953d2ff235a87cfab33ea3f45575ec21cec3987f8cc0fd07f2aabc0c419753e215a851e219502025  latte-audio-fix.patch
 7a311bb9ff309349fb5dc11a8a9b18f6595abb28108da60a67cd95dd9c713f150f29068c001400f47010fab1809f092ef2cc4393bab98a64592334ca8650519a  latte-i915-fix.patch
-fedc27118b43badbcd47f44ac127ff9f02ce4e53ba04350c5bd893d6f6f6ff687c73f8cc7b15e8c71bc0def1ec63247ab675e95b339402edbaa744a3d8acf39d  MOK.crt
-1b5d43a851e7dc4085e34368b145752d4f8d00671db097f09b85a0152e1427486e7887f9a7fd876b9f97ca4f22dcd584c496f2d8bd9a7d2e64cc1fecad8ce0f0  MOK.key
 "

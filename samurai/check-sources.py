@@ -6,7 +6,10 @@ root=Path(__file__).resolve().parents[1]
 recipes=[root/'cross/crossdirect',root/'temp/libcamera',root/'temp/modemmanager',root/'temp/geoclue',root/'temp/pipewire']
 recipes+=sorted((root/'device/testing').glob('samurai-*'))
 recipes+=[root/'device/testing/mesa-vulkan-freedreno-samurai',root/'device/testing/device-realme-samurai']
-hashes=0;checked=0;libcamera_patches=[]
+hashes=0;checked=0;key_scan=0;libcamera_patches=[]
+private_build_path=re.compile(r'/(?:home/[A-Za-z0-9._-]+|mnt/[A-Za-z])/')
+windows_user_path=re.compile(r'(?i)(?<![A-Za-z0-9])[A-Z]:\\Users\\[^\\\s]+')
+private_key_header=re.compile(r'-----BEGIN (?:RSA |EC |DSA |OPENSSH |ENCRYPTED )?PRIVATE KEY-----|-----BEGIN PGP PRIVATE KEY BLOCK-----|PuTTY-User-Key-File')
 for directory in recipes:
  recipe=(directory/'APKBUILD').read_text()
  subprocess.run(['sh','-n',str(directory/'APKBUILD')],check=True)
@@ -37,12 +40,20 @@ for directory in recipes:
   data=p.read_bytes()
   assert not data.startswith(b'\x7fELF'),str(p)
   text=data.decode()
-  assert '-----BEGIN PRIVATE KEY-----' not in text and '-----BEGIN OPENSSH PRIVATE KEY-----' not in text,str(p)
-  assert '/home/cy122/' not in text and '/mnt/e/' not in text,str(p)
+  assert not private_key_header.search(text),str(p)
+  if p.suffix not in {'.patch','.diff'}:
+   assert not private_build_path.search(text),str(p)
+   assert not windows_user_path.search(text),str(p)
   assert not re.search(r'/var/lib/samurai/k[0-9]',text),str(p)
   if p.suffix=='.py' or text.startswith('#!/usr/bin/python3'):ast.parse(text)
   if text.startswith(('#!/bin/sh','#!/sbin/openrc-run')):subprocess.run(['sh','-n',str(p)],check=True)
   checked+=1
+for p in root.rglob('*'):
+ if not p.is_file() or p.is_symlink() or '.git' in p.parts or p.resolve()==Path(__file__).resolve():continue
+ data=p.read_bytes()
+ if b'\0' in data:continue
+ assert not private_key_header.search(data.decode(errors='replace')),str(p)
+ key_scan+=1
 for p in (root/'samurai').glob('*.py'):ast.parse(p.read_text())
 tool_patches=json.loads((root/'samurai/sources.json').read_text()).get('pmbootstrap_patches',[])
 for item in tool_patches:
@@ -67,5 +78,5 @@ assert len(baseline)==958
 assert len(libcamera_patches)==52
 assert sorted(p.name for p in (root/'temp/libcamera').glob('00*.patch'))==libcamera_patches
 print(json.dumps({'recipes':len(recipes),'local_sha512_checks':hashes,'source_files_checked':checked,
- 'tool_patches_verified':len(tool_patches),'libcamera_patches':len(libcamera_patches),'observed_package_records':len(baseline),
+ 'tool_patches_verified':len(tool_patches),'libcamera_patches':len(libcamera_patches),'private_key_scan_files':key_scan,'observed_package_records':len(baseline),
  'private_build_paths_required':False,'hardware_tested':False},indent=2))

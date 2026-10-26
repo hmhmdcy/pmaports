@@ -87,6 +87,11 @@ celerybeat-schedule
 # dotenv
 .env
 
+# Local signing material
+MOK.key
+*.p12
+*.pfx
+
 # virtualenv
 .venv
 venv/
